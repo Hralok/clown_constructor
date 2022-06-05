@@ -4,9 +4,9 @@ using UnityEngine;
 
 public static class TextManager
 {
-    static LanguageEnum currentLanguage = LanguageEnum.Russian;
+    static private LanguageEnum currentLanguage = LanguageEnum.Russian;
 
-    static Dictionary<LanguageEnum, Dictionary<int, string>> allProjectText = new Dictionary<LanguageEnum, Dictionary<int, string>>()
+    static private Dictionary<LanguageEnum, Dictionary<int, string>> allProjectText = new Dictionary<LanguageEnum, Dictionary<int, string>>()
     {
         { LanguageEnum.Russian, new Dictionary<int, string>()
             {
@@ -24,7 +24,7 @@ public static class TextManager
         }
     };
 
-    static string GetTextById(int id)
+    static public string GetTextById(int id)
     {
         if (allProjectText[currentLanguage].ContainsKey(id))
         {
@@ -36,7 +36,7 @@ public static class TextManager
         }
     }
 
-    static void SetCurrentLanguage(LanguageEnum newLanguage)
+    static public void SetCurrentLanguage(LanguageEnum newLanguage)
     {
         if (newLanguage == LanguageEnum.Russian || newLanguage == LanguageEnum.English)
         {
@@ -44,7 +44,7 @@ public static class TextManager
         }
     }
 
-    static LanguageEnum GetCurrentLanguage()
+    static public LanguageEnum GetCurrentLanguage()
     {
         return currentLanguage;
     }

@@ -7,18 +7,16 @@ public class Cell
     public Vector2 coords { get; private set; }
     public Unit unitAtCell { get; private set; }
     public Structure structureAtCell { get; private set; }
-    public List<Resource> resourcesAtCell { get; private set; }
-    //public HashSet
-
-    public List<Item> itemsAtCell { get; private set; }
+    public HashSet<Resource> resourcesAtCell { get; private set; }
+    public Item itemAtCell { get; private set; }
 
     public Cell(Vector2 coords)
     {
         this.coords = coords;
         unitAtCell = null;
         structureAtCell = null;
-        resourcesAtCell = new List<Resource>();
-        itemsAtCell = new List<Item>();
+        itemAtCell = null;
+        resourcesAtCell = new HashSet<Resource>();
     }
 
     public Unit ExpelUnit()
@@ -35,19 +33,42 @@ public class Cell
         return expeledStructure;
     }
 
-    public List<Resource> ExpelResources()
+    public HashSet<Resource> ExpelResources()
     {
         var expeledResources = resourcesAtCell;
-        resourcesAtCell = null;
+        resourcesAtCell = new HashSet<Resource>();
         return expeledResources;
     }
 
-    public void AddResources(List<Resource> newResources)
+    public Item ExpelItem()
     {
-
+        var expeledItem = itemAtCell;
+        itemAtCell = null;
+        return expeledItem;
     }
 
-    public void AcceptEntity(Entity entity)
+    public void AddResources(HashSet<Resource> newResources)
+    {
+        foreach (var resource in newResources)
+        {
+            if (!resourcesAtCell.Contains(resource))
+            {
+                resourcesAtCell.Add(resource);
+            }
+            else
+            {
+                foreach (var j in newResources)
+                {
+                    if (j.type == resource.type)
+                    {
+                        j.PutResource(resource.count);
+                    }
+                }
+            }
+        }
+    }
+
+    public void AddEntity(Entity entity)
     {
         switch (entity)
         {
@@ -60,8 +81,8 @@ public class Cell
         }
     }
 
-
-
-
-
+    public void AddItem(Item item)
+    {
+        itemAtCell = item;
+    }
 }

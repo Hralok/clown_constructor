@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Cell
 {
-    public Vector2 coords { get; private set; }
+    public Vector2Int coords { get; private set; }
+    public CellTypeEnum type { get; private set; }
     public Unit unitAtCell { get; private set; }
     public Structure structureAtCell { get; private set; }
     public HashSet<Resource> resourcesAtCell { get; private set; }
     public Item itemAtCell { get; private set; }
 
-    public Cell(Vector2 coords)
+    public Cell(Vector2Int coords, CellTypeEnum type)
     {
         this.coords = coords;
+        this.type = type;
         unitAtCell = null;
         structureAtCell = null;
         itemAtCell = null;
@@ -84,5 +86,10 @@ public class Cell
     public void AddItem(Item item)
     {
         itemAtCell = item;
+    }
+
+    public void ChangeType(CellTypeEnum newType)
+    {
+        type = newType;
     }
 }

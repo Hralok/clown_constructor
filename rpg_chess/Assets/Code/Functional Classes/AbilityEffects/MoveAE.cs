@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveYourselfAE : AbilityEffect
+public abstract class MoveAE : AbilityEffect
 {
     public Map targetMap { get; private set; }
 
-    public MoveYourselfAE(
+    public MoveAE(
         HashSet<Vector2Int> targets, 
         Map targetMap, 
         Ability ability) 
@@ -15,16 +15,6 @@ public class MoveYourselfAE : AbilityEffect
         this.targetMap = targetMap;
     }
 
-    public override void DoTheStuff(Map map)
-    {
-        if (ability.owner is Unit)
-        {
-
-
-
-
-
-
-        }
-    }
+    public abstract override void DoTheStuff(Map map, Vector2Int target);
+    
 }

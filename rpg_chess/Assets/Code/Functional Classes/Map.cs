@@ -23,9 +23,9 @@ public class Map
         }
     }
 
-    public List<Cell> GetCells(HashSet<Vector2Int> coords)
+    public HashSet<Cell> GetCells(HashSet<Vector2Int> coords)
     {
-        List<Cell> cells = new List<Cell>();
+        HashSet<Cell> cells = new HashSet<Cell>();
 
         foreach (Vector2Int coord in coords)
         {
@@ -57,9 +57,9 @@ public class Map
         }
     }
 
-    public List<Cell> GetAllCells()
+    public HashSet<Cell> GetAllCells()
     {
-        List<Cell> cells = new List<Cell>();
+        HashSet<Cell> cells = new HashSet<Cell>();
 
         foreach (Cell cell in cellMap.Values)
         {

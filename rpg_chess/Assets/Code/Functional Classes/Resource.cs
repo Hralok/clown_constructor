@@ -18,6 +18,7 @@ public class Resource
     {
         return type.GetHashCode();
     }
+
     private bool Equals(Resource that)
     {
         if (that == null)

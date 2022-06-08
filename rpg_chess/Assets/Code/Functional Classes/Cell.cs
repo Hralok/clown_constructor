@@ -94,4 +94,30 @@ public class Cell
     {
         type = newType;
     }
+
+    public override bool Equals(object obj)
+    {
+        return this.Equals(obj as Cell);
+    }
+
+    public override int GetHashCode()
+    {
+        return coords.GetHashCode();
+    }
+
+    private bool Equals(Cell that)
+    {
+        if (that == null)
+        {
+            return false;
+        }
+        return coords == that.coords;
+    }
+
+
+
+
+
+
+
 }

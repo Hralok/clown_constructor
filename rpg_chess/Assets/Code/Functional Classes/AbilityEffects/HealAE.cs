@@ -20,14 +20,22 @@ public class HealAE : AbilityEffect
     {
         if (targets.Contains(target))
         {
-            var realCoordsTargets = new HashSet<Vector2Int>();
-
-            foreach (var affectedCoord in affectedArea)
+            HashSet<Cell> targetCells;
+            if (affectedArea.Count > 0)
             {
-                realCoordsTargets.Add(affectedCoord + target + ability.owner.currentCell.coords);
-            }
+                var realCoordsTargets = new HashSet<Vector2Int>();
 
-            var targetCells = map.GetCells(realCoordsTargets);
+                foreach (var affectedCoord in affectedArea)
+                {
+                    realCoordsTargets.Add(affectedCoord + target + ability.owner.currentCell.coords);
+                }
+
+                targetCells = map.GetCells(realCoordsTargets);
+            }
+            else
+            {
+                targetCells = map.GetAllCells();
+            }
 
             foreach (var cell in targetCells)
             {

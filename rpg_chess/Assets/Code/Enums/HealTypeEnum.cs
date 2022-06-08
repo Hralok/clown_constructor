@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
-public class Ability
+public enum HealTypeEnum 
 {
-
+    Dark,
+    Light,
+    Repair
 }

@@ -24,10 +24,13 @@ public class Entity
         currentCell = targetCell;
     }
 
-    public void TakeDamage(Damage damage)
+    public void TakeDamage(Damage damage, Entity attacker)
     {
 
     }
 
+    public void TakeHeal(Heal heal, Entity healer)
+    {
 
+    }
 }

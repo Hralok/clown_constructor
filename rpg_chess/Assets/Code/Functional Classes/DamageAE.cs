@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class DamageAE : AbilityEffect
 {
-    Damage damage;
+    public Damage damage { get; private set; }
 
-    public DamageAE(HashSet<Vector2Int> targets, HashSet<Vector2Int> affectedArea, Damage damage) : base(targets, affectedArea)
+    public DamageAE(
+        HashSet<Vector2Int> targets, 
+        HashSet<Vector2Int> affectedArea, 
+        Ability ability, 
+        Damage damage) 
+        : base(targets, affectedArea, ability)
     {
         this.damage = damage;
     }
@@ -19,12 +24,13 @@ public class DamageAE : AbilityEffect
         {
             if (cell.unitAtCell != null)
             {
-                cell.unitAtCell.TakeDamage(damage);
+                cell.unitAtCell.TakeDamage(damage, ability.owner);
+            }
+
+            if (cell.structureAtCell != null)
+            {
+                cell.structureAtCell.TakeDamage(damage, ability.owner);
             }
         }
-
-
-
-
     }
 }

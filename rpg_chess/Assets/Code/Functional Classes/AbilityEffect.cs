@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class AbilityEffect
 {
+    protected Ability ability;
+
     public HashSet<Vector2Int> targets { get; private set; }
     // Указываются координаты относительно применяющего.
     // Пустое множество означает применение на всю карту.
@@ -12,9 +14,10 @@ public abstract class AbilityEffect
 
     public HashSet<Vector2Int> affectedArea { get; private set; }
 
-    public AbilityEffect(HashSet<Vector2Int> targets, HashSet<Vector2Int> affectedArea)
+    public AbilityEffect(HashSet<Vector2Int> targets, HashSet<Vector2Int> affectedArea, Ability ability)
     {
         this.targets = targets;
+        this.ability = ability;
 
         if (affectedArea.Count == 0)
         {

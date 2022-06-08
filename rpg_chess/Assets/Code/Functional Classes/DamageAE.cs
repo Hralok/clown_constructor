@@ -20,11 +20,14 @@ public class DamageAE : AbilityEffect
     {
         if (targets.Contains(target))
         {
+            var realCoordsTargets = new HashSet<Vector2Int>();
 
+            foreach (var affectedCoord in affectedArea)
+            {
+                realCoordsTargets.Add(affectedCoord + target + ability.owner.currentCell.coords);
+            }
 
-
-
-            var targetCells = map.GetCells(targets);
+            var targetCells = map.GetCells(realCoordsTargets);
 
             foreach (var cell in targetCells)
             {

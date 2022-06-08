@@ -16,20 +16,30 @@ public class HealAE : AbilityEffect
         this.heal = heal;
     }
 
-    public override void DoTheStuff(Map map)
+    public override void DoTheStuff(Map map, Vector2Int target)
     {
-        var targetCells = map.GetCells(targets);
-
-        foreach (var cell in targetCells)
+        if (targets.Contains(target))
         {
-            if (cell.unitAtCell != null)
+            var realCoordsTargets = new HashSet<Vector2Int>();
+
+            foreach (var affectedCoord in affectedArea)
             {
-                cell.unitAtCell.TakeHeal(heal, ability.owner);
+                realCoordsTargets.Add(affectedCoord + target + ability.owner.currentCell.coords);
             }
 
-            if (cell.structureAtCell != null)
+            var targetCells = map.GetCells(realCoordsTargets);
+
+            foreach (var cell in targetCells)
             {
-                cell.structureAtCell.TakeHeal(heal, ability.owner);
+                if (cell.unitAtCell != null)
+                {
+                    cell.unitAtCell.TakeHeal(heal, ability.owner);
+                }
+
+                if (cell.structureAtCell != null)
+                {
+                    cell.structureAtCell.TakeHeal(heal, ability.owner);
+                }
             }
         }
     }

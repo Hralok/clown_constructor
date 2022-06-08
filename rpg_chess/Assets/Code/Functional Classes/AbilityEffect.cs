@@ -7,12 +7,15 @@ public abstract class AbilityEffect
     protected Ability ability;
 
     public HashSet<Vector2Int> targets { get; private set; }
-    // ”казываютс€ координаты относительно примен€ющего.
-    // ѕустое множество означает применение на всю карту.
+    // ”казываютс€ координаты точки применени€ относительно примен€ющего.
+    // ѕустое множество означает что выбрать целью можно любую точку карты.
     // ”казание координаты (0,0) равносильно применению на себ€,
     // если позвол€ют услови€ способности.
 
     public HashSet<Vector2Int> affectedArea { get; private set; }
+    // ”казывает на какие координаты относительно точки применени€ будет применЄн эффект способности.
+    // ѕустое множество означает что умение будет применено ко всем €чейкам карты.
+
 
     public AbilityEffect(HashSet<Vector2Int> targets, HashSet<Vector2Int> affectedArea, Ability ability)
     {
@@ -30,5 +33,5 @@ public abstract class AbilityEffect
         }
     }
 
-    public abstract void DoTheStuff(Map map);
+    public abstract void DoTheStuff(Map map, Vector2Int target);
 }

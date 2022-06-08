@@ -2,17 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveAE : MonoBehaviour
+public class MoveYourselfAE : AbilityEffect
 {
-    // Start is called before the first frame update
-    void Start()
+    public Map targetMap { get; private set; }
+
+    public MoveYourselfAE(
+        HashSet<Vector2Int> targets, 
+        Map targetMap, 
+        Ability ability) 
+        : base(targets, null, ability)
     {
-        
+        this.targetMap = targetMap;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void DoTheStuff(Map map)
     {
-        
+        if (ability.owner is Unit)
+        {
+
+
+
+
+
+
+        }
     }
 }

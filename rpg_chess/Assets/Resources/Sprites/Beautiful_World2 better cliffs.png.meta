@@ -1,0 +1,3876 @@
+fileFormatVersion: 2
+guid: 05902a1ed4195694abe69775c988a561
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5090407571827364883
+    second: Beautiful_World2 better cliffs_0
+  - first:
+      213: -49364459578164223
+    second: Beautiful_World2 better cliffs_1
+  - first:
+      213: 8146773342353825392
+    second: Beautiful_World2 better cliffs_2
+  - first:
+      213: 1785991012760993039
+    second: Beautiful_World2 better cliffs_3
+  - first:
+      213: -300753849037147626
+    second: Beautiful_World2 better cliffs_4
+  - first:
+      213: -8839097163128411459
+    second: Beautiful_World2 better cliffs_5
+  - first:
+      213: 6552211212593210134
+    second: Beautiful_World2 better cliffs_6
+  - first:
+      213: -4312080768242206238
+    second: Beautiful_World2 better cliffs_7
+  - first:
+      213: 6007951071424401904
+    second: Beautiful_World2 better cliffs_8
+  - first:
+      213: -1783705272621709027
+    second: Beautiful_World2 better cliffs_9
+  - first:
+      213: -1565143904296534493
+    second: Beautiful_World2 better cliffs_10
+  - first:
+      213: 2093792033041850855
+    second: Beautiful_World2 better cliffs_11
+  - first:
+      213: 4299106036370605492
+    second: Beautiful_World2 better cliffs_12
+  - first:
+      213: -7378166833211260794
+    second: Beautiful_World2 better cliffs_13
+  - first:
+      213: -7841368757435792623
+    second: Beautiful_World2 better cliffs_14
+  - first:
+      213: -3869825170207515344
+    second: Beautiful_World2 better cliffs_15
+  - first:
+      213: -2672157697568901802
+    second: Beautiful_World2 better cliffs_16
+  - first:
+      213: -1866046565915987329
+    second: Beautiful_World2 better cliffs_17
+  - first:
+      213: -6192766721761339520
+    second: Beautiful_World2 better cliffs_18
+  - first:
+      213: 8508593768199057243
+    second: Beautiful_World2 better cliffs_19
+  - first:
+      213: -6634494555275595317
+    second: Beautiful_World2 better cliffs_20
+  - first:
+      213: 5147405667396188144
+    second: Beautiful_World2 better cliffs_21
+  - first:
+      213: 5532612433057170208
+    second: Beautiful_World2 better cliffs_22
+  - first:
+      213: 8055664589415182355
+    second: Beautiful_World2 better cliffs_23
+  - first:
+      213: -9166049857838900713
+    second: Beautiful_World2 better cliffs_24
+  - first:
+      213: 1362628291470687844
+    second: Beautiful_World2 better cliffs_25
+  - first:
+      213: -3808202086498959720
+    second: Beautiful_World2 better cliffs_26
+  - first:
+      213: -4238126137745144794
+    second: Beautiful_World2 better cliffs_27
+  - first:
+      213: -755853198079708683
+    second: Beautiful_World2 better cliffs_28
+  - first:
+      213: -5599176229915336432
+    second: Beautiful_World2 better cliffs_29
+  - first:
+      213: 1811142720466509663
+    second: Beautiful_World2 better cliffs_30
+  - first:
+      213: -2006250473494558350
+    second: Beautiful_World2 better cliffs_31
+  - first:
+      213: 3750722211557937117
+    second: Beautiful_World2 better cliffs_32
+  - first:
+      213: -7200780251498074994
+    second: Beautiful_World2 better cliffs_33
+  - first:
+      213: 4255380374289413717
+    second: Beautiful_World2 better cliffs_34
+  - first:
+      213: 1640094066602021584
+    second: Beautiful_World2 better cliffs_35
+  - first:
+      213: -4371307784197703165
+    second: Beautiful_World2 better cliffs_36
+  - first:
+      213: -8219159594455493719
+    second: Beautiful_World2 better cliffs_37
+  - first:
+      213: -222267526740522120
+    second: Beautiful_World2 better cliffs_38
+  - first:
+      213: 7608919728758996030
+    second: Beautiful_World2 better cliffs_39
+  - first:
+      213: 2341855332027500661
+    second: Beautiful_World2 better cliffs_40
+  - first:
+      213: -7025942394505284997
+    second: Beautiful_World2 better cliffs_41
+  - first:
+      213: -7026636208906702790
+    second: Beautiful_World2 better cliffs_42
+  - first:
+      213: 80940587637620042
+    second: Beautiful_World2 better cliffs_43
+  - first:
+      213: -6723222583953936664
+    second: Beautiful_World2 better cliffs_44
+  - first:
+      213: 5901200960853911897
+    second: Beautiful_World2 better cliffs_45
+  - first:
+      213: -5832799491739129820
+    second: Beautiful_World2 better cliffs_46
+  - first:
+      213: 5326502969754651120
+    second: Beautiful_World2 better cliffs_47
+  - first:
+      213: -4466372664736524052
+    second: Beautiful_World2 better cliffs_48
+  - first:
+      213: 2072498840343537705
+    second: Beautiful_World2 better cliffs_49
+  - first:
+      213: 748673932421604591
+    second: Beautiful_World2 better cliffs_50
+  - first:
+      213: 2558699430235134515
+    second: Beautiful_World2 better cliffs_51
+  - first:
+      213: 8420774715165332382
+    second: Beautiful_World2 better cliffs_52
+  - first:
+      213: 226874814380756482
+    second: Beautiful_World2 better cliffs_53
+  - first:
+      213: -3830984804187879804
+    second: Beautiful_World2 better cliffs_54
+  - first:
+      213: 8203486649280270065
+    second: Beautiful_World2 better cliffs_55
+  - first:
+      213: 3152098933004777077
+    second: Beautiful_World2 better cliffs_56
+  - first:
+      213: 2956701395269991931
+    second: Beautiful_World2 better cliffs_57
+  - first:
+      213: 4070304057627349295
+    second: Beautiful_World2 better cliffs_58
+  - first:
+      213: 1725876169486307499
+    second: Beautiful_World2 better cliffs_59
+  - first:
+      213: 5390908385706518526
+    second: Beautiful_World2 better cliffs_60
+  - first:
+      213: 1129516032286741942
+    second: Beautiful_World2 better cliffs_61
+  - first:
+      213: 360083641845836296
+    second: Beautiful_World2 better cliffs_62
+  - first:
+      213: 6156492893292941288
+    second: Beautiful_World2 better cliffs_63
+  - first:
+      213: -3115216908752062684
+    second: Beautiful_World2 better cliffs_64
+  - first:
+      213: 7455299060436741958
+    second: Beautiful_World2 better cliffs_65
+  - first:
+      213: 7274680089637314008
+    second: Beautiful_World2 better cliffs_66
+  - first:
+      213: -5609602017584322202
+    second: Beautiful_World2 better cliffs_67
+  - first:
+      213: -3484862190113144895
+    second: Beautiful_World2 better cliffs_68
+  - first:
+      213: -2036751335870050179
+    second: Beautiful_World2 better cliffs_69
+  - first:
+      213: 4048888893204690804
+    second: Beautiful_World2 better cliffs_70
+  - first:
+      213: 2444650917598615629
+    second: Beautiful_World2 better cliffs_71
+  - first:
+      213: 3211553432932248319
+    second: Beautiful_World2 better cliffs_72
+  - first:
+      213: 3973783761698798644
+    second: Beautiful_World2 better cliffs_73
+  - first:
+      213: 8118534127600528540
+    second: Beautiful_World2 better cliffs_74
+  - first:
+      213: 3344588644697556236
+    second: Beautiful_World2 better cliffs_75
+  - first:
+      213: 8501620054166468473
+    second: Beautiful_World2 better cliffs_76
+  - first:
+      213: -1929447540933739981
+    second: Beautiful_World2 better cliffs_77
+  - first:
+      213: 4216265430097170621
+    second: Beautiful_World2 better cliffs_78
+  - first:
+      213: 8208668513346251406
+    second: Beautiful_World2 better cliffs_79
+  - first:
+      213: -8955120017960207014
+    second: Beautiful_World2 better cliffs_80
+  - first:
+      213: 2641489236808354067
+    second: Beautiful_World2 better cliffs_81
+  - first:
+      213: -8673431332730783012
+    second: Beautiful_World2 better cliffs_82
+  - first:
+      213: 6863762894136707804
+    second: Beautiful_World2 better cliffs_83
+  - first:
+      213: -2454228154755080598
+    second: Beautiful_World2 better cliffs_84
+  - first:
+      213: -7094500588458207214
+    second: Beautiful_World2 better cliffs_85
+  - first:
+      213: -6039482362237737286
+    second: Beautiful_World2 better cliffs_86
+  - first:
+      213: -7871744568318103950
+    second: Beautiful_World2 better cliffs_87
+  - first:
+      213: -3851336316937379094
+    second: Beautiful_World2 better cliffs_88
+  - first:
+      213: 4122000092092216532
+    second: Beautiful_World2 better cliffs_89
+  - first:
+      213: -2603633944641264583
+    second: Beautiful_World2 better cliffs_90
+  - first:
+      213: 8821650273866655126
+    second: Beautiful_World2 better cliffs_91
+  - first:
+      213: -2153083027890126816
+    second: Beautiful_World2 better cliffs_92
+  - first:
+      213: -3673371845298292014
+    second: Beautiful_World2 better cliffs_93
+  - first:
+      213: 6679686233578686612
+    second: Beautiful_World2 better cliffs_94
+  - first:
+      213: -6998279628950757799
+    second: Beautiful_World2 better cliffs_95
+  - first:
+      213: -897483954364357993
+    second: Beautiful_World2 better cliffs_96
+  - first:
+      213: 4740837066296637868
+    second: Beautiful_World2 better cliffs_97
+  - first:
+      213: -8149298120180520479
+    second: Beautiful_World2 better cliffs_98
+  - first:
+      213: -3922197260331956017
+    second: Beautiful_World2 better cliffs_99
+  - first:
+      213: 6704694986271947345
+    second: Beautiful_World2 better cliffs_100
+  - first:
+      213: 8175429770770007304
+    second: Beautiful_World2 better cliffs_101
+  - first:
+      213: 4090912689673743626
+    second: Beautiful_World2 better cliffs_102
+  - first:
+      213: -1108689527882906643
+    second: Beautiful_World2 better cliffs_103
+  - first:
+      213: 6514028512511523508
+    second: Beautiful_World2 better cliffs_104
+  - first:
+      213: -1242598367585437101
+    second: Beautiful_World2 better cliffs_105
+  - first:
+      213: -469741747987737991
+    second: Beautiful_World2 better cliffs_106
+  - first:
+      213: 8930316506358985955
+    second: Beautiful_World2 better cliffs_107
+  - first:
+      213: -2536920076111942041
+    second: Beautiful_World2 better cliffs_108
+  - first:
+      213: -5831448328942027665
+    second: Beautiful_World2 better cliffs_109
+  - first:
+      213: -6035513608981868665
+    second: Beautiful_World2 better cliffs_110
+  - first:
+      213: 1032308866556757762
+    second: Beautiful_World2 better cliffs_111
+  - first:
+      213: 3678862423464109519
+    second: Beautiful_World2 better cliffs_112
+  - first:
+      213: -729923322759388907
+    second: Beautiful_World2 better cliffs_113
+  - first:
+      213: -1417950522491876642
+    second: Beautiful_World2 better cliffs_114
+  - first:
+      213: -1748437823364074783
+    second: Beautiful_World2 better cliffs_115
+  - first:
+      213: 551666725866178233
+    second: Beautiful_World2 better cliffs_116
+  - first:
+      213: -8175252064510900957
+    second: Beautiful_World2 better cliffs_117
+  - first:
+      213: 8765695194585937695
+    second: Beautiful_World2 better cliffs_118
+  - first:
+      213: 3682175989209102910
+    second: Beautiful_World2 better cliffs_119
+  - first:
+      213: -677472474940374388
+    second: Beautiful_World2 better cliffs_120
+  - first:
+      213: -1072485038766802719
+    second: Beautiful_World2 better cliffs_121
+  - first:
+      213: 8633049497818206844
+    second: Beautiful_World2 better cliffs_122
+  - first:
+      213: -6979790947040493721
+    second: Beautiful_World2 better cliffs_123
+  - first:
+      213: 296217145661887657
+    second: Beautiful_World2 better cliffs_124
+  - first:
+      213: 7043803311509698917
+    second: Beautiful_World2 better cliffs_125
+  - first:
+      213: -7872055783230089507
+    second: Beautiful_World2 better cliffs_126
+  - first:
+      213: -652674780347595734
+    second: Beautiful_World2 better cliffs_127
+  - first:
+      213: 118603146519190227
+    second: Beautiful_World2 better cliffs_128
+  - first:
+      213: 6426695713419090948
+    second: Beautiful_World2 better cliffs_129
+  - first:
+      213: 662698654019389402
+    second: Beautiful_World2 better cliffs_130
+  - first:
+      213: -7958322273620134626
+    second: Beautiful_World2 better cliffs_131
+  - first:
+      213: -2892666169141496210
+    second: Beautiful_World2 better cliffs_132
+  - first:
+      213: -4755485586686436654
+    second: Beautiful_World2 better cliffs_133
+  - first:
+      213: -5270455010697530347
+    second: Beautiful_World2 better cliffs_134
+  - first:
+      213: 8763788153735661450
+    second: Beautiful_World2 better cliffs_135
+  - first:
+      213: -2000414123583055996
+    second: Beautiful_World2 better cliffs_136
+  - first:
+      213: 226418920694370067
+    second: Beautiful_World2 better cliffs_137
+  - first:
+      213: -3689629857467407850
+    second: Beautiful_World2 better cliffs_138
+  - first:
+      213: -1786673701548113702
+    second: Beautiful_World2 better cliffs_139
+  - first:
+      213: 7529190847250176824
+    second: Beautiful_World2 better cliffs_140
+  - first:
+      213: 3147540113161125942
+    second: Beautiful_World2 better cliffs_141
+  - first:
+      213: -2601154815195573744
+    second: Beautiful_World2 better cliffs_142
+  - first:
+      213: 4554295309522450008
+    second: Beautiful_World2 better cliffs_143
+  - first:
+      213: -5986640133396382083
+    second: Beautiful_World2 better cliffs_144
+  - first:
+      213: -4406081815197474305
+    second: Beautiful_World2 better cliffs_145
+  - first:
+      213: -8779745072428316516
+    second: Beautiful_World2 better cliffs_146
+  - first:
+      213: -2267047116010512905
+    second: Beautiful_World2 better cliffs_147
+  - first:
+      213: -3519501923847565081
+    second: Beautiful_World2 better cliffs_148
+  - first:
+      213: -7622793365988451638
+    second: Beautiful_World2 better cliffs_149
+  - first:
+      213: 1946461803989050485
+    second: Beautiful_World2 better cliffs_150
+  - first:
+      213: -1603702412456548268
+    second: Beautiful_World2 better cliffs_151
+  - first:
+      213: 546620824704729120
+    second: Beautiful_World2 better cliffs_152
+  - first:
+      213: 301024885205703704
+    second: Beautiful_World2 better cliffs_153
+  - first:
+      213: 6158363737489704347
+    second: Beautiful_World2 better cliffs_154
+  - first:
+      213: -4012028825315890197
+    second: Beautiful_World2 better cliffs_155
+  - first:
+      213: 9123961395560580545
+    second: Beautiful_World2 better cliffs_156
+  - first:
+      213: 3279944439902794677
+    second: Beautiful_World2 better cliffs_157
+  - first:
+      213: -1641260712897562141
+    second: Beautiful_World2 better cliffs_158
+  - first:
+      213: 5228522284897536471
+    second: Beautiful_World2 better cliffs_159
+  - first:
+      213: 4228992844405701508
+    second: Beautiful_World2 better cliffs_160
+  - first:
+      213: 2231412667747579697
+    second: Beautiful_World2 better cliffs_161
+  - first:
+      213: 7545774292221414488
+    second: Beautiful_World2 better cliffs_162
+  - first:
+      213: -7952325725170199158
+    second: Beautiful_World2 better cliffs_163
+  - first:
+      213: 6688418994473183585
+    second: Beautiful_World2 better cliffs_164
+  - first:
+      213: -5539772956058835247
+    second: Beautiful_World2 better cliffs_165
+  - first:
+      213: 2013818496178886771
+    second: Beautiful_World2 better cliffs_166
+  - first:
+      213: 795849649131076696
+    second: Beautiful_World2 better cliffs_167
+  - first:
+      213: 8923847988239889409
+    second: Beautiful_World2 better cliffs_168
+  - first:
+      213: 5171755547701571079
+    second: Beautiful_World2 better cliffs_169
+  - first:
+      213: 8265728946801848956
+    second: Beautiful_World2 better cliffs_170
+  - first:
+      213: 7231164166650155077
+    second: Beautiful_World2 better cliffs_171
+  - first:
+      213: 4629759925514795551
+    second: Beautiful_World2 better cliffs_172
+  - first:
+      213: -1348369712319683752
+    second: Beautiful_World2 better cliffs_173
+  - first:
+      213: -6878668527177752883
+    second: Beautiful_World2 better cliffs_174
+  - first:
+      213: 4291540892527640836
+    second: Beautiful_World2 better cliffs_175
+  - first:
+      213: 709863440577932890
+    second: Beautiful_World2 better cliffs_176
+  - first:
+      213: -2771239833528583445
+    second: Beautiful_World2 better cliffs_177
+  - first:
+      213: 7373863101436326158
+    second: Beautiful_World2 better cliffs_178
+  - first:
+      213: 4884710890316453479
+    second: Beautiful_World2 better cliffs_179
+  - first:
+      213: -5925199965952875149
+    second: Beautiful_World2 better cliffs_180
+  - first:
+      213: 2335877703070958264
+    second: Beautiful_World2 better cliffs_181
+  - first:
+      213: 2352672208500224446
+    second: Beautiful_World2 better cliffs_182
+  - first:
+      213: -7974225988564778819
+    second: Beautiful_World2 better cliffs_183
+  - first:
+      213: 1123179315986110982
+    second: Beautiful_World2 better cliffs_184
+  - first:
+      213: -812587822618039373
+    second: Beautiful_World2 better cliffs_185
+  - first:
+      213: 5416078962196526499
+    second: Beautiful_World2 better cliffs_186
+  - first:
+      213: 7632480311901937209
+    second: Beautiful_World2 better cliffs_187
+  - first:
+      213: -3417125736571088931
+    second: Beautiful_World2 better cliffs_188
+  - first:
+      213: 7316399926038496611
+    second: Beautiful_World2 better cliffs_189
+  - first:
+      213: -5753184442774912319
+    second: Beautiful_World2 better cliffs_190
+  - first:
+      213: 6306543889030947680
+    second: Beautiful_World2 better cliffs_191
+  - first:
+      213: -1941047394118256831
+    second: Beautiful_World2 better cliffs_192
+  - first:
+      213: -7054357224765630419
+    second: Beautiful_World2 better cliffs_193
+  - first:
+      213: 2783657663665486423
+    second: Beautiful_World2 better cliffs_194
+  - first:
+      213: -1073978603220807195
+    second: Beautiful_World2 better cliffs_195
+  - first:
+      213: 2392658238314931231
+    second: Beautiful_World2 better cliffs_196
+  - first:
+      213: 2495416590414285221
+    second: Beautiful_World2 better cliffs_197
+  - first:
+      213: -659577786167135579
+    second: Beautiful_World2 better cliffs_198
+  - first:
+      213: -3336328667686774570
+    second: Beautiful_World2 better cliffs_199
+  - first:
+      213: -6454161686377168158
+    second: Beautiful_World2 better cliffs_200
+  - first:
+      213: -4617972178774732623
+    second: Beautiful_World2 better cliffs_201
+  - first:
+      213: 8613738466082623834
+    second: Beautiful_World2 better cliffs_202
+  - first:
+      213: 2569874976692341993
+    second: Beautiful_World2 better cliffs_203
+  - first:
+      213: -3752917524845375386
+    second: Beautiful_World2 better cliffs_204
+  - first:
+      213: 6949176001759689095
+    second: Beautiful_World2 better cliffs_205
+  - first:
+      213: 2799415773594973228
+    second: Beautiful_World2 better cliffs_206
+  - first:
+      213: -4995962076880455396
+    second: Beautiful_World2 better cliffs_207
+  - first:
+      213: 4849828757107498179
+    second: Beautiful_World2 better cliffs_208
+  - first:
+      213: 1019270031044235132
+    second: Beautiful_World2 better cliffs_209
+  - first:
+      213: 7044138765203364371
+    second: Beautiful_World2 better cliffs_210
+  - first:
+      213: 1787221937976258944
+    second: Beautiful_World2 better cliffs_211
+  - first:
+      213: 1690149293174007179
+    second: Beautiful_World2 better cliffs_212
+  - first:
+      213: 6757573324053972648
+    second: Beautiful_World2 better cliffs_213
+  - first:
+      213: 605917096780188546
+    second: Beautiful_World2 better cliffs_214
+  - first:
+      213: -1254413943022836867
+    second: Beautiful_World2 better cliffs_215
+  - first:
+      213: 6462929221109206071
+    second: Beautiful_World2 better cliffs_216
+  - first:
+      213: 587793391366083189
+    second: Beautiful_World2 better cliffs_217
+  - first:
+      213: 4520913801067457865
+    second: Beautiful_World2 better cliffs_218
+  - first:
+      213: 9159978797841484943
+    second: Beautiful_World2 better cliffs_219
+  - first:
+      213: 7229563231659079458
+    second: Beautiful_World2 better cliffs_220
+  - first:
+      213: -5167271153077679091
+    second: Beautiful_World2 better cliffs_221
+  - first:
+      213: 382398666393252623
+    second: Beautiful_World2 better cliffs_222
+  - first:
+      213: -1909124710853349
+    second: Beautiful_World2 better cliffs_223
+  - first:
+      213: -53704015295864421
+    second: Beautiful_World2 better cliffs_224
+  - first:
+      213: 4744540311542993445
+    second: Beautiful_World2 better cliffs_225
+  - first:
+      213: 399734974819848307
+    second: Beautiful_World2 better cliffs_226
+  - first:
+      213: 4732233820508544997
+    second: Beautiful_World2 better cliffs_227
+  - first:
+      213: -2069666099501912002
+    second: Beautiful_World2 better cliffs_228
+  - first:
+      213: -3417260453403627701
+    second: Beautiful_World2 better cliffs_229
+  - first:
+      213: 7826568177063020227
+    second: Beautiful_World2 better cliffs_230
+  - first:
+      213: 1020503001720632516
+    second: Beautiful_World2 better cliffs_231
+  - first:
+      213: 8449395514610891758
+    second: Beautiful_World2 better cliffs_232
+  - first:
+      213: -3809191889058155284
+    second: Beautiful_World2 better cliffs_233
+  - first:
+      213: -5206117935934259071
+    second: Beautiful_World2 better cliffs_234
+  - first:
+      213: -8769071185342021478
+    second: Beautiful_World2 better cliffs_235
+  - first:
+      213: -7692692704018172277
+    second: Beautiful_World2 better cliffs_236
+  - first:
+      213: -6730137261852294432
+    second: Beautiful_World2 better cliffs_237
+  - first:
+      213: 2237959393894828908
+    second: Beautiful_World2 better cliffs_238
+  - first:
+      213: -1707519338684058186
+    second: Beautiful_World2 better cliffs_239
+  - first:
+      213: 2849830281409252486
+    second: Beautiful_World2 better cliffs_240
+  - first:
+      213: -9153227723381110050
+    second: Beautiful_World2 better cliffs_241
+  - first:
+      213: -2959071272114237365
+    second: Beautiful_World2 better cliffs_242
+  - first:
+      213: -8444171004099317786
+    second: Beautiful_World2 better cliffs_243
+  - first:
+      213: -8111062450803843708
+    second: Beautiful_World2 better cliffs_244
+  - first:
+      213: -3040299966308656235
+    second: Beautiful_World2 better cliffs_245
+  - first:
+      213: 4747726869642977084
+    second: Beautiful_World2 better cliffs_246
+  - first:
+      213: -1062646449109258682
+    second: Beautiful_World2 better cliffs_247
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1dd200ba7806350800000000000000
+      internalID: 6007951071424401904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19446941810f37e0800000000000000
+      internalID: -1783705272621709027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e790a59ed774ae0800000000000000
+      internalID: -1565143904296534493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1a00bb2c4ae0d10800000000000000
+      internalID: 2093792033041850855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_12
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b58b95992e79ab30800000000000000
+      internalID: 4299106036370605492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_13
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680cfdc3b5c7b9990800000000000000
+      internalID: -7378166833211260794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_14
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113813419acdd2390800000000000000
+      internalID: -7841368757435792623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_15
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d5aeac28e9b4ac0800000000000000
+      internalID: -3869825170207515344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a1ef5d736abc080800000000000000
+      internalID: -9166049857838900713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_25
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ef10a263709e210800000000000000
+      internalID: 1362628291470687844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_26
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ef359016c862bc0800000000000000
+      internalID: -3808202086498959720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_27
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62407667bb62f25c0800000000000000
+      internalID: -4238126137745144794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_28
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1bd12658ba285f0800000000000000
+      internalID: -755853198079708683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_29
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011e51572eabb42b0800000000000000
+      internalID: -5599176229915336432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_30
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5fd0fa55b8722910800000000000000
+      internalID: 1811142720466509663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_31
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279c5ece2dd5824e0800000000000000
+      internalID: -2006250473494558350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_40
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5788adc4401ff7020800000000000000
+      internalID: 2341855332027500661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_41
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72b7230e96de7e90800000000000000
+      internalID: -7025942394505284997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_42
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30f732c89f5c7e90800000000000000
+      internalID: -7026636208906702790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_43
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d3d0e190f8f1100800000000000000
+      internalID: 80940587637620042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_44
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eeaa895ea052b2a0800000000000000
+      internalID: -6723222583953936664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_45
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95924eb020745e150800000000000000
+      internalID: 5901200960853911897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_46
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4286fc804cbbd0fa0800000000000000
+      internalID: -5832799491739129820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_54
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48646763e9b95dac0800000000000000
+      internalID: -3830984804187879804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_55
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe8202c4a3a8d170800000000000000
+      internalID: 8203486649280270065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_56
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57633ae67418ebb20800000000000000
+      internalID: 3152098933004777077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_57
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd38f3f040580920800000000000000
+      internalID: 2956701395269991931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_58
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2195ba99ff9c7830800000000000000
+      internalID: 4070304057627349295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_59
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba01b886b3b83f710800000000000000
+      internalID: 1725876169486307499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_60
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef726b25d9a50da40800000000000000
+      internalID: 5390908385706518526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_61
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b55f80d8d8dcaf00800000000000000
+      internalID: 1129516032286741942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_69
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70d9a183710cb3e0800000000000000
+      internalID: -2036751335870050179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_70
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4777d761ffa803830800000000000000
+      internalID: 4048888893204690804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_71
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d485c47ae052de120800000000000000
+      internalID: 2444650917598615629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_72
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffaec1be4dab19c20800000000000000
+      internalID: 3211553432932248319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_73
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43cb54af647b52730800000000000000
+      internalID: 3973783761698798644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_74
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ce38476c3daa070800000000000000
+      internalID: 8118534127600528540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_83
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda86878cfbf04f50800000000000000
+      internalID: 6863762894136707804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_84
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e9f0e0f74d0fdd0800000000000000
+      internalID: -2454228154755080598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_85
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21816269d454b8d90800000000000000
+      internalID: -7094500588458207214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_86
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab625934ac27f2ca0800000000000000
+      internalID: -6039482362237737286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_87
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ee9ca7502f1c290800000000000000
+      internalID: -7871744568318103950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_88
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2e266660e4d8ac0800000000000000
+      internalID: -3851336316937379094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_89
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4b8459e39443930800000000000000
+      internalID: 4122000092092216532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_90
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9342284d8b80edbd0800000000000000
+      internalID: -2603633944641264583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_99
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc847e65f5e8199c0800000000000000
+      internalID: -3922197260331956017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_100
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15af418219cdb0d50800000000000000
+      internalID: 6704694986271947345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_101
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80546ecaf06f47170800000000000000
+      internalID: 8175429770770007304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_102
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d242baa67d5c830800000000000000
+      internalID: 4090912689673743626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_103
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3085c9fb42d90f0800000000000000
+      internalID: -1108689527882906643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_104
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4baf3095b6a766a50800000000000000
+      internalID: 6514028512511523508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_105
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35af6954e5761cee0800000000000000
+      internalID: -1242598367585437101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_106
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97215077e542b79f0800000000000000
+      internalID: -469741747987737991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_115
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2f682301d4cb7e0800000000000000
+      internalID: -1748437823364074783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_116
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b608add6f9e7a700800000000000000
+      internalID: 551666725866178233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_117
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3258c89cf8bab8e80800000000000000
+      internalID: -8175252064510900957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_118
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17b4aa365106a970800000000000000
+      internalID: 8765695194585937695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_119
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3af74d9d87b91330800000000000000
+      internalID: 3682175989209102910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_120
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82031a9f522996f0800000000000000
+      internalID: -677472474940374388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_121
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8326d1a84cd11f0800000000000000
+      internalID: -1072485038766802719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_122
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7291d547c0cec770800000000000000
+      internalID: 8633049497818206844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_131
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15fac0ae0c5e8190800000000000000
+      internalID: -7958322273620134626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_132
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66f786f17f2bd7d0800000000000000
+      internalID: -2892666169141496210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_133
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da9017fd0f110eb0800000000000000
+      internalID: -4755485586686436654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_134
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51432b287159bd6b0800000000000000
+      internalID: -5270455010697530347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_135
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87c03ea4ea3f9970800000000000000
+      internalID: 8763788153735661450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_136
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487582804f91d34e0800000000000000
+      internalID: -2000414123583055996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_137
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f4a6a0fc6642300800000000000000
+      internalID: 226418920694370067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_146
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c988c6baf54182680800000000000000
+      internalID: -8779745072428316516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_147
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd9e19c8a4d980e0800000000000000
+      internalID: -2267047116010512905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_148
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e013cab5a7382fc0800000000000000
+      internalID: -3519501923847565081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_149
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acadd0822d5663690800000000000000
+      internalID: -7622793365988451638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_150
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57422aba2b8330b10800000000000000
+      internalID: 1946461803989050485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_151
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458271417218eb9e0800000000000000
+      internalID: -1603702412456548268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_152
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0204b537ebcf59700800000000000000
+      internalID: 546620824704729120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_161
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137b660bff197fe10800000000000000
+      internalID: 2231412667747579697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_162
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cc1235db9f7b860800000000000000
+      internalID: 7545774292221414488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_163
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85970dd2e9a3a190800000000000000
+      internalID: -7952325725170199158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_164
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169ac8283a902dc50800000000000000
+      internalID: 6688418994473183585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_165
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d62cc1f8d5ce13b0800000000000000
+      internalID: -5539772956058835247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_166
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3789adaa04582fb10800000000000000
+      internalID: 2013818496178886771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_167
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cb31f0a0d6b0b00800000000000000
+      internalID: 795849649131076696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_168
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1047f98f670e7db70800000000000000
+      internalID: 8923847988239889409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_174
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce19e55b6f0a80a0800000000000000
+      internalID: -6878668527177752883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_175
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4014c2644bd9e8b30800000000000000
+      internalID: 4291540892527640836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_176
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e2fa6c901f9d900800000000000000
+      internalID: 709863440577932890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_177
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beabd17dd049a89d0800000000000000
+      internalID: -2771239833528583445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_178
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01f87f1c69355660800000000000000
+      internalID: 7373863101436326158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_179
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7665bc7acaaf9c340800000000000000
+      internalID: 4884710890316453479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_180
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375e836260675cda0800000000000000
+      internalID: -5925199965952875149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_181
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2cc4a1564ba6020800000000000000
+      internalID: 2335877703070958264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_182
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1f69c98ee56a020800000000000000
+      internalID: 2352672208500224446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_183
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db088e076bbd55190800000000000000
+      internalID: -7974225988564778819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_189
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365083208f2198560800000000000000
+      internalID: 7316399926038496611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_190
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c209112b359820b0800000000000000
+      internalID: -5753184442774912319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_191
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063a91ae048558750800000000000000
+      internalID: 6306543889030947680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_192
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147326ddda30015e0800000000000000
+      internalID: -1941047394118256831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_193
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28522bca73e91e90800000000000000
+      internalID: -7054357224765630419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_194
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a331b85e981a620800000000000000
+      internalID: 2783657663665486423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_195
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e157aa86267811f0800000000000000
+      internalID: -1073978603220807195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_196
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f146cabadfd643120800000000000000
+      internalID: 2392658238314931231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_197
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9824eea2081a220800000000000000
+      internalID: 2495416590414285221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_198
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2f4c18f75b8d6f0800000000000000
+      internalID: -659577786167135579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_199
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8d39cd0caf2b1d0800000000000000
+      internalID: -3336328667686774570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_205
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7893e8a51ce607060800000000000000
+      internalID: 6949176001759689095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_206
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24f0cb60d589d620800000000000000
+      internalID: 2799415773594973228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_207
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19b738f5f6caaab0800000000000000
+      internalID: -4995962076880455396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_208
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccddd02f8d0e4340800000000000000
+      internalID: 4849828757107498179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_209
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7fc79261bc252e00800000000000000
+      internalID: 1019270031044235132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_210
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a5180b2eec1c160800000000000000
+      internalID: 7044138765203364371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_211
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0813cdb22ec7dc810800000000000000
+      internalID: 1787221937976258944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_212
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85a30dc3dd947710800000000000000
+      internalID: 1690149293174007179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_213
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a684e39229b7cd50800000000000000
+      internalID: 6757573324053972648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_214
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b4be4a366a86800800000000000000
+      internalID: 605917096780188546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_215
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73a3dc3a2d679ee0800000000000000
+      internalID: -1254413943022836867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_219
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c837b5f28ce1f70800000000000000
+      internalID: 9159978797841484943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_220
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227b3409471945460800000000000000
+      internalID: 7229563231659079458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_221
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c8eae734a2a48b0800000000000000
+      internalID: -5167271153077679091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_222
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03f3f0af8d8e4500800000000000000
+      internalID: 382398666393252623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_223
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1517c349a739fff0800000000000000
+      internalID: -1909124710853349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_224
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91274d8b74314ff0800000000000000
+      internalID: -53704015295864421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_225
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5229a04964ef7d140800000000000000
+      internalID: 4744540311542993445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_226
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370df6a77d42c8500800000000000000
+      internalID: 399734974819848307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_227
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef508956954ca140800000000000000
+      internalID: 4732233820508544997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_228
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e303587e5a11743e0800000000000000
+      internalID: -2069666099501912002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_229
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fe2e919b37390d0800000000000000
+      internalID: -3417260453403627701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_230
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6c7344a4e8d9c60800000000000000
+      internalID: 7826568177063020227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_231
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c437cdb21e892e00800000000000000
+      internalID: 1020503001720632516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_232
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb39272478424570800000000000000
+      internalID: 8449395514610891758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_233
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4b36ba828032bc0800000000000000
+      internalID: -3809191889058155284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_234
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18049d9025720c7b0800000000000000
+      internalID: -5206117935934259071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_235
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90439ba7300e4680800000000000000
+      internalID: -8769071185342021478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_236
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86f1ca4eb01e3590800000000000000
+      internalID: -7692692704018172277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_237
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e28ca171dfb992a0800000000000000
+      internalID: -6730137261852294432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_238
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b89d62634de0f10800000000000000
+      internalID: 2237959393894828908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_239
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b570a2553cad48e0800000000000000
+      internalID: -1707519338684058186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_240
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ccc89ba81ac8720800000000000000
+      internalID: 2849830281409252486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_241
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda8c97a1e339f080800000000000000
+      internalID: -9153227723381110050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_242
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4051981b544fe6d0800000000000000
+      internalID: -2959071272114237365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_243
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efa10ef53740da80800000000000000
+      internalID: -8444171004099317786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_244
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dd3dcdca7bf6f80800000000000000
+      internalID: -8111062450803843708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_245
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b5a81f94faec5d0800000000000000
+      internalID: -3040299966308656235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_246
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f95a3fe6053e140800000000000000
+      internalID: 4747726869642977084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World2 better cliffs_247
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e23074fa8b041f0800000000000000
+      internalID: -1062646449109258682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

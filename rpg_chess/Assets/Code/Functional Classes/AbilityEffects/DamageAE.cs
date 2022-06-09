@@ -4,51 +4,94 @@ using UnityEngine;
 
 public class DamageAE : AbilityEffect
 {
-    public Damage damage { get; private set; }
+    public double baseDamage { get; private set; }
+    public DamageTypeEnum damageType { get; private set; }
+    public AttackTypeEnum attackType { get; private set; }
+    public MainCharacteristicTypeEnum amplificationChar { get; private set; }
+    public double damageBonusPerCharPoint { get; private set; }
+    public double damageMultiplerPerCharPoint { get; private set; }
+
 
     public DamageAE(
-        HashSet<Vector2Int> targets,
         HashSet<Vector2Int> affectedArea,
         Ability ability,
-        Damage damage)
-        : base(targets, affectedArea, ability)
+        bool isAbsolute,
+        bool isFlexible,
+        double baseDamage,
+        DamageTypeEnum damageType,
+        AttackTypeEnum attackType,
+        MainCharacteristicTypeEnum amplificationChar,
+        double damageBonusPerCharPoint,
+        double damageMultiplerPerCharPoint
+        )
+        : base(affectedArea, ability, isAbsolute, isFlexible)
     {
-        this.damage = damage;
+        this.baseDamage = baseDamage;
+        this.damageType = damageType;
+        this.attackType = attackType;
+        this.amplificationChar = amplificationChar;
+        this.damageBonusPerCharPoint = damageBonusPerCharPoint;
+        this.damageMultiplerPerCharPoint = damageMultiplerPerCharPoint;
     }
 
     public override void DoTheStuff(Map map, Vector2Int target)
     {
-        if (targets.Contains(target))
+
+        HashSet<Cell> targetCells;
+        Damage attack;
+
+        if (ability.owner is Unit)
         {
-            HashSet<Cell> targetCells;
-            if (affectedArea.Count > 0)
+            var attacker = (Unit)ability.owner;
+            attack = new Damage(
+                (baseDamage + attacker.mainChars[amplificationChar] * damageBonusPerCharPoint) *
+                (1 + attacker.mainChars[amplificationChar] * damageMultiplerPerCharPoint),
+                damageType,
+                attackType);
+        }
+        else
+        {
+            attack = new Damage(baseDamage, damageType, attackType);
+        }
+
+        if (affectedArea.Count > 0)
+        {
+            var realTargetsCoords = new HashSet<Vector2Int>();
+            HashSet<Vector2Int> realAffectedArea;
+
+            if (isFlexible)
             {
-                var realCoordsTargets = new HashSet<Vector2Int>();
-
-                foreach (var affectedCoord in affectedArea)
-                {
-                    realCoordsTargets.Add(affectedCoord + target + ability.owner.currentCell.coords);
-                }
-
-                targetCells = map.GetCells(realCoordsTargets);
+                realAffectedArea = WorldController.FlexArea(affectedArea, target);
             }
             else
             {
-                targetCells = map.GetAllCells();
+                realAffectedArea = affectedArea;
             }
 
-            foreach (var cell in targetCells)
+            foreach (var affectedCoord in realAffectedArea)
             {
-                if (cell.unitAtCell != null)
-                {
-                    cell.unitAtCell.TakeDamage(damage, ability.owner);
-                }
+                realTargetsCoords.Add(affectedCoord + target + ability.owner.currentCell.coords);
+            }
 
-                if (cell.structureAtCell != null)
-                {
-                    cell.structureAtCell.TakeDamage(damage, ability.owner);
-                }
+            targetCells = map.GetCells(realTargetsCoords);
+        }
+        else
+        {
+            targetCells = map.GetAllCells();
+        }
+
+        foreach (var cell in targetCells)
+        {
+            if (cell.unitAtCell != null)
+            {
+                cell.unitAtCell.TakeDamage(damage, ability.owner);
+            }
+
+            if (cell.structureAtCell != null)
+            {
+                cell.structureAtCell.TakeDamage(damage, ability.owner);
             }
         }
+
     }
 }

@@ -7,48 +7,48 @@ public class HealAE : AbilityEffect
     public Heal heal { get; private set; }
 
     public HealAE(
-        HashSet<Vector2Int> targets, 
-        HashSet<Vector2Int> affectedArea, 
+        HashSet<Vector2Int> affectedArea,
         Ability ability,
-        Heal heal) 
-        : base(targets, affectedArea, ability)
+        Heal heal,
+        bool isAbsolute,
+        bool isFlexible)
+        : base(affectedArea, ability, isAbsolute, isFlexible)
     {
         this.heal = heal;
     }
 
     public override void DoTheStuff(Map map, Vector2Int target)
     {
-        if (targets.Contains(target))
+
+        HashSet<Cell> targetCells;
+        if (affectedArea.Count > 0)
         {
-            HashSet<Cell> targetCells;
-            if (affectedArea.Count > 0)
-            {
-                var realCoordsTargets = new HashSet<Vector2Int>();
+            var realTargetsCoords = new HashSet<Vector2Int>();
 
-                foreach (var affectedCoord in affectedArea)
-                {
-                    realCoordsTargets.Add(affectedCoord + target + ability.owner.currentCell.coords);
-                }
-
-                targetCells = map.GetCells(realCoordsTargets);
-            }
-            else
+            foreach (var affectedCoord in affectedArea)
             {
-                targetCells = map.GetAllCells();
+                realTargetsCoords.Add(affectedCoord + target + ability.owner.currentCell.coords);
             }
 
-            foreach (var cell in targetCells)
-            {
-                if (cell.unitAtCell != null)
-                {
-                    cell.unitAtCell.TakeHeal(heal, ability.owner);
-                }
+            targetCells = map.GetCells(realTargetsCoords);
+        }
+        else
+        {
+            targetCells = map.GetAllCells();
+        }
 
-                if (cell.structureAtCell != null)
-                {
-                    cell.structureAtCell.TakeHeal(heal, ability.owner);
-                }
+        foreach (var cell in targetCells)
+        {
+            if (cell.unitAtCell != null)
+            {
+                cell.unitAtCell.TakeHeal(heal, ability.owner);
+            }
+
+            if (cell.structureAtCell != null)
+            {
+                cell.structureAtCell.TakeHeal(heal, ability.owner);
             }
         }
+
     }
 }

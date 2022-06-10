@@ -1,68 +1,71 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class Drawer
 {
-    //Получать объект grid
     private Grid grid;
     private GameObject mapPrefab;
-
     private GraphicSupporter graphicSupport;
-    public Drawer(Grid getGrid, GameObject prefab)
+    private TileBase groundDebug;
+    private TileBase resourceDebug;
+
+    public Drawer(Grid getGrid, GameObject prefab, GraphicSupporter supporter)
     {
         grid = getGrid;
         mapPrefab = prefab;
-        Object.Instantiate(mapPrefab, new Vector3Int(0, 0, 0), Quaternion.identity, grid.gameObject.transform);
+        graphicSupport = supporter;
+        groundDebug = Resources.Load<TileBase>("Tiles/Debug/spr_debug_0");
+        resourceDebug = Resources.Load<TileBase>("Tiles/Debug/spr_debug_1");
     }
 
-    public void DrawMap()
+    public void DrawMap(Map map)
     {
+        List<Cell> cells = map.GetAllCells();
+        mapPrefab.name = map.name;
+        GameObject newMap = Object.Instantiate(mapPrefab, new Vector3Int(0, 0, 0), Quaternion.identity, grid.gameObject.transform);
+        Tilemap[] tilemaps = newMap.GetComponentsInChildren<Tilemap>();
 
-        /*        foreach (Cell cell in cells)
+        foreach (Cell cell in cells)
+        {
+            TileBase groundTile;
+            TileBase ongroundTile;
+            (groundTile, ongroundTile) = graphicSupport.GetTileByCellType(cell.type);
+            if (groundTile == null)
+            {
+                tilemaps[0].SetTile((Vector3Int)cell.coords, groundDebug);
+                throw new System.Exception("Местность, указанная в клетке с координатами " + cell.coords + " не обнаружена");
+            }
+            else
+            {
+                tilemaps[0].SetTile((Vector3Int)cell.coords, groundTile);
+                tilemaps[2].SetTile((Vector3Int)cell.coords, ongroundTile);
+            }
+
+            if (cell.resourcesAtCell.Count > 1)
+            {
+                tilemaps[3].SetTile((Vector3Int)cell.coords, graphicSupport.manyResourceTile);
+            }
+            else
+            {
+                if (cell.resourcesAtCell.Count == 1)
                 {
-                    TileBase groundTile;
-                    TileBase ongroundTile;
-                    (groundTile, ongroundTile) = graphicSupport.GetTileByCellType(cell.type);
-                    if (groundTile == null)
+                    foreach (Resource resource in cell.resourcesAtCell)
                     {
-                        groundTilemap.SetTile((Vector3Int)cell.coords, Resources.Load<TileBase>("Tiles/Debug/spr_debug_0"));
-                        throw new System.Exception("Местность, указанная в клетке с координатами" + cell.coords + "не обнаружена");
-                        //Отрисовать тут в клетке что нет такого
-                    }
-                    else
-                    {
-                        groundTilemap.SetTile((Vector3Int)cell.coords, groundTile);
-                        ongroundTilemap.SetTile((Vector3Int)cell.coords, ongroundTile);
-                    }
-
-
-                    if (cell.resourcesAtCell.Count > 1)
-                    {
-                        resourcesTilemap.SetTile((Vector3Int)cell.coords, manyResourceTile);
-                    }
-                    else
-                    {
-                        if (cell.resourcesAtCell.Count == 1)
+                        TileBase resourcesTile;
+                        resourcesTile = graphicSupport.GetTileByResourceType(resource.type);
+                        if (resourcesTile == null)
                         {
-                            foreach (Resource resource in cell.resourcesAtCell)
-                            {
-                                TileBase resourcesTile;
-                                resourcesTile = graphicSupport.GetTileByResourceType(resource.type);
-                                if (resourcesTile == null)
-                                {
-                                    resourcesTilemap.SetTile((Vector3Int)cell.coords, Resources.Load<TileBase>("Tiles/Debug/spr_debug_1"));
-                                    throw new System.Exception("Ресурс, указанный в клетке с координатами" + cell.coords + "не обнаружен");
-                                }
-                                else
-                                {
-                                    resourcesTilemap.SetTile((Vector3Int)cell.coords, resourcesTile);
-                                }
-                            }
+                            tilemaps[3].SetTile((Vector3Int)cell.coords, resourceDebug);
+                            throw new System.Exception("Ресурс, указанный в клетке с координатами " + cell.coords + " не обнаружен");
                         }
-                        //hashset взять ресурс и отрисовать его
+                        else
+                        {
+                            tilemaps[3].SetTile((Vector3Int)cell.coords, resourcesTile);
+                        }
                     }
-                }*/
+                }
+            }
+        }
     }
 }

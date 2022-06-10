@@ -42,4 +42,8 @@ public static class WorldController
 
     }
 
+    public static void MakeHealDecision(Heal heal, Entity healer, Entity curable)
+    {
+
+    }
 }

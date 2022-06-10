@@ -5,15 +5,10 @@ public class Heal
 {
     public double heal { get; private set; }
     public HealTypeEnum healType { get; private set; }
-    public MainCharacteristicTypeEnum amplificationChar { get; private set; }
-    public double healBonusPerCharPoint { get; private set; }
-    public double healMultiplerPerCharPoint { get; private set; }
 
     public Heal(
         double heal, 
-        HealTypeEnum healType, 
-        double healBonusPerCharPoint,
-        double healMultiplerPerCharPoint)
+        HealTypeEnum healType)
     {
         if (heal < 0)
         {
@@ -25,7 +20,5 @@ public class Heal
         }
 
         this.healType = healType;
-        this.healBonusPerCharPoint = healBonusPerCharPoint;
-        this.healMultiplerPerCharPoint = healMultiplerPerCharPoint;
     }
 }

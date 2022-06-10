@@ -4,28 +4,66 @@ using UnityEngine;
 
 public class HealAE : AbilityEffect
 {
-    public Heal heal { get; private set; }
+    public double baseHeal { get; private set; }
+    public HealTypeEnum healType { get; private set; }
+    public MainCharacteristicTypeEnum amplificationChar { get; private set; }
+    public double healBonusPerCharPoint { get; private set; }
+    public double healMultiplerPerCharPoint { get; private set; }
+
 
     public HealAE(
         HashSet<Vector2Int> affectedArea,
         Ability ability,
-        Heal heal,
         bool isAbsolute,
-        bool isFlexible)
+        bool isFlexible,
+        double baseHeal,
+        HealTypeEnum healType,
+        MainCharacteristicTypeEnum amplificationChar,
+        double healBonusPerCharPoint,
+        double healMultiplerPerCharPoint)
         : base(affectedArea, ability, isAbsolute, isFlexible)
     {
-        this.heal = heal;
+        this.baseHeal = baseHeal;
+        this.healType = healType;
+        this.amplificationChar = amplificationChar;
+        this.healBonusPerCharPoint = healBonusPerCharPoint;
+        this.healMultiplerPerCharPoint = healMultiplerPerCharPoint;
     }
 
     public override void DoTheStuff(Map map, Vector2Int target)
     {
 
         HashSet<Cell> targetCells;
+        Heal heal;
+
+        if (ability.owner is Unit)
+        {
+            var healer = (Unit)ability.owner;
+            heal = new Heal(
+                (baseHeal + healer.mainChars[amplificationChar] * healBonusPerCharPoint) *
+                (1 + healer.mainChars[amplificationChar] * healMultiplerPerCharPoint),
+                healType);
+        }
+        else
+        {
+            heal = new Heal(baseHeal, healType);
+        }
+
         if (affectedArea.Count > 0)
         {
             var realTargetsCoords = new HashSet<Vector2Int>();
+            HashSet<Vector2Int> realAffectedArea;
 
-            foreach (var affectedCoord in affectedArea)
+            if (isFlexible)
+            {
+                realAffectedArea = WorldController.FlexArea(affectedArea, target);
+            }
+            else
+            {
+                realAffectedArea = affectedArea;
+            }
+
+            foreach (var affectedCoord in realAffectedArea)
             {
                 realTargetsCoords.Add(affectedCoord + target + ability.owner.currentCell.coords);
             }
@@ -39,15 +77,7 @@ public class HealAE : AbilityEffect
 
         foreach (var cell in targetCells)
         {
-            if (cell.unitAtCell != null)
-            {
-                cell.unitAtCell.TakeHeal(heal, ability.owner);
-            }
-
-            if (cell.structureAtCell != null)
-            {
-                cell.structureAtCell.TakeHeal(heal, ability.owner);
-            }
+            cell.HealCell(heal, ability.owner);
         }
 
     }

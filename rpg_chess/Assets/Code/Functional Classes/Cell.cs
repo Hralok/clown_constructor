@@ -95,6 +95,32 @@ public class Cell
         type = newType;
     }
 
+    public void AttackCell(Damage attack, Entity attacker)
+    {
+        if (unitAtCell != null)
+        {
+            WorldController.MakeDamageDecision(attack, attacker, unitAtCell);
+        }
+
+        if (structureAtCell != null)
+        {
+            WorldController.MakeDamageDecision(attack, attacker, structureAtCell);
+        }
+    }
+
+    public void HealCell(Heal heal, Entity healer)
+    {
+        if (unitAtCell != null)
+        {
+            WorldController.MakeHealDecision(heal, healer, unitAtCell);
+        }
+
+        if (structureAtCell != null)
+        {
+            WorldController.MakeHealDecision(heal, healer, structureAtCell);
+        }
+    }
+
     public override bool Equals(object obj)
     {
         return this.Equals(obj as Cell);
@@ -113,11 +139,4 @@ public class Cell
         }
         return coords == that.coords;
     }
-
-
-
-
-
-
-
 }

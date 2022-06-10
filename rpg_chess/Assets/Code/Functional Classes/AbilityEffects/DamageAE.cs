@@ -82,15 +82,7 @@ public class DamageAE : AbilityEffect
 
         foreach (var cell in targetCells)
         {
-            if (cell.unitAtCell != null)
-            {
-                cell.unitAtCell.TakeDamage(damage, ability.owner);
-            }
-
-            if (cell.structureAtCell != null)
-            {
-                cell.structureAtCell.TakeDamage(damage, ability.owner);
-            }
+            cell.AttackCell(attack, ability.owner);
         }
 
     }

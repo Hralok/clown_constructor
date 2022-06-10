@@ -12,16 +12,14 @@ public class HealAE : AbilityEffect
 
 
     public HealAE(
-        HashSet<Vector2Int> affectedArea,
         Ability ability,
-        bool isAbsolute,
-        bool isFlexible,
+        List<(HashSet<Vector2Int>, bool)> areas,
         double baseHeal,
         HealTypeEnum healType,
         MainCharacteristicTypeEnum amplificationChar,
         double healBonusPerCharPoint,
         double healMultiplerPerCharPoint)
-        : base(affectedArea, ability, isAbsolute, isFlexible)
+        : base(ability, areas)
     {
         this.baseHeal = baseHeal;
         this.healType = healType;
@@ -30,8 +28,12 @@ public class HealAE : AbilityEffect
         this.healMultiplerPerCharPoint = healMultiplerPerCharPoint;
     }
 
-    public override void DoTheStuff(Map map, Vector2Int target)
+    public override void DoTheStuff(List<(Vector2Int, Map)> targets)
     {
+        if (targets.Count != areas.Count)
+        {
+            throw new System.Exception("Количество целей не соответствует необходимому!");
+        }
 
         HashSet<Cell> targetCells;
         Heal heal;
@@ -56,49 +58,46 @@ public class HealAE : AbilityEffect
 
         heal = new Heal(calculatedBaseHeal * calculatedMultipler, healType);
 
-        if (affectedArea.Count > 0)
+        for (int i = 0; i < targets.Count; i++)
         {
-            var realTargetsCoords = new HashSet<Vector2Int>();
-            HashSet<Vector2Int> realAffectedArea;
+            var target = targets[i].Item1;
+            var map = targets[i].Item2;
+            var affectedArea = areas[i].Item1;
+            var isFlexible = areas[i].Item2;
 
-            // Определение координаты точки применения
-            Vector2Int realTarget;
-            if (isAbsolute)
+
+            if (affectedArea.Count > 0)
             {
-                realTarget = target;
+                var realTargetsCoords = new HashSet<Vector2Int>();
+                HashSet<Vector2Int> realAffectedArea;
+
+                // Отражение в случае необходимости области применения в сторону применения способности
+                if (isFlexible)
+                {
+                    realAffectedArea = WorldController.FlexArea(affectedArea, target - ability.owner.currentCell.coords);
+                }
+                else
+                {
+                    realAffectedArea = affectedArea;
+                }
+
+                // Определение координат попадающих под удар ячеек
+                foreach (var affectedCoord in realAffectedArea)
+                {
+                    realTargetsCoords.Add(affectedCoord + target);
+                }
+
+                targetCells = map.GetCells(realTargetsCoords);
             }
             else
             {
-                realTarget = target + ability.owner.currentCell.coords;
+                targetCells = map.GetAllCells();
             }
 
-            // Отражение в случае необходимости области применения в сторону применения способности
-            if (isFlexible)
+            foreach (var cell in targetCells)
             {
-                realAffectedArea = WorldController.FlexArea(affectedArea, realTarget - ability.owner.currentCell.coords);
+                cell.HealCell(heal, ability.owner);
             }
-            else
-            {
-                realAffectedArea = affectedArea;
-            }
-
-            // Определение координат попадающих под удар ячеек
-            foreach (var affectedCoord in realAffectedArea)
-            {
-                realTargetsCoords.Add(affectedCoord + realTarget);
-            }
-
-            targetCells = map.GetCells(realTargetsCoords);
         }
-        else
-        {
-            targetCells = map.GetAllCells();
-        }
-
-        foreach (var cell in targetCells)
-        {
-            cell.HealCell(heal, ability.owner);
-        }
-
     }
 }

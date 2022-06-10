@@ -13,10 +13,8 @@ public class DamageAE : AbilityEffect
 
 
     public DamageAE(
-        HashSet<Vector2Int> affectedArea,
         Ability ability,
-        bool isAbsolute,
-        bool isFlexible,
+        List<(HashSet<Vector2Int>, bool)> areas,
         double baseDamage,
         DamageTypeEnum damageType,
         AttackTypeEnum attackType,
@@ -24,7 +22,7 @@ public class DamageAE : AbilityEffect
         double damageBonusPerCharPoint,
         double damageMultiplerPerCharPoint
         )
-        : base(affectedArea, ability, isAbsolute, isFlexible)
+        : base(ability, areas)
     {
         this.baseDamage = baseDamage;
         this.damageType = damageType;
@@ -34,8 +32,13 @@ public class DamageAE : AbilityEffect
         this.damageMultiplerPerCharPoint = damageMultiplerPerCharPoint;
     }
 
-    public override void DoTheStuff(Map map, Vector2Int target)
+    public override void DoTheStuff(List<(Vector2Int, Map)> targets)
     {
+        if (targets.Count != areas.Count)
+        {
+            throw new System.Exception("Количество целей не соответствует необходимому!");
+        }
+
         HashSet<Cell> targetCells;
         Damage attack;
 
@@ -63,50 +66,46 @@ public class DamageAE : AbilityEffect
 
         attack = new Damage(calculatedBaseDamage * calculatedMultipler, damageType, attackType);
 
-        if (affectedArea.Count > 0)
+        for (int i = 0; i < targets.Count; i++)
         {
-            var realTargetsCoords = new HashSet<Vector2Int>();
-            HashSet<Vector2Int> realAffectedArea;
+            var target = targets[i].Item1;
+            var map = targets[i].Item2;
+            var affectedArea = areas[i].Item1;
+            var isFlexible = areas[i].Item2;
 
-            // Определение координаты точки применения
-            Vector2Int realTarget;
-            if (isAbsolute)
+            if (affectedArea.Count > 0)
             {
-                realTarget = target;
+                var realTargetsCoords = new HashSet<Vector2Int>();
+                HashSet<Vector2Int> realAffectedArea;
+
+                // Отражение в случае необходимости области применения в сторону применения способности
+                if (isFlexible)
+                {
+                    realAffectedArea = WorldController.FlexArea(affectedArea, target - ability.owner.currentCell.coords);
+                }
+                else
+                {
+                    realAffectedArea = affectedArea;
+                }
+
+                // Определение координат попадающих под удар ячеек
+                foreach (var affectedCoord in realAffectedArea)
+                {
+                    realTargetsCoords.Add(affectedCoord + target);
+                }
+
+                // Получение попадающих под удар ячеек
+                targetCells = map.GetCells(realTargetsCoords);
             }
             else
             {
-                realTarget = target + ability.owner.currentCell.coords;
+                targetCells = map.GetAllCells();
             }
 
-            // Отражение в случае необходимости области применения в сторону применения способности
-            if (isFlexible)
+            foreach (var cell in targetCells)
             {
-                realAffectedArea = WorldController.FlexArea(affectedArea, realTarget - ability.owner.currentCell.coords);
+                cell.AttackCell(attack, ability.owner);
             }
-            else
-            {
-                realAffectedArea = affectedArea;
-            }
-
-            // Определение координат попадающих под удар ячеек
-            foreach (var affectedCoord in realAffectedArea)
-            {
-                realTargetsCoords.Add(affectedCoord + realTarget);
-            }
-
-            // Получение попадающих под удар ячеек
-            targetCells = map.GetCells(realTargetsCoords);
         }
-        else
-        {
-            targetCells = map.GetAllCells();
-        }
-
-        foreach (var cell in targetCells)
-        {
-            cell.AttackCell(attack, ability.owner);
-        }
-
     }
 }

@@ -5,43 +5,28 @@ using UnityEngine;
 public abstract class AbilityEffect
 {
     protected Ability ability;
-    public bool isFlexible { get; private set; }
-    public bool isAbsolute { get; private set; }
-    public HashSet<Vector2Int> affectedArea { get; private set; }
-    // ”казывает на какие координаты относительно точки применени€ будет применЄн эффект способности.
-    // ѕустое множество означает что умение будет применено ко всем €чейкам карты.
+    public List<(HashSet<Vector2Int>, bool)> areas { get; private set; }
 
+    // ѕервый параметр кортежа указывает на какие координаты относительно точки применени€ будет применЄн эффект способности.
+    // ѕустое множество означает что умение будет применено ко всем €чейкам карты.
+    // ¬торой параметр кортежа указывает необходимо ли повернуть область применени€ в сторону применени€
 
     public AbilityEffect(
-        HashSet<Vector2Int> affectedArea, 
         Ability ability,
-        bool isAbsolute,
-        bool isFlexible
+        List<(HashSet<Vector2Int>, bool)> areas
         )
     {
         this.ability = ability;
-        this.isFlexible = isFlexible;
-        this.isAbsolute = isAbsolute;
+        this.areas = areas;
 
-        if (affectedArea == null)
+        foreach (var area in areas)
         {
-
-        }
-        else if (affectedArea.Count == 0)
-        {
-            affectedArea = new HashSet<Vector2Int>();
-            affectedArea.Add(new Vector2Int(0, 0));
-        }
-        else
-        {
-            this.affectedArea = affectedArea;
+            if (area.Item1 == null)
+            {
+                throw new System.Exception("ќбласть пременени€ способности не может быть null!");
+            }
         }
     }
 
-    //protected HashSet<Vector2Int> FlexAffectedArea()
-    //{
-
-    //}
-
-    public abstract void DoTheStuff(Map map, Vector2Int target);
+    public abstract void DoTheStuff(List<(Vector2Int, Map)> targets);
 }

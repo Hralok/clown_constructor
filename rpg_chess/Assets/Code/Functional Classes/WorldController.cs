@@ -46,4 +46,9 @@ public static class WorldController
     {
 
     }
+
+    public static void MakeMoveDecision((Vector2Int, Vector2Int) fromToPair, Entity movable, Map targetMap)
+    {
+
+    }
 }

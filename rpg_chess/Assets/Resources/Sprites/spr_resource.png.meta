@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b28b8a9ec645973419ada2be23b9643f
+guid: c7a0332baf7c6f44ca35ea33d806dd57
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -47,6 +47,12 @@ TextureImporter:
   - first:
       213: -1587626606887438812
     second: spr_resource_14
+  - first:
+      213: 2874851113193699852
+    second: spr_resource_15
+  - first:
+      213: 959908793812349883
+    second: spr_resource_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -307,12 +313,12 @@ TextureImporter:
       name: spr_resource_8
       rect:
         serializedVersion: 2
-        x: 128
-        y: 34
-        width: 12
-        height: 14
-      alignment: 9
-      pivot: {x: 0.5, y: 0.42857143}
+        x: 0
+        y: 19
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -350,11 +356,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 3
+        y: 2
         width: 12
-        height: 13
+        height: 15
       alignment: 9
-      pivot: {x: 0.5, y: 0.46153846}
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -371,11 +377,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 4
+        y: 2
         width: 12
-        height: 12
+        height: 14
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.42857146}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -392,11 +398,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 4
+        y: 3
         width: 12
-        height: 12
+        height: 13
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.4615385}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -413,11 +419,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 3
+        y: 4
         width: 12
-        height: 13
+        height: 12
       alignment: 9
-      pivot: {x: 0.5, y: 0.46153846}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -433,6 +439,48 @@ TextureImporter:
       name: spr_resource_14
       rect:
         serializedVersion: 2
+        x: 80
+        y: 4
+        width: 12
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426f38c330e97f9e0800000000000000
+      internalID: -1587626606887438812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_resource_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 3
+        width: 12
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4615385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0afb081bd585e720800000000000000
+      internalID: 2874851113193699852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_resource_16
+      rect:
+        serializedVersion: 2
         x: 304
         y: 18
         width: 12
@@ -444,8 +492,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 426f38c330e97f9e0800000000000000
-      internalID: -1587626606887438812
+      spriteID: bb375ff46f7425d00800000000000000
+      internalID: 959908793812349883
       vertices: []
       indices: 
       edges: []

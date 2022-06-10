@@ -110,6 +110,9 @@ TextureImporter:
   - first:
       213: -3504024158802673344
     second: spr_debug_35
+  - first:
+      213: 8134330499471771290
+    second: spr_debug_36
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -950,6 +953,27 @@ TextureImporter:
       bones: []
       spriteID: 0410e2ab7943f5fc0800000000000000
       internalID: -3504024158802673344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_debug_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9604a2ed72f2e070800000000000000
+      internalID: 8134330499471771290
       vertices: []
       indices: 
       edges: []

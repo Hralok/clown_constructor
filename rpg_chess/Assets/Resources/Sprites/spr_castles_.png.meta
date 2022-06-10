@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-guid: 8456753032f0fd34894db37911df4774
+guid: 3c3a99e4eb92431438025de31f975d77
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 2025966561709287672
-    second: spr_castles__0
-  - first:
-      213: 4830366081467217184
-    second: spr_castles__1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:

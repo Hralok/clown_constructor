@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: spr_obstacles_121
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -5931223411111060722, guid: ada61c63c11036143ab2fff1b0228b08, type: 3}
+  m_Sprite: {fileID: -5931223411111060722, guid: edb002c85a194e64a96a5217e06c9d68, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

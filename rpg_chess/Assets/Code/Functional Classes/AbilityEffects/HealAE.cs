@@ -61,15 +61,7 @@ public class HealAE : AbilityEffect
             var realTargetsCoords = new HashSet<Vector2Int>();
             HashSet<Vector2Int> realAffectedArea;
 
-            if (isFlexible)
-            {
-                realAffectedArea = WorldController.FlexArea(affectedArea, target);
-            }
-            else
-            {
-                realAffectedArea = affectedArea;
-            }
-
+            // ќпределение координаты точки применени€
             Vector2Int realTarget;
             if (isAbsolute)
             {
@@ -78,6 +70,16 @@ public class HealAE : AbilityEffect
             else
             {
                 realTarget = target + ability.owner.currentCell.coords;
+            }
+
+            // ќтражение в случае необходимости области применени€ в сторону применени€ способности
+            if (isFlexible)
+            {
+                realAffectedArea = WorldController.FlexArea(affectedArea, realTarget - ability.owner.currentCell.coords);
+            }
+            else
+            {
+                realAffectedArea = affectedArea;
             }
 
             // ќпределение координат попадающих под удар €чеек

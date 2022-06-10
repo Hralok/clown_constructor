@@ -4,35 +4,16 @@ using UnityEngine;
 
 public class TestScript : MonoBehaviour
 {
-    [SerializeField]
-    GameObject[] obj;
+    
 
     
     void Start()
     {
-        HashSet<Vector2Int> area = new HashSet<Vector2Int>() { 
-            new Vector2Int (0,1),
-            new Vector2Int (0,2),
-            new Vector2Int (0,3),
-            new Vector2Int (0,4),
-            new Vector2Int (1,3),
-            new Vector2Int (-1,3),
-        };
+        Vector2Int a = new Vector2Int(1, 1);
+        Vector2Int b = new Vector2Int(2, 2);
 
-        Vector2Int point = new Vector2Int (0, -1);
-
-        area = WorldController.FlexArea(area, point);
-
-        int i = 0;
-        foreach (Vector2Int newPoint in area)
-        {
-            obj[i].transform.position = (Vector3Int)newPoint;
-            i++;
-        }
-
-
-
-
+        Debug.Log(a - b);
+        Debug.Log(b - a);
 
     }
 

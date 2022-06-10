@@ -36,29 +36,39 @@ public class DamageAE : AbilityEffect
 
     public override void DoTheStuff(Map map, Vector2Int target)
     {
-
         HashSet<Cell> targetCells;
         Damage attack;
 
+        // ќпределение количества урона который будет нанесЄн
+
+        double calculatedBaseDamage;
+        double calculatedMultipler;
+
+        calculatedBaseDamage =
+            baseDamage +
+            ability.owner.damageBonusAmplification +
+            ability.owner.damageElementBonusAmplification.GetValueOrDefault(damageType, 0) +
+            ability.owner.attackTypeBonusAmplification.GetValueOrDefault(attackType, 0);
+
+        calculatedMultipler =
+            (1 + ability.owner.damageMultiplerAmplification) *
+            (1 + ability.owner.damageElementMultiplerAmplification.GetValueOrDefault(damageType, 0)) *
+            (1 + ability.owner.attackTypeMultiplerAmplification.GetValueOrDefault(attackType, 0));
+
         if (ability.owner is Unit)
         {
-            var attacker = (Unit)ability.owner;
-            attack = new Damage(
-                (baseDamage + attacker.mainChars[amplificationChar] * damageBonusPerCharPoint) *
-                (1 + attacker.mainChars[amplificationChar] * damageMultiplerPerCharPoint),
-                damageType,
-                attackType);
+            calculatedBaseDamage += ((Unit)ability.owner).mainChars[amplificationChar] * damageBonusPerCharPoint;
+            calculatedMultipler *= (1 + ((Unit)ability.owner).mainChars[amplificationChar] * damageMultiplerPerCharPoint);
         }
-        else
-        {
-            attack = new Damage(baseDamage, damageType, attackType);
-        }
+
+        attack = new Damage(calculatedBaseDamage * calculatedMultipler, damageType, attackType);
 
         if (affectedArea.Count > 0)
         {
             var realTargetsCoords = new HashSet<Vector2Int>();
             HashSet<Vector2Int> realAffectedArea;
 
+            // ќтражение в случае необходимости области применени€ в сторону куда направлена способность
             if (isFlexible)
             {
                 realAffectedArea = WorldController.FlexArea(affectedArea, target);
@@ -68,11 +78,24 @@ public class DamageAE : AbilityEffect
                 realAffectedArea = affectedArea;
             }
 
-            foreach (var affectedCoord in realAffectedArea)
+            // ќпределение координаты точки применени€
+            Vector2Int realTarget;
+            if (isAbsolute)
             {
-                realTargetsCoords.Add(affectedCoord + target + ability.owner.currentCell.coords);
+                realTarget = target;
+            }
+            else
+            {
+                realTarget = target + ability.owner.currentCell.coords;
             }
 
+            // ќпределение координат попадающих под удар €чеек
+            foreach (var affectedCoord in realAffectedArea)
+            {
+                realTargetsCoords.Add(affectedCoord + realTarget);
+            }
+
+            // ѕолучение попадающих под удар €чеек
             targetCells = map.GetCells(realTargetsCoords);
         }
         else

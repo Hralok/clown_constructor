@@ -36,18 +36,25 @@ public class HealAE : AbilityEffect
         HashSet<Cell> targetCells;
         Heal heal;
 
+        double calculatedBaseHeal;
+        double calculatedMultipler;
+
+        calculatedBaseHeal =
+            baseHeal +
+            ability.owner.healBonusAmplification +
+            ability.owner.healElementBonusAmplification.GetValueOrDefault(healType, 0);
+
+        calculatedMultipler =
+            (1 + ability.owner.healMultiplerAmplification) *
+            (1 + ability.owner.healElementMultiplerAmplification.GetValueOrDefault(healType, 0));
+
         if (ability.owner is Unit)
         {
-            var healer = (Unit)ability.owner;
-            heal = new Heal(
-                (baseHeal + healer.mainChars[amplificationChar] * healBonusPerCharPoint) *
-                (1 + healer.mainChars[amplificationChar] * healMultiplerPerCharPoint),
-                healType);
+            calculatedBaseHeal += ((Unit)ability.owner).mainChars[amplificationChar] * healBonusPerCharPoint;
+            calculatedMultipler *= (1 + ((Unit)ability.owner).mainChars[amplificationChar] * healMultiplerPerCharPoint);
         }
-        else
-        {
-            heal = new Heal(baseHeal, healType);
-        }
+
+        heal = new Heal(calculatedBaseHeal * calculatedMultipler, healType);
 
         if (affectedArea.Count > 0)
         {
@@ -63,9 +70,20 @@ public class HealAE : AbilityEffect
                 realAffectedArea = affectedArea;
             }
 
+            Vector2Int realTarget;
+            if (isAbsolute)
+            {
+                realTarget = target;
+            }
+            else
+            {
+                realTarget = target + ability.owner.currentCell.coords;
+            }
+
+            // ќпределение координат попадающих под удар €чеек
             foreach (var affectedCoord in realAffectedArea)
             {
-                realTargetsCoords.Add(affectedCoord + target + ability.owner.currentCell.coords);
+                realTargetsCoords.Add(affectedCoord + realTarget);
             }
 
             targetCells = map.GetCells(realTargetsCoords);

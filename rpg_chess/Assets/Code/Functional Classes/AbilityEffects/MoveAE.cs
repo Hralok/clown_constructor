@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 
 public abstract class MoveAE : AbilityEffect
 {
     public Map targetMap { get; private set; }
-    
     public bool onlyUnits { get; private set; }
+
+    
     public MoveAE(
         Map targetMap, 
         Ability ability,

@@ -45,35 +45,65 @@ public abstract class MoveAE : AbilityEffect
             throw new System.Exception("Количество целей не соответствует необходимому!");
         }
 
+        List<Vector2Int> realFromArea;
+        List<Vector2Int> realToArea;
+        Vector2Int realToPoint;
+        Map realToMap;
 
 
-
-
-
-
-
-        if (ability.owner is Unit)
+        if (fromIsFlexible)
         {
-            Vector2Int realTargetCoords;
+            realFromArea = WorldController.FlexArea(fromArea, targets[0].Item1 - ability.owner.currentCell.coords);
+        }
+        else
+        {
+            realFromArea = fromArea;
+        }
 
-
-
-            Map curMap;
-            if (targetMap == null)
+        if (needSecondTarget)
+        {
+            realToPoint = targets[1].Item1;
+            realToMap = targets[1].Item2;
+            if (toIsFlexible)
             {
-                curMap = map;
+                realToArea = WorldController.FlexArea(toArea, targets[1].Item1 - targets[0].Item1);
+            }
+            {
+                realToArea = toArea;
+            }
+        }
+        else
+        {
+            realToPoint = targets[0].Item1 + offset;
+            realToMap = targets[0].Item2;
+            if (toIsFlexible)
+            {
+                realToArea = WorldController.FlexArea(toArea, targets[0].Item1 - ability.owner.currentCell.coords);
             }
             else
             {
-                curMap = targetMap;
+                realToArea = toArea;
             }
+        }
 
-            Cell targetCell = curMap.GetCell(realTargetCoords);
+        Cell currentCell;
 
-            targetCell.AddEntity(ability.owner);
-            ability.owner.currentCell.ExpelUnit();
-            ability.owner.MoveToCell(targetCell);
+        for (int i = 0; i < realFromArea.Count; i++)
+        {
+            currentCell = targets[0].Item2.GetCell(realFromArea[i] + targets[0].Item1);
+
+            if (currentCell != null)
+            {
+                if (currentCell.unitAtCell != null)
+                {
+                    WorldController.MakeMoveDecision((currentCell.coords, realToArea[i] + realToPoint), currentCell.unitAtCell, realToMap);
+                }
+
+                if (!onlyUnits && currentCell.structureAtCell != null)
+                {
+                    WorldController.MakeMoveDecision((currentCell.coords, realToArea[i] + realToPoint), currentCell.structureAtCell, realToMap);
+                }
+            }
         }
     }
-
 }

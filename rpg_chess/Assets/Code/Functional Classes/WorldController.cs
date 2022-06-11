@@ -4,9 +4,9 @@ using UnityEngine;
 
 public static class WorldController
 {
-    public static HashSet<Vector2Int> FlexArea(HashSet<Vector2Int> baseArea, Vector2Int flexPoint)
+    public static T FlexArea<T>(T baseArea, Vector2Int flexPoint) where T : ICollection<Vector2Int>, new()
     {
-        HashSet<Vector2Int> result = new HashSet<Vector2Int>();
+        T result = new T();
 
         if (Mathf.Abs(flexPoint.y) >= Mathf.Abs(flexPoint.x) && flexPoint.y >= 0)
         {

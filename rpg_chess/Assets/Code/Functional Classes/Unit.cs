@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Unit : Entity
 {
-    public Cell currentCell;
+    public UnitStateEnum state { get; set; }
     public Unit (Cell cell)
     {
         currentCell = cell;
+        state = UnitStateEnum.Free;
     }
 }

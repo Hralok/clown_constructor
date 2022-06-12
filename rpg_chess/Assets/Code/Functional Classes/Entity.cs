@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Entity 
 {
-    public Cell currentCell { get; private set; }
+    public Cell currentCell { get; protected set; }
 
     public void LeaveCell()
     {

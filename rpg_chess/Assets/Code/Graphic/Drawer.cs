@@ -7,14 +7,26 @@ public class Drawer
     private struct TilemapGroup
     {
         public Tilemap groundTilemap;
+        public Tilemap roadTilemap;
         public Tilemap onGroundTilemap;
         public Tilemap resourcesTilemap;
+        public Tilemap itemsTilemap;
+        public Tilemap structuresTilemap;
+        public Tilemap deadBodiesTilemap;
+        public Tilemap creaturesTilemap;
 
-        public TilemapGroup(Tilemap groungTilemap, Tilemap onGroundTilemap, Tilemap resourcesTilemap)
+        public TilemapGroup(Tilemap groundTilemap, Tilemap roadTilemap, Tilemap onGroundTilemap,
+            Tilemap resourcesTilemap, Tilemap itemsTilemap, Tilemap structuresTilemap,
+            Tilemap deadBodiesTilemap, Tilemap creaturesTilemap)
         {
-            this.groundTilemap = groungTilemap;
+            this.groundTilemap = groundTilemap;
+            this.roadTilemap = roadTilemap;
             this.onGroundTilemap = onGroundTilemap;
             this.resourcesTilemap = resourcesTilemap;
+            this.itemsTilemap = itemsTilemap;
+            this.structuresTilemap = structuresTilemap;
+            this.deadBodiesTilemap = deadBodiesTilemap;
+            this.creaturesTilemap = creaturesTilemap;
         }
     }
 
@@ -23,9 +35,9 @@ public class Drawer
     private GraphicSupporter graphicSupport;
     private TileBase groundDebug;
     private TileBase resourceDebug;
+    private TileBase unitDebug;
     List<Map> maps = new List<Map>();
     private Dictionary<Map, TilemapGroup> mapTilemaps;
-
 
     public Drawer(Grid getGrid, GameObject prefab, GraphicSupporter supporter, List<Map> getMaps)
     {
@@ -35,6 +47,7 @@ public class Drawer
         maps = getMaps;
         groundDebug = Resources.Load<TileBase>("Tiles/Debug/spr_debug_0");
         resourceDebug = Resources.Load<TileBase>("Tiles/Debug/spr_debug_1");
+        unitDebug = Resources.Load<TileBase>("Tiles/Debug/spr_debug_2");
 
         foreach (Map map in maps)
         {
@@ -51,7 +64,7 @@ public class Drawer
         newMap.SetActive(false);
         newMap.name = map.name;
         Tilemap[] tilemaps = newMap.GetComponentsInChildren<Tilemap>();
-        TilemapGroup tilemapGroup = new TilemapGroup(tilemaps[0], tilemaps[2], tilemaps[3]);
+        TilemapGroup tilemapGroup = new TilemapGroup(tilemaps[0], tilemaps[1], tilemaps[2], tilemaps[3], tilemaps[4], tilemaps[5], tilemaps[6], tilemaps[7]);
         mapTilemaps.Add(map, tilemapGroup);
         DrawMap(map);
     }
@@ -115,13 +128,66 @@ public class Drawer
 
     private void DrawUnit(Cell cell, TilemapGroup tilemaps)
     {
-        //ќтдельный метод  дл€ отрисовки unit
+        if (cell.unitAtCell != null)
+        {
+            AnimatedTile unitTile;
+            unitTile = graphicSupport.GetStayingUnitAnimatedTile();
+
+            if (unitTile == null)
+            {
+                tilemaps.creaturesTilemap.SetTile((Vector3Int)cell.coords, unitDebug);
+                throw new System.Exception("ёнит, указанный в клетке с координатами " + cell.coords + " не обнаружен");
+            }
+            else
+            {
+                tilemaps.creaturesTilemap.SetTile((Vector3Int)cell.coords, unitTile);
+            }
+        }
     }
 
-    //‘ункци€ дл€ отрисовки единичной €чейки 
-    //ёниту в конструктор закинуть €чейку
+    //‘ункци€ дл€ отрисовки единичной €чейки нужна
+    public void DrawUnitIsAttacking(Unit unit)
+    {
+        TilemapGroup tilemapGroup;
+        tilemapGroup = mapTilemaps[unit.currentCell.relatedMap];
+        
+        if (unit.state == UnitStateEnum.Free)
+        {
+            //анимаци€ единична€
+        }
+        else
+        {
+            AnimatedTile unitTile;
+            unitTile = graphicSupport.GetAttackingUnitAnimatedTile();
+
+            if (unitTile == null)
+            {
+                tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, unitDebug);
+                throw new System.Exception("ёнит, указанный в клетке с координатами " + unit.currentCell.coords + " не обнаружен");
+            }
+            else
+            {
+                tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, unitTile);
+            }
+        }
+    }
+
     public void DrawUnitIsDying(Unit unit)
     {
+        TilemapGroup tilemapGroup;
+        tilemapGroup = mapTilemaps[unit.currentCell.relatedMap];
 
+        GameObject dyingUnit;
+        dyingUnit = graphicSupport.GetDeadUnitAnimation();
+        if (dyingUnit == null)
+        {
+            tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, unitDebug);
+            throw new System.Exception("ёнит, указанный в клетке с координатами " + unit.currentCell.coords + " не обнаружен");
+        }
+        else
+        {
+            //ќтыграть анимацию
+        }
+        //анимаци€ единична€ и dead body
     }
 }

@@ -30,4 +30,8 @@ public class GraphicSupporter
         return resourceTiles.ContainsKey(type) ? resourceTiles[type] : null;
     }
 
+/*    public TileBase GetDeadUnitTile()
+    {
+        return resourceTiles.ContainsKey(type) ? resourceTiles[type] : null;
+    }*/
 }

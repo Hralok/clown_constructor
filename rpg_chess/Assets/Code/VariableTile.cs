@@ -39,14 +39,10 @@ public class VariableTile : TileBase
 
     public Tile.ColliderType m_TileColliderType;
 
-    private bool alreadyPlayed = false;
-
-
     public override void GetTileData(Vector3Int position, ITilemap tilemap, ref TileData tileData)
     {
         counter++;
         Debug.Log(counter);
-
 
         tileData.transform = Matrix4x4.identity;
         tileData.color = Color.white;

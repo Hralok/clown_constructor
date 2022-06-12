@@ -5,9 +5,6 @@ using UnityEngine;
 
 public enum UnitStateEnum
 {
-    Staying,
-    Moving,
-    Attacking,
-    Dying,
-    Dead
+    Free,
+    Busy
 }

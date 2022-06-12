@@ -81,30 +81,47 @@ public class Drawer
                 tilemaps.onGroundTilemap.SetTile((Vector3Int)cell.coords, ongroundTile);
             }
 
-            if (cell.resourcesAtCell.Count > 1)
+            DrawResource(cell, tilemaps);
+        }
+    }
+
+    private void DrawResource(Cell cell, TilemapGroup tilemaps)
+    {
+        if (cell.resourcesAtCell.Count > 1)
+        {
+            tilemaps.resourcesTilemap.SetTile((Vector3Int)cell.coords, graphicSupport.manyResourceTile);
+        }
+        else
+        {
+            if (cell.resourcesAtCell.Count == 1)
             {
-                tilemaps.resourcesTilemap.SetTile((Vector3Int)cell.coords, graphicSupport.manyResourceTile);
-            }
-            else
-            {
-                if (cell.resourcesAtCell.Count == 1)
+                foreach (Resource resource in cell.resourcesAtCell)
                 {
-                    foreach (Resource resource in cell.resourcesAtCell)
+                    TileBase resourcesTile;
+                    resourcesTile = graphicSupport.GetTileByResourceType(resource.type);
+                    if (resourcesTile == null)
                     {
-                        TileBase resourcesTile;
-                        resourcesTile = graphicSupport.GetTileByResourceType(resource.type);
-                        if (resourcesTile == null)
-                        {
-                            tilemaps.resourcesTilemap.SetTile((Vector3Int)cell.coords, resourceDebug);
-                            throw new System.Exception("–есурс, указанный в клетке с координатами " + cell.coords + " не обнаружен");
-                        }
-                        else
-                        {
-                            tilemaps.resourcesTilemap.SetTile((Vector3Int)cell.coords, resourcesTile);
-                        }
+                        tilemaps.resourcesTilemap.SetTile((Vector3Int)cell.coords, resourceDebug);
+                        throw new System.Exception("–есурс, указанный в клетке с координатами " + cell.coords + " не обнаружен");
+                    }
+                    else
+                    {
+                        tilemaps.resourcesTilemap.SetTile((Vector3Int)cell.coords, resourcesTile);
                     }
                 }
             }
         }
+    }
+
+    private void DrawUnit(Cell cell, TilemapGroup tilemaps)
+    {
+        //ќтдельный метод  дл€ отрисовки unit
+    }
+
+    //‘ункци€ дл€ отрисовки единичной €чейки 
+    //ёниту в конструктор закинуть €чейку
+    public void DrawUnitIsDying(Unit unit)
+    {
+
     }
 }

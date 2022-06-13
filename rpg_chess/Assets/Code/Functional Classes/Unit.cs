@@ -4,5 +4,10 @@ using UnityEngine;
 
 public class Unit : Entity
 {
-    
+    public Dictionary<MainCharacteristicTypeEnum, double> mainChars { get; private set; }
+
+
+
+
+
 }

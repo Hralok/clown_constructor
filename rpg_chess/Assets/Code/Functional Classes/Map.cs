@@ -25,6 +25,21 @@ public class Map
         }
     }
 
+    public HashSet<Cell> GetCells(HashSet<Vector2Int> coords)
+    {
+        HashSet<Cell> cells = new HashSet<Cell>();
+
+        foreach (Vector2Int coord in coords)
+        {
+            if (!cellMap.ContainsKey(coord))
+            {
+                cells.Add(cellMap[coord]);
+            }
+        }
+
+        return cells;
+    }
+
     public bool DoesCellExist(Vector2Int coords)
     {
         return cellMap.ContainsKey(coords);
@@ -32,14 +47,21 @@ public class Map
 
     public Cell ExpelCell(Vector2Int coords)
     {
-        Cell cell = cellMap[coords];
-        cellMap.Remove(coords);
-        return cell;
+        if (cellMap.ContainsKey(coords))
+        {
+            Cell cell = cellMap[coords];
+            cellMap.Remove(coords);
+            return cell;
+        }
+        else
+        {
+            throw new System.Exception("Произошла попытка удалить несуществующую ячейку");
+        }
     }
 
-    public List<Cell> GetAllCells()
+    public HashSet<Cell> GetAllCells()
     {
-        List<Cell> cells = new List<Cell>();
+        HashSet<Cell> cells = new HashSet<Cell>();
 
         foreach (Cell cell in cellMap.Values)
         {

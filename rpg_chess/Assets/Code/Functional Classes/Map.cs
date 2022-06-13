@@ -5,10 +5,12 @@ using UnityEngine;
 public class Map
 {
     private Dictionary<Vector2Int, Cell> cellMap;
+    public string name { get; private set; }
 
-    public Map()
+    public Map(string name)
     {
         cellMap = new Dictionary<Vector2Int, Cell>();
+        this.name = name;  
     }
 
     public Cell GetCell(Vector2Int coords)
@@ -78,6 +80,21 @@ public class Map
         else
         {
             cellMap[newCell.coords] = newCell;
+        }
+    }
+
+    public void AddCells(HashSet<Cell> newCells)
+    {
+        foreach (Cell newCell in newCells)
+        {
+            if (cellMap.ContainsKey(newCell.coords))
+            {
+                throw new System.Exception("Произошла попытка добавить ячейку в карту на уже занятое место");
+            }
+            else
+            {
+                cellMap[newCell.coords] = newCell;
+            }
         }
     }
 }

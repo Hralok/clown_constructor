@@ -1,0 +1,3240 @@
+fileFormatVersion: 2
+guid: 8bed9982e0d2ea9449822ab5dec3c76d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8287536957314657646
+    second: Beautiful_World3_0
+  - first:
+      213: 4636111033543360614
+    second: Beautiful_World3_1
+  - first:
+      213: -2242833402404917324
+    second: Beautiful_World3_2
+  - first:
+      213: 2791233570468407290
+    second: Beautiful_World3_3
+  - first:
+      213: 3760620608434319441
+    second: Beautiful_World3_4
+  - first:
+      213: 2771250174639375398
+    second: Beautiful_World3_5
+  - first:
+      213: 5393098499308061587
+    second: Beautiful_World3_6
+  - first:
+      213: -537218018490462245
+    second: Beautiful_World3_7
+  - first:
+      213: -5221307593618023015
+    second: Beautiful_World3_8
+  - first:
+      213: -913743972261338232
+    second: Beautiful_World3_9
+  - first:
+      213: -1068859796458552973
+    second: Beautiful_World3_10
+  - first:
+      213: 5292750896067390078
+    second: Beautiful_World3_11
+  - first:
+      213: 9153275237928200292
+    second: Beautiful_World3_12
+  - first:
+      213: 6031607060919634999
+    second: Beautiful_World3_13
+  - first:
+      213: 4986437805512558601
+    second: Beautiful_World3_14
+  - first:
+      213: 3632572261337584155
+    second: Beautiful_World3_15
+  - first:
+      213: 1739154330474323550
+    second: Beautiful_World3_16
+  - first:
+      213: -267977266427531924
+    second: Beautiful_World3_17
+  - first:
+      213: 8160800033898063845
+    second: Beautiful_World3_18
+  - first:
+      213: -7651857024937228921
+    second: Beautiful_World3_19
+  - first:
+      213: -1078234266822948061
+    second: Beautiful_World3_20
+  - first:
+      213: -8789467149455640649
+    second: Beautiful_World3_21
+  - first:
+      213: -3084701571971604078
+    second: Beautiful_World3_22
+  - first:
+      213: -1627066338601821120
+    second: Beautiful_World3_23
+  - first:
+      213: 4483953255825957243
+    second: Beautiful_World3_24
+  - first:
+      213: 6963142593287319589
+    second: Beautiful_World3_25
+  - first:
+      213: 2752624614317511162
+    second: Beautiful_World3_26
+  - first:
+      213: -4520138562053212329
+    second: Beautiful_World3_27
+  - first:
+      213: 4314412188109814056
+    second: Beautiful_World3_28
+  - first:
+      213: 1119205028307240888
+    second: Beautiful_World3_29
+  - first:
+      213: -3998958064680096278
+    second: Beautiful_World3_30
+  - first:
+      213: 4446217146581337193
+    second: Beautiful_World3_31
+  - first:
+      213: -1428306777665269097
+    second: Beautiful_World3_32
+  - first:
+      213: 56277940416302441
+    second: Beautiful_World3_33
+  - first:
+      213: 929266032764918250
+    second: Beautiful_World3_34
+  - first:
+      213: -4317339870768689704
+    second: Beautiful_World3_35
+  - first:
+      213: 1375952468312381678
+    second: Beautiful_World3_36
+  - first:
+      213: 3003945139095706831
+    second: Beautiful_World3_37
+  - first:
+      213: 8052507508782231585
+    second: Beautiful_World3_38
+  - first:
+      213: 485000471978182612
+    second: Beautiful_World3_39
+  - first:
+      213: 2265843965078289505
+    second: Beautiful_World3_40
+  - first:
+      213: 5622913945763133542
+    second: Beautiful_World3_41
+  - first:
+      213: -3810136099220970573
+    second: Beautiful_World3_42
+  - first:
+      213: -6678693469764205228
+    second: Beautiful_World3_43
+  - first:
+      213: 3943423486313797154
+    second: Beautiful_World3_44
+  - first:
+      213: 8967476222560353519
+    second: Beautiful_World3_45
+  - first:
+      213: 4596078596228928971
+    second: Beautiful_World3_46
+  - first:
+      213: 7471469274150252334
+    second: Beautiful_World3_47
+  - first:
+      213: -6492673863752929887
+    second: Beautiful_World3_48
+  - first:
+      213: 8706501731679617104
+    second: Beautiful_World3_49
+  - first:
+      213: 3166789948280567781
+    second: Beautiful_World3_50
+  - first:
+      213: 2671834739057027625
+    second: Beautiful_World3_51
+  - first:
+      213: 4460815507649886930
+    second: Beautiful_World3_52
+  - first:
+      213: -4630363318997017659
+    second: Beautiful_World3_53
+  - first:
+      213: -1226716764348133681
+    second: Beautiful_World3_54
+  - first:
+      213: 2747131888509396875
+    second: Beautiful_World3_55
+  - first:
+      213: 2561594700216346831
+    second: Beautiful_World3_56
+  - first:
+      213: -1976953050998416092
+    second: Beautiful_World3_57
+  - first:
+      213: -4707803054556229986
+    second: Beautiful_World3_58
+  - first:
+      213: 618908933400833838
+    second: Beautiful_World3_59
+  - first:
+      213: -3576033288331033550
+    second: Beautiful_World3_60
+  - first:
+      213: -1123081674659819057
+    second: Beautiful_World3_61
+  - first:
+      213: 7775844216752434046
+    second: Beautiful_World3_62
+  - first:
+      213: -8923894098694116515
+    second: Beautiful_World3_63
+  - first:
+      213: 9206625500869696014
+    second: Beautiful_World3_64
+  - first:
+      213: 3497210489324930505
+    second: Beautiful_World3_65
+  - first:
+      213: 4479635291377925183
+    second: Beautiful_World3_66
+  - first:
+      213: -9029315571783878566
+    second: Beautiful_World3_67
+  - first:
+      213: 3697457160207173214
+    second: Beautiful_World3_68
+  - first:
+      213: -2613799123961595988
+    second: Beautiful_World3_69
+  - first:
+      213: 3142174506482449465
+    second: Beautiful_World3_70
+  - first:
+      213: -6015983045137784239
+    second: Beautiful_World3_71
+  - first:
+      213: 5889018271052852010
+    second: Beautiful_World3_72
+  - first:
+      213: 1072912951528470984
+    second: Beautiful_World3_73
+  - first:
+      213: -761604450899954356
+    second: Beautiful_World3_74
+  - first:
+      213: 1376687568977362746
+    second: Beautiful_World3_75
+  - first:
+      213: -4025626446707328234
+    second: Beautiful_World3_76
+  - first:
+      213: 8318040905199480438
+    second: Beautiful_World3_77
+  - first:
+      213: 2715007058630556263
+    second: Beautiful_World3_78
+  - first:
+      213: 5837082100855968257
+    second: Beautiful_World3_79
+  - first:
+      213: 8600123575028032183
+    second: Beautiful_World3_80
+  - first:
+      213: 4048603315865699815
+    second: Beautiful_World3_81
+  - first:
+      213: 1207218811422772879
+    second: Beautiful_World3_82
+  - first:
+      213: 3007998628591416422
+    second: Beautiful_World3_83
+  - first:
+      213: -8681311177722932617
+    second: Beautiful_World3_84
+  - first:
+      213: -1716557471909255689
+    second: Beautiful_World3_85
+  - first:
+      213: 1716490521078344296
+    second: Beautiful_World3_86
+  - first:
+      213: -5325200021859526251
+    second: Beautiful_World3_87
+  - first:
+      213: 8858039350361411984
+    second: Beautiful_World3_88
+  - first:
+      213: -7644276682690205488
+    second: Beautiful_World3_89
+  - first:
+      213: -3654343976683311514
+    second: Beautiful_World3_90
+  - first:
+      213: 6505554745438689059
+    second: Beautiful_World3_91
+  - first:
+      213: 11432182134395557
+    second: Beautiful_World3_92
+  - first:
+      213: -2038065470378817065
+    second: Beautiful_World3_93
+  - first:
+      213: -7866216262265293634
+    second: Beautiful_World3_94
+  - first:
+      213: -7938953626536238595
+    second: Beautiful_World3_95
+  - first:
+      213: -4693129521996848502
+    second: Beautiful_World3_96
+  - first:
+      213: 8835708659170398447
+    second: Beautiful_World3_97
+  - first:
+      213: 8184255638428202317
+    second: Beautiful_World3_98
+  - first:
+      213: -1290101335966845066
+    second: Beautiful_World3_99
+  - first:
+      213: -4860913363344939206
+    second: Beautiful_World3_100
+  - first:
+      213: 7494516960786648472
+    second: Beautiful_World3_101
+  - first:
+      213: 229208218423249931
+    second: Beautiful_World3_102
+  - first:
+      213: 7165773886748497993
+    second: Beautiful_World3_103
+  - first:
+      213: 4464527888561913889
+    second: Beautiful_World3_104
+  - first:
+      213: 6085344450245167948
+    second: Beautiful_World3_105
+  - first:
+      213: 7927391290151184999
+    second: Beautiful_World3_106
+  - first:
+      213: 4165355549727661280
+    second: Beautiful_World3_107
+  - first:
+      213: -7794068581206561018
+    second: Beautiful_World3_108
+  - first:
+      213: 6741707141715656766
+    second: Beautiful_World3_109
+  - first:
+      213: -5620397056561155464
+    second: Beautiful_World3_110
+  - first:
+      213: -3768744341215293094
+    second: Beautiful_World3_111
+  - first:
+      213: 177741878695618351
+    second: Beautiful_World3_112
+  - first:
+      213: 7271099227785125724
+    second: Beautiful_World3_113
+  - first:
+      213: 2435459596963357451
+    second: Beautiful_World3_114
+  - first:
+      213: -1522113686783172040
+    second: Beautiful_World3_115
+  - first:
+      213: 5813837729412711277
+    second: Beautiful_World3_116
+  - first:
+      213: -5099427185780610508
+    second: Beautiful_World3_117
+  - first:
+      213: -974384801904911191
+    second: Beautiful_World3_118
+  - first:
+      213: 7736535522309007569
+    second: Beautiful_World3_119
+  - first:
+      213: 5934095377354986817
+    second: Beautiful_World3_120
+  - first:
+      213: -4459643728185717350
+    second: Beautiful_World3_121
+  - first:
+      213: -4407858135711936553
+    second: Beautiful_World3_122
+  - first:
+      213: -7680462291701073213
+    second: Beautiful_World3_123
+  - first:
+      213: -6511215758745555968
+    second: Beautiful_World3_124
+  - first:
+      213: -4507515322790947410
+    second: Beautiful_World3_125
+  - first:
+      213: 5778219733297673527
+    second: Beautiful_World3_126
+  - first:
+      213: -6937720791265020246
+    second: Beautiful_World3_127
+  - first:
+      213: -778410579000310197
+    second: Beautiful_World3_128
+  - first:
+      213: -1094279049087291274
+    second: Beautiful_World3_129
+  - first:
+      213: 4004742434802066135
+    second: Beautiful_World3_130
+  - first:
+      213: 8526658959263474798
+    second: Beautiful_World3_131
+  - first:
+      213: -6068177564170316817
+    second: Beautiful_World3_132
+  - first:
+      213: 2241012080796070437
+    second: Beautiful_World3_133
+  - first:
+      213: -7200520308213802993
+    second: Beautiful_World3_134
+  - first:
+      213: -1380330525910914555
+    second: Beautiful_World3_135
+  - first:
+      213: 4016552054126004664
+    second: Beautiful_World3_136
+  - first:
+      213: 3674481949762256809
+    second: Beautiful_World3_137
+  - first:
+      213: 3662155498667897971
+    second: Beautiful_World3_138
+  - first:
+      213: 3443571087680721683
+    second: Beautiful_World3_139
+  - first:
+      213: -516430231495781393
+    second: Beautiful_World3_140
+  - first:
+      213: 2093513082513862649
+    second: Beautiful_World3_141
+  - first:
+      213: -6550626690177421793
+    second: Beautiful_World3_142
+  - first:
+      213: 8178477535616823722
+    second: Beautiful_World3_143
+  - first:
+      213: 1976140223387715379
+    second: Beautiful_World3_144
+  - first:
+      213: -4797123501219385031
+    second: Beautiful_World3_145
+  - first:
+      213: -7610868377017586985
+    second: Beautiful_World3_146
+  - first:
+      213: -1805364412010237351
+    second: Beautiful_World3_147
+  - first:
+      213: -5991842635917229172
+    second: Beautiful_World3_148
+  - first:
+      213: -4225894144474635755
+    second: Beautiful_World3_149
+  - first:
+      213: 5248740790833614486
+    second: Beautiful_World3_150
+  - first:
+      213: -6999446519668501484
+    second: Beautiful_World3_151
+  - first:
+      213: 7547988575990749653
+    second: Beautiful_World3_152
+  - first:
+      213: 561127285080258574
+    second: Beautiful_World3_153
+  - first:
+      213: -6330873412294559090
+    second: Beautiful_World3_154
+  - first:
+      213: -7764803458237306042
+    second: Beautiful_World3_155
+  - first:
+      213: 8452075521123562644
+    second: Beautiful_World3_156
+  - first:
+      213: 8533600179224403661
+    second: Beautiful_World3_157
+  - first:
+      213: 5373479301728173670
+    second: Beautiful_World3_158
+  - first:
+      213: 2613005197469402778
+    second: Beautiful_World3_159
+  - first:
+      213: 4552203124164294544
+    second: Beautiful_World3_160
+  - first:
+      213: -4272376963860559201
+    second: Beautiful_World3_161
+  - first:
+      213: -2522183068489930038
+    second: Beautiful_World3_162
+  - first:
+      213: 1724284590735781950
+    second: Beautiful_World3_163
+  - first:
+      213: -6593305522964554224
+    second: Beautiful_World3_164
+  - first:
+      213: -6144508036441103587
+    second: Beautiful_World3_165
+  - first:
+      213: 4080341074758420075
+    second: Beautiful_World3_166
+  - first:
+      213: -4394892156215319471
+    second: Beautiful_World3_167
+  - first:
+      213: -3489347384278486972
+    second: Beautiful_World3_168
+  - first:
+      213: -7939107404036427303
+    second: Beautiful_World3_169
+  - first:
+      213: 3502953153510332082
+    second: Beautiful_World3_170
+  - first:
+      213: 6307972304042699891
+    second: Beautiful_World3_171
+  - first:
+      213: 6344084652563216015
+    second: Beautiful_World3_172
+  - first:
+      213: 5211038677011346061
+    second: Beautiful_World3_173
+  - first:
+      213: -6327256194579140449
+    second: Beautiful_World3_174
+  - first:
+      213: -7029458210637724993
+    second: Beautiful_World3_175
+  - first:
+      213: -7280717185945042246
+    second: Beautiful_World3_176
+  - first:
+      213: 6772037604416181292
+    second: Beautiful_World3_177
+  - first:
+      213: -2203402542917316464
+    second: Beautiful_World3_178
+  - first:
+      213: -2619981461195011257
+    second: Beautiful_World3_179
+  - first:
+      213: -2121177884668170241
+    second: Beautiful_World3_180
+  - first:
+      213: 83565649612958162
+    second: Beautiful_World3_181
+  - first:
+      213: -8142043747842900574
+    second: Beautiful_World3_182
+  - first:
+      213: -7312593051745042798
+    second: Beautiful_World3_183
+  - first:
+      213: 8820322077395045781
+    second: Beautiful_World3_184
+  - first:
+      213: -3389158733154746183
+    second: Beautiful_World3_185
+  - first:
+      213: -1724987486226080085
+    second: Beautiful_World3_186
+  - first:
+      213: 1696555283359720421
+    second: Beautiful_World3_187
+  - first:
+      213: -3542071553539127567
+    second: Beautiful_World3_188
+  - first:
+      213: 7565155274170469451
+    second: Beautiful_World3_189
+  - first:
+      213: -429921003245154388
+    second: Beautiful_World3_190
+  - first:
+      213: 574821699064356599
+    second: Beautiful_World3_191
+  - first:
+      213: 6089010956483224146
+    second: Beautiful_World3_192
+  - first:
+      213: -5073987538960346029
+    second: Beautiful_World3_193
+  - first:
+      213: 738007667604138016
+    second: Beautiful_World3_194
+  - first:
+      213: 8056685716441090478
+    second: Beautiful_World3_195
+  - first:
+      213: 1863550452866836059
+    second: Beautiful_World3_196
+  - first:
+      213: -2658971448753018777
+    second: Beautiful_World3_197
+  - first:
+      213: 7656402130521104460
+    second: Beautiful_World3_198
+  - first:
+      213: -1314544009698280208
+    second: Beautiful_World3_199
+  - first:
+      213: -5009198180613706256
+    second: Beautiful_World3_200
+  - first:
+      213: 2740340969250746924
+    second: Beautiful_World3_201
+  - first:
+      213: -5815166135099859479
+    second: Beautiful_World3_202
+  - first:
+      213: -8265732786628944675
+    second: Beautiful_World3_203
+  - first:
+      213: -5610563093482502472
+    second: Beautiful_World3_204
+  - first:
+      213: -5911325473356141146
+    second: Beautiful_World3_205
+  - first:
+      213: -3414720840488811231
+    second: Beautiful_World3_206
+  - first:
+      213: -3386932762958805176
+    second: Beautiful_World3_207
+  - first:
+      213: -8696660941764442741
+    second: Beautiful_World3_208
+  - first:
+      213: -7750281301422872514
+    second: Beautiful_World3_209
+  - first:
+      213: -3241190208262638549
+    second: Beautiful_World3_210
+  - first:
+      213: 366021703910944934
+    second: Beautiful_World3_211
+  - first:
+      213: 5593377704046695044
+    second: Beautiful_World3_212
+  - first:
+      213: 4344900484777314600
+    second: Beautiful_World3_213
+  - first:
+      213: -2657522376284608274
+    second: Beautiful_World3_214
+  - first:
+      213: 7400635531954617719
+    second: Beautiful_World3_215
+  - first:
+      213: -5491229026646122542
+    second: Beautiful_World3_216
+  - first:
+      213: -4462531244995706687
+    second: Beautiful_World3_217
+  - first:
+      213: 1197956987150631658
+    second: Beautiful_World3_218
+  - first:
+      213: 7513569292383818529
+    second: Beautiful_World3_219
+  - first:
+      213: 5206239623700539824
+    second: Beautiful_World3_220
+  - first:
+      213: 7845954717770309375
+    second: Beautiful_World3_221
+  - first:
+      213: -4328451887610040612
+    second: Beautiful_World3_222
+  - first:
+      213: -4107300570918987664
+    second: Beautiful_World3_223
+  - first:
+      213: 2584519565036709006
+    second: Beautiful_World3_224
+  - first:
+      213: -7794321826643532886
+    second: Beautiful_World3_225
+  - first:
+      213: -1942931945146016983
+    second: Beautiful_World3_226
+  - first:
+      213: -4665509582842898573
+    second: Beautiful_World3_227
+  - first:
+      213: -1793393425688972871
+    second: Beautiful_World3_228
+  - first:
+      213: 8961976561648211094
+    second: Beautiful_World3_229
+  - first:
+      213: -6363170469435889101
+    second: Beautiful_World3_230
+  - first:
+      213: -9049814617312562800
+    second: Beautiful_World3_231
+  - first:
+      213: -3627719661283584503
+    second: Beautiful_World3_232
+  - first:
+      213: -2355125344428114805
+    second: Beautiful_World3_233
+  - first:
+      213: 4878097513105001795
+    second: Beautiful_World3_234
+  - first:
+      213: -6995586015298683964
+    second: Beautiful_World3_235
+  - first:
+      213: 8288694357046251238
+    second: Beautiful_World3_236
+  - first:
+      213: -6863672715173164500
+    second: Beautiful_World3_237
+  - first:
+      213: -3267714329846766079
+    second: Beautiful_World3_238
+  - first:
+      213: -5561295330789907948
+    second: Beautiful_World3_239
+  - first:
+      213: -5059910829210870208
+    second: Beautiful_World3_240
+  - first:
+      213: -6317313972733227206
+    second: Beautiful_World3_241
+  - first:
+      213: 3127503552384454803
+    second: Beautiful_World3_242
+  - first:
+      213: -3116438742725433145
+    second: Beautiful_World3_243
+  - first:
+      213: -2187650018144560232
+    second: Beautiful_World3_244
+  - first:
+      213: -2955176680085734387
+    second: Beautiful_World3_245
+  - first:
+      213: 8291231542301687335
+    second: Beautiful_World3_246
+  - first:
+      213: 2437942300862642818
+    second: Beautiful_World3_247
+  - first:
+      213: 5111633781168243482
+    second: Beautiful_World3_248
+  - first:
+      213: 449733602507148953
+    second: Beautiful_World3_249
+  - first:
+      213: 4389327208945205561
+    second: Beautiful_World3_250
+  - first:
+      213: 6561071686944938156
+    second: Beautiful_World3_251
+  - first:
+      213: -8798453008599925891
+    second: Beautiful_World3_252
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Beautiful_World3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292965ceb01ccfc80800000000000000
+      internalID: -8287536957314657646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d195348603a87b0800000000000000
+      internalID: -5221307593618023015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88365bdc2bab153f0800000000000000
+      internalID: -913743972261338232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371446d9da5aa21f0800000000000000
+      internalID: -1068859796458552973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a2ab4d5e0a37940800000000000000
+      internalID: 5292750896067390078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_12
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468e6103557f60f70800000000000000
+      internalID: 9153275237928200292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_13
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c4ad24aa294b350800000000000000
+      internalID: 6031607060919634999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_14
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908872cc3c2633540800000000000000
+      internalID: 4986437805512558601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_15
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12d6f9b93d796230800000000000000
+      internalID: 3632572261337584155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e118d26a7b22810800000000000000
+      internalID: 1739154330474323550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7166faaab33a3e30800000000000000
+      internalID: 4483953255825957243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_25
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5207849db4d02a060800000000000000
+      internalID: 6963142593287319589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_26
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af15460b089433620800000000000000
+      internalID: 2752624614317511162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_27
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757f5413ded3541c0800000000000000
+      internalID: -4520138562053212329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_28
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829b6eeb60fdfdb30800000000000000
+      internalID: 4314412188109814056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_29
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7851f1b07388f00800000000000000
+      internalID: 1119205028307240888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_30
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed2f0bd3d8d088c0800000000000000
+      internalID: -3998958064680096278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_31
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9644b3010f224bd30800000000000000
+      internalID: 4446217146581337193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae91ac8888a65ec00800000000000000
+      internalID: 929266032764918250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_35
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd8334034ab514c0800000000000000
+      internalID: -4317339870768689704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8d495da7d581310800000000000000
+      internalID: 1375952468312381678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_40
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c34fec415e17f10800000000000000
+      internalID: 2265843965078289505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_41
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6683dc3317a980e40800000000000000
+      internalID: 5622913945763133542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_42
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3aa0c976daf1bc0800000000000000
+      internalID: -3810136099220970573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_43
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455cbfaaca38053a0800000000000000
+      internalID: -6678693469764205228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_44
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2269aa484cad9b630800000000000000
+      internalID: 3943423486313797154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_45
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecb879dc10e27c70800000000000000
+      internalID: 8967476222560353519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_46
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc55008d12d88cf30800000000000000
+      internalID: 4596078596228928971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_47
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2fa8f328bdffa760800000000000000
+      internalID: 7471469274150252334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_56
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc82be4decc9c8320800000000000000
+      internalID: 2561594700216346831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_57
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d5d99aca37094e0800000000000000
+      internalID: -1976953050998416092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_58
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e4dac90168aaeb0800000000000000
+      internalID: -4707803054556229986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_59
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f2ca3556ec69800800000000000000
+      internalID: 618908933400833838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_60
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2348e00cba06f5ec0800000000000000
+      internalID: -3576033288331033550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_61
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc19620da230a60f0800000000000000
+      internalID: -1123081674659819057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_62
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7bed40fd1959eb60800000000000000
+      internalID: 7775844216752434046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_63
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5be12a1995f72480800000000000000
+      internalID: -8923894098694116515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_72
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2be3e98aeef9b150800000000000000
+      internalID: 5889018271052852010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_73
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c935c615a0c3ee00800000000000000
+      internalID: 1072912951528470984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_74
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4570cc79cc3e65f0800000000000000
+      internalID: -761604450899954356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_75
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f779bcc0afa1310800000000000000
+      internalID: 1376687568977362746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_76
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b779d431a1228c0800000000000000
+      internalID: -4025626446707328234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_77
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e6595e12e9f6370800000000000000
+      internalID: 8318040905199480438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_78
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a3a5cf884ada520800000000000000
+      internalID: 2715007058630556263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_79
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1029f4a9e3b710150800000000000000
+      internalID: 5837082100855968257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_88
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09159b47bd31eea70800000000000000
+      internalID: 8858039350361411984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_89
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8e273bbd21ae590800000000000000
+      internalID: -7644276682690205488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_90
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ee3b6c389294dc0800000000000000
+      internalID: -3654343976683311514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_91
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327dab4b29f584a50800000000000000
+      internalID: 6505554745438689059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_92
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2d023528d982000800000000000000
+      internalID: 11432182134395557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_93
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9c419b04657b3e0800000000000000
+      internalID: -2038065470378817065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_94
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4b6498cf595d290800000000000000
+      internalID: -7866216262265293634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_95
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df122023dbb23d190800000000000000
+      internalID: -7938953626536238595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_103
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9481a645261f17360800000000000000
+      internalID: 7165773886748497993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_104
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120ce87e57035fd30800000000000000
+      internalID: 4464527888561913889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_105
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b02c4398c737450800000000000000
+      internalID: 6085344450245167948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_106
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76aacf49060c30e60800000000000000
+      internalID: 7927391290151184999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_107
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec18b0bdc05ec930800000000000000
+      internalID: 4165355549727661280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_108
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f662e8be7e5d390800000000000000
+      internalID: -7794068581206561018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_109
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e300da12dea5f8d50800000000000000
+      internalID: 6741707141715656766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_110
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872750bb7a65002b0800000000000000
+      internalID: -5620397056561155464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_111
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5159944dfab2bbc0800000000000000
+      internalID: -3768744341215293094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_112
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27ec550c47777200800000000000000
+      internalID: 177741878695618351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_113
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5fdfb6493228e460800000000000000
+      internalID: 7271099227785125724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_114
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0321dd899d7cc120800000000000000
+      internalID: 2435459596963357451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_115
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83267879aad50eae0800000000000000
+      internalID: -1522113686783172040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_116
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d638863ac96eea050800000000000000
+      internalID: 5813837729412711277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_117
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43aa3911ef13b39b0800000000000000
+      internalID: -5099427185780610508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_118
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac1be76f2a4a72f0800000000000000
+      internalID: -974384801904911191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_119
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d86b6f4112bd5b60800000000000000
+      internalID: 7736535522309007569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_120
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14518863e442a5250800000000000000
+      internalID: 5934095377354986817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_121
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d01bc48a92c12c0800000000000000
+      internalID: -4459643728185717350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_122
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df0390216424d2c0800000000000000
+      internalID: -4407858135711936553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_123
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3caff501d34896590800000000000000
+      internalID: -7680462291701073213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_124
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00cab0ce3c383a5a0800000000000000
+      internalID: -6511215758745555968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_125
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea55a6d12b61271c0800000000000000
+      internalID: -4507515322790947410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7353c5dab3c503050800000000000000
+      internalID: 5778219733297673527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_127
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa67ecda2b348bf90800000000000000
+      internalID: -6937720791265020246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_128
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46c74dd3b78235f0800000000000000
+      internalID: -778410579000310197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_129
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670fff9a00750d0f0800000000000000
+      internalID: -1094279049087291274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_130
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d26f43c604b39730800000000000000
+      internalID: 4004742434802066135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_131
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e642dc3b527c45670800000000000000
+      internalID: 8526658959263474798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_132
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe312ade7a089cba0800000000000000
+      internalID: -6068177564170316817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_135
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50aa37233b418dce0800000000000000
+      internalID: -1380330525910914555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_136
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9cb0800d8adb730800000000000000
+      internalID: 4016552054126004664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_137
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aff9257dd16ef230800000000000000
+      internalID: 3674481949762256809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_138
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374f75ae50792d230800000000000000
+      internalID: 3662155498667897971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_139
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313d300d8a50acf20800000000000000
+      internalID: 3443571087680721683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_140
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3db6cc07545d8f0800000000000000
+      internalID: -516430231495781393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_141
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff2fdf7e07ad0d10800000000000000
+      internalID: 2093513082513862649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_142
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e28c36bbf7715a0800000000000000
+      internalID: -6550626690177421793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_143
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1f3f9bcf9cf7170800000000000000
+      internalID: 8178477535616823722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_144
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337c2692019ac6b10800000000000000
+      internalID: 1976140223387715379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_145
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931f32687913d6db0800000000000000
+      internalID: -4797123501219385031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_146
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7daec930983c06690800000000000000
+      internalID: -7610868377017586985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_147
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9527ffbe1ae02f6e0800000000000000
+      internalID: -1805364412010237351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_148
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c830d186ed2b8dca0800000000000000
+      internalID: -5991842635917229172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_197
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768ab212e8f691bd0800000000000000
+      internalID: -2658971448753018777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_198
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40214f1c21014a60800000000000000
+      internalID: 7656402130521104460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_199
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fcf05c103dc1cde0800000000000000
+      internalID: -1314544009698280208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_200
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fdacfa6bc0cb7ab0800000000000000
+      internalID: -5009198180613706256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_201
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22f3a3b795a70620800000000000000
+      internalID: 2740340969250746924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_202
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eddd7fc5316c4fa0800000000000000
+      internalID: -5815166135099859479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_203
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc9ea403d73a4d80800000000000000
+      internalID: -8265732786628944675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_204
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b60f0fa7964322b0800000000000000
+      internalID: -5610563093482502472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_213
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829039b78ff2c4c30800000000000000
+      internalID: 4344900484777314600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_214
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee867ea9a759e1bd0800000000000000
+      internalID: -2657522376284608274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_215
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77df94a5ec654b660800000000000000
+      internalID: 7400635531954617719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_216
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df91764b4c3bc3b0800000000000000
+      internalID: -5491229026646122542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_217
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c003f6e977e112c0800000000000000
+      internalID: -4462531244995706687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_218
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae28f43688fff9010800000000000000
+      internalID: 1197956987150631658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_219
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12312db767f854860800000000000000
+      internalID: 7513569292383818529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beautiful_World3_220
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9eb3a9a57404840800000000000000
+      internalID: 5206239623700539824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

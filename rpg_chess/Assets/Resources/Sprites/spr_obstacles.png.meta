@@ -1,0 +1,1113 @@
+fileFormatVersion: 2
+guid: ada61c63c11036143ab2fff1b0228b08
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2980828415291787546
+    second: spr_obstacles_0
+  - first:
+      213: 8819282180776476328
+    second: spr_obstacles_1
+  - first:
+      213: -969204643192126132
+    second: spr_obstacles_2
+  - first:
+      213: -5950294193635818380
+    second: spr_obstacles_3
+  - first:
+      213: -7583447531203853730
+    second: spr_obstacles_4
+  - first:
+      213: 1115951103283792053
+    second: spr_obstacles_5
+  - first:
+      213: 7473650786498035565
+    second: spr_obstacles_6
+  - first:
+      213: -2593992675248538024
+    second: spr_obstacles_7
+  - first:
+      213: 8732011904701190497
+    second: spr_obstacles_8
+  - first:
+      213: 7698667779623504931
+    second: spr_obstacles_9
+  - first:
+      213: 706138960882798926
+    second: spr_obstacles_10
+  - first:
+      213: -6376209487774044347
+    second: spr_obstacles_11
+  - first:
+      213: 403782631729736166
+    second: spr_obstacles_12
+  - first:
+      213: -82177976974287604
+    second: spr_obstacles_13
+  - first:
+      213: -8760336967756635792
+    second: spr_obstacles_14
+  - first:
+      213: -5085133812101845575
+    second: spr_obstacles_15
+  - first:
+      213: 7905915391794297005
+    second: spr_obstacles_16
+  - first:
+      213: -6641410275741868107
+    second: spr_obstacles_17
+  - first:
+      213: -7078874540338599953
+    second: spr_obstacles_18
+  - first:
+      213: 9104333711946968939
+    second: spr_obstacles_19
+  - first:
+      213: 6319518177449633821
+    second: spr_obstacles_20
+  - first:
+      213: 6138985609379767584
+    second: spr_obstacles_21
+  - first:
+      213: 4109373473453291598
+    second: spr_obstacles_22
+  - first:
+      213: 4995247643355830704
+    second: spr_obstacles_23
+  - first:
+      213: 1328508904869595233
+    second: spr_obstacles_24
+  - first:
+      213: -511576105128031354
+    second: spr_obstacles_25
+  - first:
+      213: 133172553481454710
+    second: spr_obstacles_26
+  - first:
+      213: 820013520345448912
+    second: spr_obstacles_27
+  - first:
+      213: 8776460884886711651
+    second: spr_obstacles_28
+  - first:
+      213: -5351402455319112835
+    second: spr_obstacles_29
+  - first:
+      213: -569253915944313613
+    second: spr_obstacles_30
+  - first:
+      213: -8333388001292373397
+    second: spr_obstacles_31
+  - first:
+      213: 3834635123193761607
+    second: spr_obstacles_32
+  - first:
+      213: 6959429215196098166
+    second: spr_obstacles_33
+  - first:
+      213: -3918424487235312625
+    second: spr_obstacles_34
+  - first:
+      213: 6499207204996944478
+    second: spr_obstacles_35
+  - first:
+      213: 2746313503560273807
+    second: spr_obstacles_36
+  - first:
+      213: -8734936517113424733
+    second: spr_obstacles_37
+  - first:
+      213: -7107584316373364874
+    second: spr_obstacles_38
+  - first:
+      213: -3837895562744282240
+    second: spr_obstacles_39
+  - first:
+      213: 7508781843692250549
+    second: spr_obstacles_40
+  - first:
+      213: -5405708263395916175
+    second: spr_obstacles_41
+  - first:
+      213: 653877026536110941
+    second: spr_obstacles_42
+  - first:
+      213: -2170243626850513538
+    second: spr_obstacles_43
+  - first:
+      213: 3435373823046348197
+    second: spr_obstacles_44
+  - first:
+      213: -5157009997412422909
+    second: spr_obstacles_45
+  - first:
+      213: -239871114909184504
+    second: spr_obstacles_46
+  - first:
+      213: 6463253624481587730
+    second: spr_obstacles_47
+  - first:
+      213: -8907105231182154951
+    second: spr_obstacles_48
+  - first:
+      213: -3675962937410687575
+    second: spr_obstacles_49
+  - first:
+      213: 2829178958960064897
+    second: spr_obstacles_50
+  - first:
+      213: 1219078754015069358
+    second: spr_obstacles_51
+  - first:
+      213: -7811716960193991722
+    second: spr_obstacles_52
+  - first:
+      213: -3408478594200709241
+    second: spr_obstacles_53
+  - first:
+      213: 2503156424608990213
+    second: spr_obstacles_54
+  - first:
+      213: -2568109388608307794
+    second: spr_obstacles_55
+  - first:
+      213: 8358950780428905540
+    second: spr_obstacles_56
+  - first:
+      213: -4657870780046670514
+    second: spr_obstacles_57
+  - first:
+      213: -123825313417451791
+    second: spr_obstacles_58
+  - first:
+      213: -5929206554258326850
+    second: spr_obstacles_59
+  - first:
+      213: 8751411872326207489
+    second: spr_obstacles_60
+  - first:
+      213: -1018003619125192302
+    second: spr_obstacles_61
+  - first:
+      213: -1962588786475941027
+    second: spr_obstacles_62
+  - first:
+      213: 7254715546354437495
+    second: spr_obstacles_63
+  - first:
+      213: -6448610022300871487
+    second: spr_obstacles_64
+  - first:
+      213: -4472872654808342883
+    second: spr_obstacles_65
+  - first:
+      213: -3125290456640020496
+    second: spr_obstacles_66
+  - first:
+      213: 6280751172767898246
+    second: spr_obstacles_67
+  - first:
+      213: 3016491611907000630
+    second: spr_obstacles_68
+  - first:
+      213: 6990984463250937387
+    second: spr_obstacles_69
+  - first:
+      213: 2211113230670305876
+    second: spr_obstacles_70
+  - first:
+      213: 4030954527004694611
+    second: spr_obstacles_71
+  - first:
+      213: -733544076914588209
+    second: spr_obstacles_72
+  - first:
+      213: 2496757402480334491
+    second: spr_obstacles_73
+  - first:
+      213: 1639098980897545372
+    second: spr_obstacles_74
+  - first:
+      213: -3497685056745107286
+    second: spr_obstacles_75
+  - first:
+      213: 2712601036900208422
+    second: spr_obstacles_76
+  - first:
+      213: -2356493896859627980
+    second: spr_obstacles_77
+  - first:
+      213: -5391183844669014573
+    second: spr_obstacles_78
+  - first:
+      213: -3730095929482575230
+    second: spr_obstacles_79
+  - first:
+      213: -1370373427094393054
+    second: spr_obstacles_80
+  - first:
+      213: 8448058905307180446
+    second: spr_obstacles_81
+  - first:
+      213: 6902559830891989712
+    second: spr_obstacles_82
+  - first:
+      213: -6882640408217905256
+    second: spr_obstacles_83
+  - first:
+      213: -5926700954439034697
+    second: spr_obstacles_84
+  - first:
+      213: 6242445761156069887
+    second: spr_obstacles_85
+  - first:
+      213: -8683124051826066495
+    second: spr_obstacles_86
+  - first:
+      213: -3592796344138060154
+    second: spr_obstacles_87
+  - first:
+      213: -993853792568191113
+    second: spr_obstacles_88
+  - first:
+      213: 6792934912831216101
+    second: spr_obstacles_89
+  - first:
+      213: -1927910087841977710
+    second: spr_obstacles_90
+  - first:
+      213: -4206799259341265907
+    second: spr_obstacles_91
+  - first:
+      213: -111991911376050893
+    second: spr_obstacles_92
+  - first:
+      213: 8785891580361532484
+    second: spr_obstacles_93
+  - first:
+      213: 2905391074625389408
+    second: spr_obstacles_94
+  - first:
+      213: -5684140664337072091
+    second: spr_obstacles_95
+  - first:
+      213: 2193158285237649335
+    second: spr_obstacles_96
+  - first:
+      213: -1355643070779825647
+    second: spr_obstacles_97
+  - first:
+      213: 5593517343078843130
+    second: spr_obstacles_98
+  - first:
+      213: 1603028141074401885
+    second: spr_obstacles_99
+  - first:
+      213: 5602359262416607876
+    second: spr_obstacles_100
+  - first:
+      213: -3831539395391275579
+    second: spr_obstacles_101
+  - first:
+      213: -955187510073217195
+    second: spr_obstacles_102
+  - first:
+      213: -4987966432727976204
+    second: spr_obstacles_103
+  - first:
+      213: 5793992534157054339
+    second: spr_obstacles_104
+  - first:
+      213: 469172985663419634
+    second: spr_obstacles_105
+  - first:
+      213: 4905221607403367528
+    second: spr_obstacles_106
+  - first:
+      213: -846814283731120732
+    second: spr_obstacles_107
+  - first:
+      213: -2325792415607061847
+    second: spr_obstacles_108
+  - first:
+      213: -7478523747624008307
+    second: spr_obstacles_109
+  - first:
+      213: -2446191630319563693
+    second: spr_obstacles_110
+  - first:
+      213: -4471609524782283077
+    second: spr_obstacles_111
+  - first:
+      213: 1942874686492147685
+    second: spr_obstacles_112
+  - first:
+      213: -3792054562797831353
+    second: spr_obstacles_113
+  - first:
+      213: -3662855761296068659
+    second: spr_obstacles_114
+  - first:
+      213: 8818424845219403477
+    second: spr_obstacles_115
+  - first:
+      213: -6062345192200817316
+    second: spr_obstacles_116
+  - first:
+      213: -4191560748411871774
+    second: spr_obstacles_117
+  - first:
+      213: -4435428256984093827
+    second: spr_obstacles_118
+  - first:
+      213: -7935213578859034678
+    second: spr_obstacles_119
+  - first:
+      213: -2439177886080875350
+    second: spr_obstacles_120
+  - first:
+      213: -5931223411111060722
+    second: spr_obstacles_121
+  - first:
+      213: -2466951589384973013
+    second: spr_obstacles_122
+  - first:
+      213: -160813268206700755
+    second: spr_obstacles_123
+  - first:
+      213: -575381014194591856
+    second: spr_obstacles_124
+  - first:
+      213: 3647014264975004922
+    second: spr_obstacles_125
+  - first:
+      213: 2683032254543828124
+    second: spr_obstacles_126
+  - first:
+      213: 3060804654063446081
+    second: spr_obstacles_127
+  - first:
+      213: -5990276304511742671
+    second: spr_obstacles_128
+  - first:
+      213: 8144852489951273585
+    second: spr_obstacles_129
+  - first:
+      213: 1106756701521209893
+    second: spr_obstacles_130
+  - first:
+      213: 431339287095841709
+    second: spr_obstacles_131
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spr_obstacles_30
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc9329549a9918f0800000000000000
+      internalID: -569253915944313613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_31
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b623777d3cbd95c80800000000000000
+      internalID: -8333388001292373397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f4339e35c573530800000000000000
+      internalID: 3834635123193761607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_33
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e2d33affbd49060800000000000000
+      internalID: 6959429215196098166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_94
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06303a8f9c5025820800000000000000
+      internalID: 2905391074625389408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_95
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52006d08e20ed11b0800000000000000
+      internalID: -5684140664337072091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_96
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf7bcf27d9af6e10800000000000000
+      internalID: 2193158285237649335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_97
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112e2f34fc9cf2de0800000000000000
+      internalID: -1355643070779825647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_98
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af28337436a20ad40800000000000000
+      internalID: 5593517343078843130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a167c01149fbd40800000000000000
+      internalID: 5602359262416607876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_101
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cdb9c26833a3dac0800000000000000
+      internalID: -3831539395391275579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_102
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f2238350e7eb2f0800000000000000
+      internalID: -955187510073217195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_103
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f63da1f4fe27cab0800000000000000
+      internalID: -4987966432727976204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_104
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38152bd0385686050800000000000000
+      internalID: 5793992534157054339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_105
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f47dac3856d28600800000000000000
+      internalID: 469172985663419634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_106
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c29dd1019d21440800000000000000
+      internalID: 4905221607403367528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_107
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4adca7345e28f34f0800000000000000
+      internalID: -846814283731120732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_116
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55b219da293edba0800000000000000
+      internalID: -6062345192200817316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_117
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed907805b594d5c0800000000000000
+      internalID: -4191560748411871774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_118
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7babbb00813272c0800000000000000
+      internalID: -4435428256984093827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_119
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac74047ea4570e190800000000000000
+      internalID: -7935213578859034678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4492cc2ac462ed0800000000000000
+      internalID: -2439177886080875350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_121
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b9e398bbf00bda0800000000000000
+      internalID: -5931223411111060722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_122
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b259f949990a3cdd0800000000000000
+      internalID: -2466951589384973013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_123
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27be514f2da4cdf0800000000000000
+      internalID: -160813268206700755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_124
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0976d6e1406d308f0800000000000000
+      internalID: -575381014194591856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_125
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af41e9ab62ccc9230800000000000000
+      internalID: 3647014264975004922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_126
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c941005ce9b0c3520800000000000000
+      internalID: 2683032254543828124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_obstacles_127
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1486054bd992a7a20800000000000000
+      internalID: 3060804654063446081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -63,7 +63,7 @@ public class Drawer
             throw new System.Exception("”казанна€ карта не инициализирована как GameObject");
         }
         TilemapGroup tilemaps = mapTilemaps[map];
-        List<Cell> cells = map.GetAllCells();
+        HashSet<Cell> cells = map.GetAllCells();
 
         foreach (Cell cell in cells)
         {

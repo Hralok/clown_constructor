@@ -10,6 +10,7 @@ public class Cell
     public Structure structureAtCell { get; private set; }
     public HashSet<Resource> resourcesAtCell { get; private set; }
     public Item itemAtCell { get; private set; }
+
     public Map map { get; private set; }
 
     public Cell(Vector2Int coords, CellTypeEnum type, Map map)

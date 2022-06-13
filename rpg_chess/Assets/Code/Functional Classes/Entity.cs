@@ -21,10 +21,6 @@ public class Entity
     public bool busy { get; private set; }
     public ActiveAbility currentAbility { get; private set; }
 
-
-
-
-
     public Entity()
     {
         acquiredTypes = new List<(int, EntityTypeEnum)>();

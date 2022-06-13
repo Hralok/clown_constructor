@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: Bonfire
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: 7682861818880133299, guid: b28b8a9ec645973419ada2be23b9643f, type: 3}
-  - {fileID: -7637869343579107775, guid: b28b8a9ec645973419ada2be23b9643f, type: 3}
-  - {fileID: -3166818012069856428, guid: b28b8a9ec645973419ada2be23b9643f, type: 3}
-  - {fileID: 4873850964739031158, guid: b28b8a9ec645973419ada2be23b9643f, type: 3}
-  - {fileID: 4860096295943014660, guid: b28b8a9ec645973419ada2be23b9643f, type: 3}
-  - {fileID: -4965915047072843383, guid: b28b8a9ec645973419ada2be23b9643f, type: 3}
-  - {fileID: -1587626606887438812, guid: b28b8a9ec645973419ada2be23b9643f, type: 3}
+  - {fileID: -7637869343579107775, guid: c7a0332baf7c6f44ca35ea33d806dd57, type: 3}
+  - {fileID: -3166818012069856428, guid: c7a0332baf7c6f44ca35ea33d806dd57, type: 3}
+  - {fileID: 4873850964739031158, guid: c7a0332baf7c6f44ca35ea33d806dd57, type: 3}
+  - {fileID: 4860096295943014660, guid: c7a0332baf7c6f44ca35ea33d806dd57, type: 3}
+  - {fileID: -4965915047072843383, guid: c7a0332baf7c6f44ca35ea33d806dd57, type: 3}
+  - {fileID: -1587626606887438812, guid: c7a0332baf7c6f44ca35ea33d806dd57, type: 3}
+  - {fileID: 2874851113193699852, guid: c7a0332baf7c6f44ca35ea33d806dd57, type: 3}
+  - {fileID: 959908793812349883, guid: c7a0332baf7c6f44ca35ea33d806dd57, type: 3}
   m_MinSpeed: 5
   m_MaxSpeed: 5
   m_AnimationStartTime: 0

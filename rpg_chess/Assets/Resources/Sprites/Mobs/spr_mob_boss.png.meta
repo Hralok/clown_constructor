@@ -1,0 +1,1068 @@
+fileFormatVersion: 2
+guid: 536772822b7a42541bd4e0a1b14e0392
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2540991725984753329
+    second: spr_mob_boss_0
+  - first:
+      213: 89377064031839610
+    second: spr_mob_boss_1
+  - first:
+      213: -2991083876198393537
+    second: spr_mob_boss_2
+  - first:
+      213: -4608765387348835073
+    second: spr_mob_boss_3
+  - first:
+      213: -4822820061938463489
+    second: spr_mob_boss_4
+  - first:
+      213: -2619050329366634785
+    second: spr_mob_boss_5
+  - first:
+      213: -6168115769229914283
+    second: spr_mob_boss_6
+  - first:
+      213: -8558809402324809583
+    second: spr_mob_boss_7
+  - first:
+      213: 6948735497431865323
+    second: spr_mob_boss_8
+  - first:
+      213: -5130190372752285963
+    second: spr_mob_boss_9
+  - first:
+      213: 2606396435854236434
+    second: spr_mob_boss_10
+  - first:
+      213: 7540417382236085950
+    second: spr_mob_boss_11
+  - first:
+      213: 4879830550263176714
+    second: spr_mob_boss_12
+  - first:
+      213: -5949468822763674588
+    second: spr_mob_boss_13
+  - first:
+      213: -4782298935672726060
+    second: spr_mob_boss_14
+  - first:
+      213: -3743605922109970552
+    second: spr_mob_boss_15
+  - first:
+      213: -2994290635031821121
+    second: spr_mob_boss_16
+  - first:
+      213: -8249470421662191539
+    second: spr_mob_boss_17
+  - first:
+      213: -2215827681519298704
+    second: spr_mob_boss_18
+  - first:
+      213: 66705774466695586
+    second: spr_mob_boss_19
+  - first:
+      213: 894687291713610821
+    second: spr_mob_boss_20
+  - first:
+      213: -5403192052429896596
+    second: spr_mob_boss_21
+  - first:
+      213: 4888562826824390443
+    second: spr_mob_boss_22
+  - first:
+      213: 7780715971459920003
+    second: spr_mob_boss_23
+  - first:
+      213: -3588762734728401024
+    second: spr_mob_boss_24
+  - first:
+      213: 7306097299136680581
+    second: spr_mob_boss_25
+  - first:
+      213: 3498664866730843646
+    second: spr_mob_boss_26
+  - first:
+      213: -1242579343587670140
+    second: spr_mob_boss_27
+  - first:
+      213: 6533777685325591398
+    second: spr_mob_boss_28
+  - first:
+      213: 4104469694352467264
+    second: spr_mob_boss_29
+  - first:
+      213: -1317945331254893777
+    second: spr_mob_boss_30
+  - first:
+      213: -7653404981445525606
+    second: spr_mob_boss_31
+  - first:
+      213: -1103100335976197237
+    second: spr_mob_boss_32
+  - first:
+      213: -6897400001608397848
+    second: spr_mob_boss_33
+  - first:
+      213: 7329278259578580627
+    second: spr_mob_boss_34
+  - first:
+      213: 1040223614166590223
+    second: spr_mob_boss_35
+  - first:
+      213: -7057685255385272789
+    second: spr_mob_boss_36
+  - first:
+      213: -7086906312010189924
+    second: spr_mob_boss_37
+  - first:
+      213: -5410590235525372916
+    second: spr_mob_boss_38
+  - first:
+      213: 7311848256295521206
+    second: spr_mob_boss_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spr_mob_boss_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 371
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49d87bec759cbcd0800000000000000
+      internalID: -2540991725984753329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 372
+        width: 21
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a756fa857f78d3100800000000000000
+      internalID: 89377064031839610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 372
+        width: 22
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39dbc1ef098d76d0800000000000000
+      internalID: -2991083876198393537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 371
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff405f96c406a00c0800000000000000
+      internalID: -4608765387348835073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 371
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffcc780c4b6e11db0800000000000000
+      internalID: -4822820061938463489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 372
+        width: 22
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde5b3d0a9347abd0800000000000000
+      internalID: -2619050329366634785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 372
+        width: 24
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fc0915363766aa0800000000000000
+      internalID: -6168115769229914283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 372
+        width: 22
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1980822f130093980800000000000000
+      internalID: -8558809402324809583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 372
+        width: 20
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7d2927e1ede6060800000000000000
+      internalID: 6948735497431865323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 371
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe98f17907edc8b0800000000000000
+      internalID: -5130190372752285963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 373
+        width: 24
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5555556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b9fe6cfb7cb2420800000000000000
+      internalID: 2606396435854236434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_11
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 373
+        width: 24
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5555556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebedc5688a1f4a860800000000000000
+      internalID: 7540417382236085950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_12
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 372
+        width: 21
+        height: 19
+      alignment: 9
+      pivot: {x: 0.47619048, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e1980f704a8b340800000000000000
+      internalID: 4879830550263176714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_13
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 372
+        width: 19
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5263158, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424e8e890ad3f6da0800000000000000
+      internalID: -5949468822763674588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_14
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 373
+        width: 19
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5555556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd9f79a47cd1adb0800000000000000
+      internalID: -4782298935672726060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_15
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 372
+        width: 20
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88726919f3a0c0cc0800000000000000
+      internalID: -3743605922109970552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_16
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 372
+        width: 19
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb446a828842276d0800000000000000
+      internalID: -2994290635031821121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_17
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 374
+        width: 20
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5882353}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40bbbbeb5ef38d80800000000000000
+      internalID: -8249470421662191539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_18
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 377
+        width: 24
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71428573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077909fa67ccf31e0800000000000000
+      internalID: -2215827681519298704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_19
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 383
+        width: 23
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5217391, y: 1.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a10e876c8cfce000800000000000000
+      internalID: 66705774466695586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54465aff9519a6c00800000000000000
+      internalID: 894687291713610821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_21
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 25
+        width: 24
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52380955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64c3b5a4710405b0800000000000000
+      internalID: -5403192052429896596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_22
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 26
+        width: 24
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b271c038df9a7d340800000000000000
+      internalID: 4888562826824390443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_23
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 24
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380b319b3f7aafb60800000000000000
+      internalID: 7780715971459920003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 27
+        width: 24
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57894737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08faa5d8e47223ec0800000000000000
+      internalID: -3588762734728401024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_25
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 26
+        width: 24
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5829b71c8c8746560800000000000000
+      internalID: 7306097299136680581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_26
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 27
+        width: 24
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57894737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd91a9d821cd8030800000000000000
+      internalID: 3498664866730843646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_27
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 25
+        width: 24
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52380955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4870834aba871cee0800000000000000
+      internalID: -1242579343587670140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 24
+        width: 24
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663b437ff24acaa50800000000000000
+      internalID: 6533777685325591398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_29
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 23
+        width: 24
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47826087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0452c3bc07106f830800000000000000
+      internalID: 4104469694352467264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_30
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 23
+        width: 24
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47826087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23ea2934b7b5bde0800000000000000
+      internalID: -1317945331254893777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_31
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 23
+        width: 24
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47826087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ffbb608b4a9c590800000000000000
+      internalID: -7653404981445525606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_32
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 23
+        width: 23
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5217391, y: 0.47826087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b835682c61001b0f0800000000000000
+      internalID: -1103100335976197237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_33
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 23
+        width: 22
+        height: 23
+      alignment: 9
+      pivot: {x: 0.54545456, y: 0.47826087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb4a561e338740a0800000000000000
+      internalID: -6897400001608397848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_34
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 23
+        width: 21
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5714286, y: 0.47826087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39eac22beb3d6b560800000000000000
+      internalID: 7329278259578580627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_35
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 23
+        width: 22
+        height: 23
+      alignment: 9
+      pivot: {x: 0.54545456, y: 0.47826087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f036f51addd9f6e00800000000000000
+      internalID: 1040223614166590223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 24
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2eaf3847a01e0e90800000000000000
+      internalID: -7057685255385272789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_37
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 23
+        width: 24
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47826087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93b82cd14046ad90800000000000000
+      internalID: -7086906312010189924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_38
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 23
+        width: 24
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47826087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04205ae8d8b9e4b0800000000000000
+      internalID: -5410590235525372916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_mob_boss_39
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 23
+        width: 24
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47826087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bbcd00df37e87560800000000000000
+      internalID: 7311848256295521206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

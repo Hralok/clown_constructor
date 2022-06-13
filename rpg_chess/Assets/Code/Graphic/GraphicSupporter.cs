@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -6,6 +5,7 @@ using UnityEngine.Tilemaps;
 public class GraphicSupporter
 {
     protected Dictionary<CellTypeEnum, (TileBase, TileBase)> cellTiles; 
+    //Первый на groundTilemap, второй на onGroundTilemap
     protected Dictionary<ResourceTypeEnum, TileBase> resourceTiles;
     public TileBase manyResourceTile { get; private set; }
 
@@ -39,14 +39,14 @@ public class GraphicSupporter
         return Resources.Load<GameObject>("Prefabs/Snake/SnakeDyingPrefab");
     }
 
-    public AnimatedTile GetAttackingUnitAnimatedTile()
+    public TileBase GetAttackingUnitAnimatedTile()
     {
-        return Resources.Load<AnimatedTile>("Tiles/Creatures/Snake/Snake_attacking");
+        return Resources.Load<TileBase>("Tiles/Creatures/Snake/Snake_attacking");
     }
 
-    public AnimatedTile GetStayingUnitAnimatedTile()
+    public TileBase GetStayingUnitAnimatedTile()
     {
-        return Resources.Load<AnimatedTile>("Tiles/Creatures/Snake/Snake_staying");
+        return Resources.Load<TileBase>("Tiles/Creatures/Snake/Snake_staying");
     }
 
     public TileBase GetDeadUnitTile()

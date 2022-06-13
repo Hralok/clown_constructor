@@ -4,7 +4,7 @@ using UnityEngine.Tilemaps;
 
 public class Drawer
 {
-    private struct TilemapGroup
+    public struct TilemapGroup
     {
         public Tilemap groundTilemap;
         public Tilemap roadTilemap;
@@ -45,6 +45,7 @@ public class Drawer
         mapPrefab = prefab;
         graphicSupport = supporter;
         maps = getMaps;
+        mapTilemaps = new Dictionary<Map, TilemapGroup>();
         groundDebug = Resources.Load<TileBase>("Tiles/Debug/spr_debug_0");
         resourceDebug = Resources.Load<TileBase>("Tiles/Debug/spr_debug_1");
         unitDebug = Resources.Load<TileBase>("Tiles/Debug/spr_debug_2");
@@ -61,7 +62,7 @@ public class Drawer
     public void CreateMapGameObject(Map map)
     {
         GameObject newMap = Object.Instantiate(mapPrefab, new Vector3Int(0, 0, 0), Quaternion.identity, grid.gameObject.transform);
-        newMap.SetActive(false);
+        //newMap.SetActive(false);
         newMap.name = map.name;
         Tilemap[] tilemaps = newMap.GetComponentsInChildren<Tilemap>();
         TilemapGroup tilemapGroup = new TilemapGroup(tilemaps[0], tilemaps[1], tilemaps[2], tilemaps[3], tilemaps[4], tilemaps[5], tilemaps[6], tilemaps[7]);
@@ -80,25 +81,31 @@ public class Drawer
 
         foreach (Cell cell in cells)
         {
-            TileBase groundTile;
-            TileBase ongroundTile;
-            (groundTile, ongroundTile) = graphicSupport.GetTileByCellType(cell.type);
-            if (groundTile == null)
-            {
-                tilemaps.groundTilemap.SetTile((Vector3Int)cell.coords, groundDebug);
-                throw new System.Exception("Местность, указанная в клетке с координатами " + cell.coords + " не обнаружена");
-            }
-            else
-            {
-                tilemaps.groundTilemap.SetTile((Vector3Int)cell.coords, groundTile);
-                tilemaps.onGroundTilemap.SetTile((Vector3Int)cell.coords, ongroundTile);
-            }
-
-            DrawResource(cell, tilemaps);
+            DrawCell(cell, tilemaps);
         }
     }
 
-    private void DrawResource(Cell cell, TilemapGroup tilemaps)
+    public void DrawCell(Cell cell, TilemapGroup tilemaps)
+    {
+        TileBase groundTile;
+        TileBase ongroundTile;
+        (groundTile, ongroundTile) = graphicSupport.GetTileByCellType(cell.type);
+        if (groundTile == null)
+        {
+            tilemaps.groundTilemap.SetTile((Vector3Int)cell.coords, groundDebug);
+            throw new System.Exception("Местность, указанная в клетке с координатами " + cell.coords + " не обнаружена");
+        }
+        else
+        {
+            tilemaps.groundTilemap.SetTile((Vector3Int)cell.coords, groundTile);
+            tilemaps.onGroundTilemap.SetTile((Vector3Int)cell.coords, ongroundTile);
+        }
+
+        DrawResource(cell, tilemaps);
+        DrawUnit(cell, tilemaps);
+    }
+
+    public void DrawResource(Cell cell, TilemapGroup tilemaps)
     {
         if (cell.resourcesAtCell.Count > 1)
         {
@@ -126,11 +133,11 @@ public class Drawer
         }
     }
 
-    private void DrawUnit(Cell cell, TilemapGroup tilemaps)
+    public void DrawUnit(Cell cell, TilemapGroup tilemaps)
     {
         if (cell.unitAtCell != null)
         {
-            AnimatedTile unitTile;
+            TileBase unitTile;
             unitTile = graphicSupport.GetStayingUnitAnimatedTile();
 
             if (unitTile == null)
@@ -146,29 +153,47 @@ public class Drawer
     }
 
     //Функция для отрисовки единичной ячейки нужна
-    public void DrawUnitIsAttacking(Unit unit)
+    public void DrawUnitIsBusyAttacking(Unit unit)
     {
         TilemapGroup tilemapGroup;
         tilemapGroup = mapTilemaps[unit.currentCell.relatedMap];
-        
-        if (unit.state == UnitStateEnum.Free)
+
+        TileBase unitTile;
+        unitTile = graphicSupport.GetAttackingUnitAnimatedTile();
+
+        if (unitTile == null)
         {
-            //анимация единичная
+            tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, unitDebug);
+            throw new System.Exception("Юнит, указанный в клетке с координатами " + unit.currentCell.coords + " не обнаружен");
         }
         else
         {
-            AnimatedTile unitTile;
-            unitTile = graphicSupport.GetAttackingUnitAnimatedTile();
+            tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, null);
+            tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, unitTile);
+        }
+    }
 
-            if (unitTile == null)
-            {
-                tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, unitDebug);
-                throw new System.Exception("Юнит, указанный в клетке с координатами " + unit.currentCell.coords + " не обнаружен");
-            }
-            else
-            {
-                tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, unitTile);
-            }
+    public void DrawUnitIsOnceAttacking(Unit unit)
+    {
+        TilemapGroup tilemapGroup;
+        tilemapGroup = mapTilemaps[unit.currentCell.relatedMap];
+
+        GameObject AttackAnimation;
+        AttackAnimation = graphicSupport.GetAttackUnitAnimation();
+
+        if (AttackAnimation == null)
+        {
+            tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, unitDebug);
+            throw new System.Exception("Юнит, указанный в клетке с координатами " + unit.currentCell.coords + " не обнаружен");
+        }
+        else
+        {
+            tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, null);
+            GameObject UnitAttack = Object.Instantiate(AttackAnimation, (Vector3Int)unit.currentCell.coords, Quaternion.identity, grid.gameObject.transform);
+            var UnitScript = UnitAttack.GetComponent<UnitAfterAnimationSupporter>();
+            UnitScript.coords = (Vector3Int)unit.currentCell.coords;
+            UnitScript.targetTilemap = tilemapGroup.creaturesTilemap;
+            UnitScript.replacementTile = graphicSupport.GetStayingUnitAnimatedTile();
         }
     }
 
@@ -177,17 +202,21 @@ public class Drawer
         TilemapGroup tilemapGroup;
         tilemapGroup = mapTilemaps[unit.currentCell.relatedMap];
 
-        GameObject dyingUnit;
-        dyingUnit = graphicSupport.GetDeadUnitAnimation();
-        if (dyingUnit == null)
+        GameObject dyingAnimation;
+        dyingAnimation = graphicSupport.GetDeadUnitAnimation();
+        if (dyingAnimation == null)
         {
             tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, unitDebug);
             throw new System.Exception("Юнит, указанный в клетке с координатами " + unit.currentCell.coords + " не обнаружен");
         }
         else
         {
-            //Отыграть анимацию
+            tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, null);
+            GameObject UnitAttack = Object.Instantiate(dyingAnimation, (Vector3Int)unit.currentCell.coords, Quaternion.identity, grid.gameObject.transform);
+            var UnitScript = UnitAttack.GetComponent<UnitAfterAnimationSupporter>();
+            UnitScript.replacementTile = graphicSupport.GetDeadUnitTile();
+            UnitScript.coords = (Vector3Int)unit.currentCell.coords;
+            UnitScript.targetTilemap = tilemapGroup.deadBodiesTilemap;
         }
-        //анимация единичная и dead body
     }
 }

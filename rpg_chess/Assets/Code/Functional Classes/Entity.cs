@@ -5,7 +5,6 @@ using UnityEngine;
 public class Entity 
 {
     public Cell currentCell { get; protected set; }
-
     public void LeaveCell()
     {
         currentCell = null;
@@ -15,8 +14,4 @@ public class Entity
     {
         currentCell = targetCell;
     }
-
-
-
-
 }

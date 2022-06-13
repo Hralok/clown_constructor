@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7409431151140008680}
   - component: {fileID: 7409431151140008678}
+  - component: {fileID: -7591872843024675465}
   - component: {fileID: 7409431151140008681}
   m_Layer: 0
   m_Name: SnakeDyingPrefab
@@ -83,6 +84,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-7591872843024675465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7409431151140008683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82caa5da83165514696768d0c9053b33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replacementTile: {fileID: 0}
+  targetTilemap: {fileID: 0}
+  coords: {x: 0, y: 0, z: 0}
 --- !u!95 &7409431151140008681
 Animator:
   serializedVersion: 3

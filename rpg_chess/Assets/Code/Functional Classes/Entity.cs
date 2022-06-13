@@ -18,6 +18,12 @@ public class Entity
     public Dictionary<HealTypeEnum, double> healElementMultiplerAmplification { get; private set; }
     public Dictionary<AttackTypeEnum, double> attackTypeBonusAmplification { get; private set; }
     public Dictionary<AttackTypeEnum, double> attackTypeMultiplerAmplification { get; private set; }
+    public bool busy { get; private set; }
+    public ActiveAbility currentAbility { get; private set; }
+
+
+
+
 
     public Entity()
     {

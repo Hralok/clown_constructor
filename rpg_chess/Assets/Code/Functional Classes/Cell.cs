@@ -11,13 +11,13 @@ public class Cell
     public HashSet<Resource> resourcesAtCell { get; private set; }
     public Item itemAtCell { get; private set; }
 
-    public Map map { get; private set; }
+    public Map relatedMap { get; private set; }
 
     public Cell(Vector2Int coords, CellTypeEnum type, Map map)
     {
         this.coords = coords;
         this.type = type;
-        this.map = map;
+        this.relatedMap = map;
         unitAtCell = null;
         structureAtCell = null;
         itemAtCell = null;

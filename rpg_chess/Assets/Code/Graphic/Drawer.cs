@@ -82,6 +82,8 @@ public class Drawer
         foreach (Cell cell in cells)
         {
             DrawCell(cell, tilemaps);
+            DrawResource(cell, tilemaps);
+            DrawUnit(cell, tilemaps);
         }
     }
 
@@ -97,12 +99,15 @@ public class Drawer
         }
         else
         {
-            tilemaps.groundTilemap.SetTile((Vector3Int)cell.coords, groundTile);
-            tilemaps.onGroundTilemap.SetTile((Vector3Int)cell.coords, ongroundTile);
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    tilemaps.groundTilemap.SetTile(new Vector3Int(cell.coords.x * 4 + i, cell.coords.y * 4 + j, 0), groundTile);
+                    tilemaps.onGroundTilemap.SetTile(new Vector3Int(cell.coords.x * 4 + i, cell.coords.y * 4 + j, 0), ongroundTile);
+                }
+            }
         }
-
-        DrawResource(cell, tilemaps);
-        DrawUnit(cell, tilemaps);
     }
 
     public void DrawResource(Cell cell, TilemapGroup tilemaps)
@@ -152,7 +157,6 @@ public class Drawer
         }
     }
 
-    //Функция для отрисовки единичной ячейки нужна
     public void DrawUnitIsBusyAttacking(Unit unit)
     {
         TilemapGroup tilemapGroup;
@@ -189,7 +193,8 @@ public class Drawer
         else
         {
             tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, null);
-            GameObject UnitAttack = Object.Instantiate(AttackAnimation, (Vector3Int)unit.currentCell.coords, Quaternion.identity, grid.gameObject.transform);
+            GameObject UnitAttackHelper = Object.Instantiate(AttackAnimation, (Vector3Int)unit.currentCell.coords, Quaternion.identity, grid.gameObject.transform);
+            var UnitAttack = UnitAttackHelper.transform.GetChild(0).gameObject;
             var UnitScript = UnitAttack.GetComponent<UnitAfterAnimationSupporter>();
             UnitScript.coords = (Vector3Int)unit.currentCell.coords;
             UnitScript.targetTilemap = tilemapGroup.creaturesTilemap;
@@ -212,8 +217,9 @@ public class Drawer
         else
         {
             tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, null);
-            GameObject UnitAttack = Object.Instantiate(dyingAnimation, (Vector3Int)unit.currentCell.coords, Quaternion.identity, grid.gameObject.transform);
-            var UnitScript = UnitAttack.GetComponent<UnitAfterAnimationSupporter>();
+            GameObject UnitDieHelper = Object.Instantiate(dyingAnimation, (Vector3Int)unit.currentCell.coords, Quaternion.identity, grid.gameObject.transform);
+            var UnitDie = UnitDieHelper.transform.GetChild(0).gameObject;
+            var UnitScript = UnitDie.GetComponent<UnitAfterAnimationSupporter>();
             UnitScript.replacementTile = graphicSupport.GetDeadUnitTile();
             UnitScript.coords = (Vector3Int)unit.currentCell.coords;
             UnitScript.targetTilemap = tilemapGroup.deadBodiesTilemap;

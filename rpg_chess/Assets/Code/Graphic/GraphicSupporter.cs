@@ -31,7 +31,7 @@ public class GraphicSupporter
 
     public GameObject GetAttackUnitAnimation()
     {
-        return Resources.Load<GameObject>("Prefabs/Snake/SnakeAttack");
+        return Resources.Load<GameObject>("Prefabs/Snake/SnakeAttackPrefab");
     }
 
     public GameObject GetDeadUnitAnimation()

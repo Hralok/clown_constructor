@@ -10,6 +10,6 @@ public class UnitAfterAnimationSupporter : MonoBehaviour
     public void ReplaceTile()
     {
         targetTilemap.SetTile(coords, replacementTile);
-        Destroy(gameObject);
+        Destroy(transform.parent.gameObject);
     }
 }

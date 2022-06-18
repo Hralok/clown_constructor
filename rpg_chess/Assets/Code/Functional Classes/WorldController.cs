@@ -51,4 +51,12 @@ public static class WorldController
     {
 
     }
+
+    public static void KillEntity(Entity victim)
+    {
+
+    }
+
+
+
 }

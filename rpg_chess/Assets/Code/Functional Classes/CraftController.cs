@@ -2,28 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CraftController
+public static class CraftController
 {
-    // Словарь: id предмета - {id предметов для крафта}
-    Dictionary<int, HashSet<int>> craftingCatalog = new Dictionary<int, HashSet<int>>()
-    {
+    static private Dictionary<int, List<List<int>>> craftingCatalog;
 
-    };
-
-    // Получить id предметов, которые могут быть созданы с помощью переданного предмета
-    public HashSet<int> GetCraftableItemsIds(int itemId)
+    static public void Init(Dictionary<int, List<List<int>>> craftingCatalog)
     {
-        HashSet<int> items = new HashSet<int>();
+        CraftController.craftingCatalog = craftingCatalog;
+    }
+
+    static public List<int> GetCraftableItemsIds(int itemId)
+    {
+        List<int> items = new List<int>();
 
         foreach (var craftableItem in craftingCatalog.Keys)
         {
-            if (craftingCatalog[craftableItem].Contains(itemId))
+            foreach (var recipe in craftingCatalog[craftableItem])
             {
-                items.Add(craftableItem);
+                if (recipe.Contains(itemId))
+                {
+                    items.Add(craftableItem);
+                    break;
+                }
             }
+            
         }
 
         return items;
     }
-
 }

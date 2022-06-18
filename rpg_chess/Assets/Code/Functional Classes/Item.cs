@@ -49,10 +49,10 @@ public class Item
     // Проверка предметов, которые можно скрафтить из этого
     public void CheckCraftableItems(List<Item> inventory)
     {
-
+        // CraftController.CraftNewItem(craftableItemsIds, inventory)
     }
 
-    // Получать список предметов?? в инвентаре могут быть и ресурсы
+    // Получать список предметов?? в инвентаре могут быть и ресурсы?
     public void ExecuteAfterAddingToInventoty(List<Item> inventory)
     {
         // Объединение с предметами того же типа
@@ -65,12 +65,15 @@ public class Item
 
     public void UseItem()
     {
+        // Вызов функций у Unit, принимающих значения увеличения характеристик
+
         if (isItConsumable)
         {
             usageMargin--;
             if (usageMargin <= 0)
             {
-                // Действия после израсходования
+                // Действия после израсходования. Т.е. манипуляции с инвентарем?
+                // Вызов функции у Unit(?), к-я меняет предмет в ячейке инвентаря
             }
         }
     }

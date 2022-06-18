@@ -9,4 +9,9 @@ public Dictionary<MainCharacteristicTypeEnum, double> mainChars { get; private s
     {
         currentCell = cell;
     }
+
+    public void ReplaceTheItemWith(Item replaceableItem, Item replacementItem)
+    {
+        
+    }
 }

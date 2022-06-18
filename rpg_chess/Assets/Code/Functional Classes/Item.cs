@@ -10,35 +10,29 @@ public class Item
     public List<PassiveAbility> passiveAbilities { get; private set; }
     public int nameId { get; private set; }
     public int descriptionId { get; private set; }
-
-    // Использовать ли предмет для авто-крафта
     public bool notCombinable { get; private set; } = false;
-
-    // id предметов, которые могут быть созданы с использованием этого предмета
-    private HashSet<int> craftableItemsIds;
-
-    // Подумать над логикой после расходования (удалить/заменить/...)
+    public List<int> craftableItemsIds { get; private set; }
     public bool isItConsumable { get; private set; }
-    private int usageMargin; 
-
-    // Предметы собираются
+    private int usageMargin;
+    private Item replacementItem;
 
     public Item(
         int itemId, int nameId, int descriptionId,
-        bool consumable,
         List<HashSet<Resource>> cost,
-        ActiveAbility activeAbilitiy, List<PassiveAbility> passiveAbilities
+        ActiveAbility activeAbilitiy, List<PassiveAbility> passiveAbilities,
+        bool consumable, Item replacementItem = null
         )
     {
         this.itemId = itemId;
         this.nameId = nameId;
-        this.isItConsumable = consumable;
         this.descriptionId = descriptionId;
         this.cost = cost;
         this.activeAbilitiy = activeAbilitiy;
         this.passiveAbilities = passiveAbilities;
+        this.isItConsumable = consumable;
+        this.replacementItem = replacementItem;
 
-        // this.craftableItemsIds = CraftController.GetCraftableItemsIds(itemId);
+        this.craftableItemsIds = CraftController.GetCraftableItemsIds(itemId);
     }
 
     public void DoItNotCombinable(bool notComb)
@@ -46,34 +40,21 @@ public class Item
         notCombinable = notComb;
     }
 
-    // Проверка предметов, которые можно скрафтить из этого
-    public void CheckCraftableItems(List<Item> inventory)
+    public List<ActiveAbility.TargetArea> GetActiveAbilityTargetsArea()
     {
-        // CraftController.CraftNewItem(craftableItemsIds, inventory)
+        return activeAbilitiy.targetAreas;
     }
 
-    // Получать список предметов?? в инвентаре могут быть и ресурсы?
-    public void ExecuteAfterAddingToInventoty(List<Item> inventory)
+    public void UseItemActiveAbility(List<(Vector2Int, Map)> targetsList, Unit owner)
     {
-        // Объединение с предметами того же типа
-
-        if (!notCombinable)
-        {
-            CheckCraftableItems(inventory);
-        }
-    }
-
-    public void UseItem()
-    {
-        // Вызов функций у Unit, принимающих значения увеличения характеристик
+        activeAbilitiy.UseAbility(targetsList);
 
         if (isItConsumable)
         {
             usageMargin--;
             if (usageMargin <= 0)
             {
-                // Действия после израсходования. Т.е. манипуляции с инвентарем?
-                // Вызов функции у Unit(?), к-я меняет предмет в ячейке инвентаря
+                owner.ReplaceTheItemWith(this, replacementItem);
             }
         }
     }

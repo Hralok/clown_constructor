@@ -20,7 +20,7 @@ public class Item
         int itemId, int nameId, int descriptionId,
         List<HashSet<Resource>> cost,
         ActiveAbility activeAbilitiy, List<PassiveAbility> passiveAbilities,
-        bool consumable, Item replacementItem = null
+        bool consumable, int usageMargin = 1, Item replacementItem = null
         )
     {
         this.itemId = itemId;
@@ -30,6 +30,7 @@ public class Item
         this.activeAbilitiy = activeAbilitiy;
         this.passiveAbilities = passiveAbilities;
         this.isItConsumable = consumable;
+        this.usageMargin = usageMargin;
         this.replacementItem = replacementItem;
 
         this.craftableItemsIds = CraftController.GetCraftableItemsIds(itemId);

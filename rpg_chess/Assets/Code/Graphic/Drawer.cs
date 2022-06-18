@@ -7,6 +7,7 @@ public class Drawer
     public struct TilemapGroup
     {
         public Tilemap groundTilemap;
+        public Tilemap ground2Tilemap;
         public Tilemap roadTilemap;
         public Tilemap onGroundTilemap;
         public Tilemap resourcesTilemap;
@@ -15,11 +16,12 @@ public class Drawer
         public Tilemap deadBodiesTilemap;
         public Tilemap creaturesTilemap;
 
-        public TilemapGroup(Tilemap groundTilemap, Tilemap roadTilemap, Tilemap onGroundTilemap,
+        public TilemapGroup(Tilemap groundTilemap, Tilemap ground2Tilemap, Tilemap roadTilemap, Tilemap onGroundTilemap,
             Tilemap resourcesTilemap, Tilemap itemsTilemap, Tilemap structuresTilemap,
             Tilemap deadBodiesTilemap, Tilemap creaturesTilemap)
         {
             this.groundTilemap = groundTilemap;
+            this.ground2Tilemap = ground2Tilemap;
             this.roadTilemap = roadTilemap;
             this.onGroundTilemap = onGroundTilemap;
             this.resourcesTilemap = resourcesTilemap;
@@ -65,7 +67,7 @@ public class Drawer
         //newMap.SetActive(false);
         newMap.name = map.name;
         Tilemap[] tilemaps = newMap.GetComponentsInChildren<Tilemap>();
-        TilemapGroup tilemapGroup = new TilemapGroup(tilemaps[0], tilemaps[1], tilemaps[2], tilemaps[3], tilemaps[4], tilemaps[5], tilemaps[6], tilemaps[7]);
+        TilemapGroup tilemapGroup = new TilemapGroup(tilemaps[0], tilemaps[1], tilemaps[2], tilemaps[3], tilemaps[4], tilemaps[5], tilemaps[6], tilemaps[7], tilemaps[8]);
         mapTilemaps.Add(map, tilemapGroup);
         DrawMap(map);
     }
@@ -90,8 +92,9 @@ public class Drawer
     public void DrawCell(Cell cell, TilemapGroup tilemaps)
     {
         TileBase groundTile;
+        TileBase ground2Tile;
         TileBase ongroundTile;
-        (groundTile, ongroundTile) = graphicSupport.GetTileByCellType(cell.type);
+        (groundTile, ongroundTile, ground2Tile) = graphicSupport.GetTileByCellType(cell.type);
         if (groundTile == null)
         {
             tilemaps.groundTilemap.SetTile((Vector3Int)cell.coords, groundDebug);
@@ -104,6 +107,7 @@ public class Drawer
                 for (int j = 0; j < 4; j++)
                 {
                     tilemaps.groundTilemap.SetTile(new Vector3Int(cell.coords.x * 4 + i, cell.coords.y * 4 + j, 0), groundTile);
+                    tilemaps.ground2Tilemap.SetTile(new Vector3Int(cell.coords.x * 4 + i, cell.coords.y * 4 + j, 0), ground2Tile);
                     tilemaps.onGroundTilemap.SetTile(new Vector3Int(cell.coords.x * 4 + i, cell.coords.y * 4 + j, 0), ongroundTile);
                 }
             }

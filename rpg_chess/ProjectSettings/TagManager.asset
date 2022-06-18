@@ -36,8 +36,35 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - MobLayers
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: GroundTilemap
+    uniqueID: 1306041805
+    locked: 0
+  - name: Ground2Tailmap
+    uniqueID: 3901973219
+    locked: 0
+  - name: RoadTilemap
+    uniqueID: 121840669
+    locked: 0
+  - name: OngroundTilemap
+    uniqueID: 2695154157
+    locked: 0
+  - name: ResourcesTilemap
+    uniqueID: 3861414401
+    locked: 0
+  - name: ItemsTilemap
+    uniqueID: 2255314877
+    locked: 0
+  - name: StructuresTilemap
+    uniqueID: 2056416763
+    locked: 0
+  - name: DeadBodiesTilemap
+    uniqueID: 3889776815
+    locked: 0
+  - name: CreaturesTilemap
+    uniqueID: 3251380157
     locked: 0

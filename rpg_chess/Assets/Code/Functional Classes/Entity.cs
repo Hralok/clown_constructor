@@ -49,7 +49,9 @@ public class Entity
     public bool busy { get; private set; }
     public ActiveAbility currentAbility { get; private set; }
 
-    public List<Ability> abilities { get; private set; }
+    // Необходимо вынести способности из сущностей и предметов, заменив на id способностей
+    // Подумать над смешением активных и пассивных способностей
+    public List<ActiveAbility> abilities { get; private set; }
 
     public Item[] inventory { get; private set; }
     public int inventorySize { get; private set; }
@@ -136,6 +138,23 @@ public class Entity
         return pickedUp;
     }
 
+    public bool GetItem(Item item)
+    {
+        bool getted = false;
+
+
+        var slotIndx = FindFirstEmptySlot();
+
+        if (slotIndx > -1)
+        {
+            inventory[slotIndx] = item;
+            getted = true;
+            CheckCraftsForItem(slotIndx);
+        }
+
+        return getted;
+    }
+
     protected int FindFirstEmptySlot()
     {
         int indx = -1;
@@ -170,12 +189,17 @@ public class Entity
         }
     }
 
-    public void DropItemFromIndx(int indx)
+    public Item ExpelItemFromIndx(int indx)
     {
+        Item item = null;
+
         if (indx < inventory.Length)
         {
+            item = inventory[indx];
             inventory[indx] = null;
         }
+
+        return item;
     }
 
     public double Die()
@@ -247,5 +271,14 @@ public class Entity
             }
         }
     }
+
+    public void UseAbility(int indx, List<(Vector2Int, Map)> targetsList)
+    {
+        abilities[indx].UseAbility(targetsList, this);
+    }
+
+
+
+
 
 }

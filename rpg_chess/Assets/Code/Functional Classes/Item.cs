@@ -12,15 +12,15 @@ public class Item
     public int descriptionId { get; private set; }
     public bool сombinable { get; private set; } = true; // Игрок может переключать состояние предмета если не хочет чтобы он участвовал в крафтах
     public List<int> craftableItemsIds { get; private set; }
-    public bool isItConsumable { get; private set; }
-    private int usageMargin;
-    private Item replacementItem;
+    public bool hasCharges { get; private set; }
+    private int charges;
+    private bool consumable;
+    private int replacementItemId;
 
     public Item(
         int itemId, int nameId, int descriptionId,
         List<HashSet<Resource>> cost,
-        ActiveAbility activeAbilitiy, List<PassiveAbility> passiveAbilities,
-        bool consumable, int usageMargin = 1, Item replacementItem = null
+        ActiveAbility activeAbilitiy, List<PassiveAbility> passiveAbilities
         )
     {
         this.itemId = itemId;
@@ -29,9 +29,6 @@ public class Item
         this.cost = cost;
         this.activeAbilitiy = activeAbilitiy;
         this.passiveAbilities = passiveAbilities;
-        this.isItConsumable = consumable;
-        this.usageMargin = usageMargin;
-        this.replacementItem = replacementItem;
 
     }
 
@@ -62,14 +59,20 @@ public class Item
     {
         if (activeAbilitiy != null)
         {
+            if (hasCharges && charges <= 0)
+            {
+                return;
+            }
+
             activeAbilitiy.UseAbility(targetsList, owner);
 
-            if (isItConsumable)
+            if (hasCharges)
             {
-                usageMargin--;
-                if (usageMargin <= 0)
+                charges--;
+
+                if (charges == 0 && consumable)
                 {
-                    owner.ReplaceTheItemWith(this, replacementItem);
+                    owner.ReplaceItemWith(this, replacementItemId);
                 }
             }
         }

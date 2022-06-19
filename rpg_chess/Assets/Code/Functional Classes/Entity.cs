@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Entity
 {
@@ -36,7 +37,7 @@ public class Entity
     public Dictionary<AttackTypeEnum, double> attackTypeMultiplerAmplification { get; private set; }
 
     public DefenseTypeEnum defenseType { get; private set; }
-    
+
     // Переменные отвечают за использование продолжительных способностей
     public bool busy { get; private set; }
     public ActiveAbility currentAbility { get; private set; }
@@ -55,9 +56,9 @@ public class Entity
         currentCell = targetCell;
     }
 
-    public void TakeDamage(double count)
+    public void ChangeHP(double count)
     {
-        healthPoints -= count;
+        healthPoints += count;
 
         if (healthPoints <= 0)
         {
@@ -65,10 +66,26 @@ public class Entity
         }
     }
 
-    public void TakeHeal(double count)
+    public void ChangeMana(double count)
     {
-        healthPoints += count;
+        mana += count;
+
+        if (mana < 0)
+        {
+            mana = 0;
+        }
     }
+
+    public void ChangeEnergy(double count)
+    {
+        energy += count;
+
+        if (energy < 0)
+        {
+            energy = 0;
+        }
+    }
+
 
     public bool GetItemFromCurrentCell()
     {
@@ -76,19 +93,34 @@ public class Entity
 
         if (currentCell.itemAtCell != null)
         {
-            for (int i = 0; i < inventory.Length; i++)
+            var slotIndx = FindFirstEmptySlot();
+
+            if (slotIndx != -1)
             {
-                if (inventory[i] == null)
-                {
-                    inventory[i] = currentCell.itemAtCell;
-                    pickedUp = true;
-                    currentCell.ExpelItem();
-                    break;
-                }
+                inventory[slotIndx] = currentCell.itemAtCell;
+                pickedUp = true;
+                currentCell.ExpelItem();
+                CheckCraftsForItem(slotIndx);
             }
         }
 
         return pickedUp;
+    }
+
+    protected int FindFirstEmptySlot()
+    {
+        int indx = -1;
+
+        for (int i = 0; i < inventory.Length; i++)
+        {
+            if (inventory[i] == null)
+            {
+                indx = i;
+                break;
+            }
+        }
+
+        return indx;
     }
 
     public void MoveItemInInventory(int from, int to)
@@ -111,12 +143,63 @@ public class Entity
 
     public void CheckCraftsForItem(int itemInInventoryIndex)
     {
-        foreach (var itemId in inventory[itemInInventoryIndex].craftableItemsIds)
+        Dictionary<int, int> realItemsCount;
+        if (inventory[itemInInventoryIndex].craftableItemsIds.Count != 0)
         {
+            realItemsCount = new Dictionary<int, int>();
 
+            foreach (var item in inventory)
+            {
+                if (item.сombinable)
+                {
+                    if (realItemsCount.ContainsKey(item.itemId))
+                    {
+                        realItemsCount[item.itemId]++;
+                    }
+                    else
+                    {
+                        realItemsCount[item.itemId] = 1;
+                    }
+                }
+
+            }
+
+            foreach (var craftableItemId in inventory[itemInInventoryIndex].craftableItemsIds)
+            {
+                var recipesForItem = CraftController.GetCraftableItemsIds(craftableItemId, itemInInventoryIndex);
+
+                foreach (var recipe in recipesForItem)
+                {
+                    bool canCraft = true;
+
+                    foreach (var key in recipe.Keys)
+                    {
+                        if (!realItemsCount.ContainsKey(key) && recipe[key] > realItemsCount[key])
+                        {
+                            canCraft = false;
+                        }
+                    }
+
+                    if (canCraft)
+                    {
+
+                        foreach (var key in realItemsCount.Keys)
+                        {
+                            while (realItemsCount[key] != 0)
+                            {
+                                inventory[inventory.First(x => x.itemId == key && x.сombinable).itemId] = null;
+                                realItemsCount[key] -= 1;
+                            }
+                        }
+
+                        var indx = FindFirstEmptySlot();
+
+                        inventory[indx] = Fabricator.CreateItem(craftableItemId);
+                        return;
+                    }
+                }
+            }
         }
-
-        var neededItems = CraftController.GetCraftableItemsIds(itemInInventoryIndex);
     }
 
 }

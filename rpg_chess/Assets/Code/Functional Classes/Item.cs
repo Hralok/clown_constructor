@@ -10,7 +10,7 @@ public class Item
     public List<PassiveAbility> passiveAbilities { get; private set; }
     public int nameId { get; private set; }
     public int descriptionId { get; private set; }
-    public bool notCombinable { get; private set; } = false;
+    public bool сombinable { get; private set; } = true; // Игрок может переключать состояние предмета если не хочет чтобы он участвовал в крафтах
     public List<int> craftableItemsIds { get; private set; }
     public bool isItConsumable { get; private set; }
     private int usageMargin;
@@ -33,12 +33,11 @@ public class Item
         this.usageMargin = usageMargin;
         this.replacementItem = replacementItem;
 
-        this.craftableItemsIds = CraftController.GetCraftableItemsIds(itemId);
     }
 
-    public void DoItNotCombinable(bool notComb)
+    public void SwitchCombinableStatus()
     {
-        notCombinable = notComb;
+        сombinable = !сombinable;
     }
 
     public List<ActiveAbility.TargetArea> GetActiveAbilityTargetsArea()

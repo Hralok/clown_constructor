@@ -36,6 +36,13 @@ public class Entity
     public Dictionary<AttackTypeEnum, double> attackTypeBonusAmplification { get; private set; }
     public Dictionary<AttackTypeEnum, double> attackTypeMultiplerAmplification { get; private set; }
 
+    public double expToKiller { get; private set; }
+    public double currentExp { get; private set; }
+    public double expToNextLvl { get; private set; } // Временная переменная, необходимо заменить 
+    public int currentLvl { get; private set; }
+
+
+
     public DefenseTypeEnum defenseType { get; private set; }
 
     // Переменные отвечают за использование продолжительных способностей
@@ -51,18 +58,33 @@ public class Entity
     {
 
     }
+
+    public void GetExp(double count)
+    {
+        if (count >= 0)
+        {
+            currentExp += count;
+
+            while (currentExp >= expToNextLvl)
+            {
+                currentLvl++;
+                currentExp -= expToNextLvl;
+            }
+        }
+    }
+
     public void MoveToCell(Cell targetCell)
     {
         currentCell = targetCell;
     }
 
-    public void ChangeHP(double count)
+    public void ChangeHP(double count, Entity source)
     {
         healthPoints += count;
 
         if (healthPoints <= 0)
         {
-            WorldController.KillEntity(this);
+            WorldController.KillEntity(this, source);
         }
     }
 
@@ -86,6 +108,13 @@ public class Entity
         }
     }
 
+    public void DoTheTurnStuff()
+    {
+        foreach (var ability in abilities)
+        {
+            ability.DoTheTurnStuff(this);
+        }
+    }
 
     public bool GetItemFromCurrentCell()
     {
@@ -140,6 +169,23 @@ public class Entity
             }
         }
     }
+
+    public void DropItemFromIndx(int indx)
+    {
+        if (indx < inventory.Length)
+        {
+            inventory[indx] = null;
+        }
+    }
+
+    public double Die()
+    {
+
+        // Будущий код, связанный с использованием посмертных способностей и способностей предметов
+
+        return expToKiller;
+    }
+
 
     public void CheckCraftsForItem(int itemInInventoryIndex)
     {

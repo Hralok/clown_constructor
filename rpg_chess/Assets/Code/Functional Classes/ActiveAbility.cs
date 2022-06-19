@@ -51,7 +51,7 @@ public class ActiveAbility : Ability
     public bool inUse { get; private set; }
     public int descriptionTextIndex { get; private set; }
 
-    public void DoTheTurnStuff()
+    public override void DoTheTurnStuff(Entity owner)
     {
         if (!inUse)
         {
@@ -73,7 +73,7 @@ public class ActiveAbility : Ability
                     targets.Add(targetsList[i]);
                 }
 
-                UseEffectGroup(effects[currentEffectGroup], targets);
+                UseEffectGroup(effects[currentEffectGroup], targets, owner);
                 currentEffectGroup++;
 
                 while (effects[currentEffectGroup].delay == 0)
@@ -83,7 +83,7 @@ public class ActiveAbility : Ability
                         targets.Add(targetsList[i]);
                     }
 
-                    UseEffectGroup(effects[currentEffectGroup], targets);
+                    UseEffectGroup(effects[currentEffectGroup], targets, owner);
                     currentEffectGroup++;
                 }
 
@@ -100,7 +100,7 @@ public class ActiveAbility : Ability
         }
     }
 
-    public void UseAbility(List<(Vector2Int, Map)> targetsList)
+    public void UseAbility(List<(Vector2Int, Map)> targetsList, Entity owner)
     {
         if (inUse)
         {
@@ -123,7 +123,7 @@ public class ActiveAbility : Ability
                 targets.Add(targetsList[i]);
             }
 
-            UseEffectGroup(effects[currentEffectGroup], targets);
+            UseEffectGroup(effects[currentEffectGroup], targets, owner);
             currentEffectGroup++;
         }
 
@@ -140,21 +140,15 @@ public class ActiveAbility : Ability
         }
     }
 
-    private void UseEffectGroup(EffectGroup group, List<(Vector2Int, Map)> targets)
+    private void UseEffectGroup(EffectGroup group, List<(Vector2Int, Map)> targets, Entity owner)
     {
         foreach (var effect in group.effects)
         {
-            effect.DoTheStuff(targets);
+            effect.DoTheStuff(targets, owner);
         }
     }
 
 
-
-
-    public ActiveAbility(Entity owner) : base(owner)
-    {
-
-    }
 
 
 }

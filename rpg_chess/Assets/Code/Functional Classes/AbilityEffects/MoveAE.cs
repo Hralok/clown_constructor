@@ -13,14 +13,13 @@ public abstract class MoveAE : AbilityEffect
     public Vector2Int offset { get; private set; }
 
     public MoveAE(
-        Ability ability,
         bool onlyUnits,
         List<(Vector2Int, Vector2Int)> moves,
         bool fromIsFlexible,
         bool toIsFlexible,
         bool needSecondTarget,
         Vector2Int offset)
-        : base(ability, null)
+        : base(null)
     {
         this.fromArea = new List<Vector2Int>();
         this.toArea = new List<Vector2Int>();
@@ -38,7 +37,7 @@ public abstract class MoveAE : AbilityEffect
         }
     }
 
-    public override void DoTheStuff(List<(Vector2Int, Map)> targets)
+    public override void DoTheStuff(List<(Vector2Int, Map)> targets, Entity owner)
     {
         if (needSecondTarget && targets.Count != 2 || !needSecondTarget && targets.Count != 1)
         {
@@ -53,7 +52,7 @@ public abstract class MoveAE : AbilityEffect
 
         if (fromIsFlexible)
         {
-            realFromArea = WorldController.FlexArea(fromArea, targets[0].Item1 - ability.owner.currentCell.coords);
+            realFromArea = WorldController.FlexArea(fromArea, targets[0].Item1 - owner.currentCell.coords);
         }
         else
         {
@@ -78,7 +77,7 @@ public abstract class MoveAE : AbilityEffect
             realToMap = targets[0].Item2;
             if (toIsFlexible)
             {
-                realToArea = WorldController.FlexArea(toArea, targets[0].Item1 - ability.owner.currentCell.coords);
+                realToArea = WorldController.FlexArea(toArea, targets[0].Item1 - owner.currentCell.coords);
             }
             else
             {

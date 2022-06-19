@@ -12,14 +12,13 @@ public class HealAE : AbilityEffect
 
 
     public HealAE(
-        Ability ability,
         List<(HashSet<Vector2Int>, bool)> areas,
         double baseHeal,
         HealTypeEnum healType,
         MainCharacteristicTypeEnum amplificationChar,
         double healBonusPerCharPoint,
         double healMultiplerPerCharPoint)
-        : base(ability, areas)
+        : base(areas)
     {
         this.baseHeal = baseHeal;
         this.healType = healType;
@@ -28,7 +27,7 @@ public class HealAE : AbilityEffect
         this.healMultiplerPerCharPoint = healMultiplerPerCharPoint;
     }
 
-    public override void DoTheStuff(List<(Vector2Int, Map)> targets)
+    public override void DoTheStuff(List<(Vector2Int, Map)> targets, Entity owner)
     {
         if (targets.Count != areas.Count)
         {
@@ -43,17 +42,17 @@ public class HealAE : AbilityEffect
 
         calculatedBaseHeal =
             baseHeal +
-            ability.owner.healBonusAmplification +
-            ability.owner.healElementBonusAmplification.GetValueOrDefault(healType, 0);
+            owner.healBonusAmplification +
+            owner.healElementBonusAmplification.GetValueOrDefault(healType, 0);
 
         calculatedMultipler =
-            (1 + ability.owner.healMultiplerAmplification) *
-            (1 + ability.owner.healElementMultiplerAmplification.GetValueOrDefault(healType, 0));
+            (1 + owner.healMultiplerAmplification) *
+            (1 + owner.healElementMultiplerAmplification.GetValueOrDefault(healType, 0));
 
-        if (ability.owner is Unit)
+        if (owner is Unit)
         {
-            calculatedBaseHeal += ((Unit)ability.owner).mainChars[amplificationChar] * healBonusPerCharPoint;
-            calculatedMultipler *= (1 + ((Unit)ability.owner).mainChars[amplificationChar] * healMultiplerPerCharPoint);
+            calculatedBaseHeal += ((Unit)owner).mainChars[amplificationChar] * healBonusPerCharPoint;
+            calculatedMultipler *= (1 + ((Unit)owner).mainChars[amplificationChar] * healMultiplerPerCharPoint);
         }
 
         heal = new Heal(calculatedBaseHeal * calculatedMultipler, healType);
@@ -74,7 +73,7 @@ public class HealAE : AbilityEffect
                 // ќтражение в случае необходимости области применени€ в сторону применени€ способности
                 if (isFlexible)
                 {
-                    realAffectedArea = WorldController.FlexArea(affectedArea, target - ability.owner.currentCell.coords);
+                    realAffectedArea = WorldController.FlexArea(affectedArea, target - owner.currentCell.coords);
                 }
                 else
                 {
@@ -96,7 +95,7 @@ public class HealAE : AbilityEffect
 
             foreach (var cell in targetCells)
             {
-                cell.HealCell(heal, ability.owner);
+                cell.HealCell(heal, owner);
             }
         }
     }

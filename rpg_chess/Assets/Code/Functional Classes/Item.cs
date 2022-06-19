@@ -40,6 +40,19 @@ public class Item
         ñombinable = !ñombinable;
     }
 
+    public void DoTheTurnStuff(Entity owner)
+    {
+        if (activeAbilitiy != null)
+        {
+            activeAbilitiy.DoTheTurnStuff(owner);
+        }
+
+        foreach (var ability in passiveAbilities)
+        {
+            ability.DoTheTurnStuff(owner);
+        }
+    }
+
     public List<ActiveAbility.TargetArea> GetActiveAbilityTargetsArea()
     {
         return activeAbilitiy.targetAreas;
@@ -47,14 +60,17 @@ public class Item
 
     public void UseItemActiveAbility(List<(Vector2Int, Map)> targetsList, Unit owner)
     {
-        activeAbilitiy.UseAbility(targetsList);
-
-        if (isItConsumable)
+        if (activeAbilitiy != null)
         {
-            usageMargin--;
-            if (usageMargin <= 0)
+            activeAbilitiy.UseAbility(targetsList, owner);
+
+            if (isItConsumable)
             {
-                owner.ReplaceTheItemWith(this, replacementItem);
+                usageMargin--;
+                if (usageMargin <= 0)
+                {
+                    owner.ReplaceTheItemWith(this, replacementItem);
+                }
             }
         }
     }

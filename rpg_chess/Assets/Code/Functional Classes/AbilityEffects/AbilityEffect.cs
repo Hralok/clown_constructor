@@ -4,7 +4,6 @@ using UnityEngine;
 
 public abstract class AbilityEffect
 {
-    protected Ability ability;
     public List<(HashSet<Vector2Int>, bool)> areas { get; private set; }
 
     // Первый параметр кортежа указывает на какие координаты относительно точки применения будет применён эффект способности.
@@ -12,11 +11,9 @@ public abstract class AbilityEffect
     // Второй параметр кортежа указывает необходимо ли повернуть область применения в сторону применения
 
     public AbilityEffect(
-        Ability ability,
         List<(HashSet<Vector2Int>, bool)> areas
         )
     {
-        this.ability = ability;
         this.areas = areas;
 
         foreach (var area in areas)
@@ -28,5 +25,5 @@ public abstract class AbilityEffect
         }
     }
 
-    public abstract void DoTheStuff(List<(Vector2Int, Map)> targets);
+    public abstract void DoTheStuff(List<(Vector2Int, Map)> targets, Entity owner);
 }

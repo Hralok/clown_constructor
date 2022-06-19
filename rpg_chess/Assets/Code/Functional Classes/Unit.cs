@@ -5,6 +5,9 @@ using UnityEngine;
 public class Unit : Entity
 {
     public Dictionary<MainCharacteristicTypeEnum, double> mainChars { get; private set; }
+    public double currentExp { get; private set; }
+    public double expToNextLvl { get; private set; } // Временная переменная, необходимо заменить 
+    public int currentLvl { get; private set; }
     public Unit(Cell cell)
     {
         currentCell = cell;
@@ -33,6 +36,20 @@ public class Unit : Entity
         if (indx < inventory.Length && inventory[indx] != null && inventory[indx].activeAbilitiy != null)
         {
             inventory[indx].UseItemActiveAbility(targetsList, this);
+        }
+    }
+
+    public void GetExp(double count)
+    {
+        if (count >= 0)
+        {
+            currentExp += count;
+
+            while (currentExp >= expToNextLvl)
+            {
+                currentLvl++;
+                currentExp -= expToNextLvl;
+            }
         }
     }
 }

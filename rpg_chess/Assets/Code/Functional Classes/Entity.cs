@@ -37,9 +37,7 @@ public class Entity
     public Dictionary<AttackTypeEnum, double> attackTypeMultiplerAmplification { get; private set; }
 
     public double expToKiller { get; private set; }
-    public double currentExp { get; private set; }
-    public double expToNextLvl { get; private set; } // Временная переменная, необходимо заменить 
-    public int currentLvl { get; private set; }
+    
 
 
 
@@ -61,19 +59,7 @@ public class Entity
 
     }
 
-    public void GetExp(double count)
-    {
-        if (count >= 0)
-        {
-            currentExp += count;
-
-            while (currentExp >= expToNextLvl)
-            {
-                currentLvl++;
-                currentExp -= expToNextLvl;
-            }
-        }
-    }
+    
 
     public void MoveToCell(Cell targetCell)
     {

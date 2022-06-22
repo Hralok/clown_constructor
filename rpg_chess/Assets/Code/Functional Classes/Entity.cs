@@ -263,7 +263,10 @@ public class Entity
         abilities[indx].UseAbility(targetsList, this);
     }
 
-
+    public void SetNewPlayer(Player newPlayer)
+    {
+        player = newPlayer;
+    }
 
 
 

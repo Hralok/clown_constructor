@@ -8,12 +8,10 @@ public class GameController : MonoBehaviour
 {
     public void Start()
     {
-        Dictionary<int, int> test = new Dictionary<int, int>();
+        HashSet<int> test = new HashSet<int>() { 1, 2, 3, 4 };
 
-        test[0] = 1;
-        test[1] = 5;
-
-
-        Debug.Log(test.Sum(x => x.Value));
+        Debug.Log(test.Remove(1));
+        Debug.Log(test.Remove(0));
+        Debug.Log(test.Add(2));
     }
 }

@@ -10,17 +10,17 @@ public class Item
     public List<PassiveAbility> passiveAbilities { get; private set; }
     public int nameId { get; private set; }
     public int descriptionId { get; private set; }
-    public bool notCombinable { get; private set; } = false;
+    public bool сombinable { get; private set; } = true; // Игрок может переключать состояние предмета если не хочет чтобы он участвовал в крафтах
     public List<int> craftableItemsIds { get; private set; }
-    public bool isItConsumable { get; private set; }
-    private int usageMargin;
-    private Item replacementItem;
+    public bool hasCharges { get; private set; }
+    private int charges;
+    private bool consumable;
+    private int replacementItemId;
 
     public Item(
         int itemId, int nameId, int descriptionId,
         List<HashSet<Resource>> cost,
-        ActiveAbility activeAbilitiy, List<PassiveAbility> passiveAbilities,
-        bool consumable, int usageMargin = 1, Item replacementItem = null
+        ActiveAbility activeAbilitiy, List<PassiveAbility> passiveAbilities
         )
     {
         this.itemId = itemId;
@@ -29,16 +29,25 @@ public class Item
         this.cost = cost;
         this.activeAbilitiy = activeAbilitiy;
         this.passiveAbilities = passiveAbilities;
-        this.isItConsumable = consumable;
-        this.usageMargin = usageMargin;
-        this.replacementItem = replacementItem;
 
-        this.craftableItemsIds = CraftController.GetCraftableItemsIds(itemId);
     }
 
-    public void DoItNotCombinable(bool notComb)
+    public void SwitchCombinableStatus()
     {
-        notCombinable = notComb;
+        сombinable = !сombinable;
+    }
+
+    public void DoTheTurnStuff(Entity owner)
+    {
+        if (activeAbilitiy != null)
+        {
+            activeAbilitiy.DoTheTurnStuff(owner);
+        }
+
+        foreach (var ability in passiveAbilities)
+        {
+            ability.DoTheTurnStuff(owner);
+        }
     }
 
     public List<ActiveAbility.TargetArea> GetActiveAbilityTargetsArea()
@@ -48,14 +57,23 @@ public class Item
 
     public void UseItemActiveAbility(List<(Vector2Int, Map)> targetsList, Unit owner)
     {
-        activeAbilitiy.UseAbility(targetsList);
-
-        if (isItConsumable)
+        if (activeAbilitiy != null)
         {
-            usageMargin--;
-            if (usageMargin <= 0)
+            if (hasCharges && charges <= 0)
             {
-                owner.ReplaceTheItemWith(this, replacementItem);
+                return;
+            }
+
+            activeAbilitiy.UseAbility(targetsList, owner);
+
+            if (hasCharges)
+            {
+                charges--;
+
+                if (charges == 0 && consumable)
+                {
+                    owner.ReplaceItemWith(this, replacementItemId);
+                }
             }
         }
     }

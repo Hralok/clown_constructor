@@ -51,4 +51,17 @@ public static class WorldController
     {
 
     }
+
+    public static void KillEntity(Entity victim, Entity killer)
+    {
+
+        if (killer is Unit)
+        {
+            ((Unit)killer).GetExp(victim.Die());
+        }
+
+    }
+
+
+
 }

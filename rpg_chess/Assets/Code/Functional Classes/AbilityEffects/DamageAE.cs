@@ -13,7 +13,6 @@ public class DamageAE : AbilityEffect
 
 
     public DamageAE(
-        Ability ability,
         List<(HashSet<Vector2Int>, bool)> areas,
         double baseDamage,
         DamageTypeEnum damageType,
@@ -22,7 +21,7 @@ public class DamageAE : AbilityEffect
         double damageBonusPerCharPoint,
         double damageMultiplerPerCharPoint
         )
-        : base(ability, areas)
+        : base(areas)
     {
         this.baseDamage = baseDamage;
         this.damageType = damageType;
@@ -32,7 +31,7 @@ public class DamageAE : AbilityEffect
         this.damageMultiplerPerCharPoint = damageMultiplerPerCharPoint;
     }
 
-    public override void DoTheStuff(List<(Vector2Int, Map)> targets)
+    public override void DoTheStuff(List<(Vector2Int, Map)> targets, Entity owner)
     {
         if (targets.Count != areas.Count)
         {
@@ -49,19 +48,19 @@ public class DamageAE : AbilityEffect
 
         calculatedBaseDamage =
             baseDamage +
-            ability.owner.damageBonusAmplification +
-            ability.owner.damageElementBonusAmplification.GetValueOrDefault(damageType, 0) +
-            ability.owner.attackTypeBonusAmplification.GetValueOrDefault(attackType, 0);
+            owner.damageBonusAmplification +
+            owner.damageElementBonusAmplification.GetValueOrDefault(damageType, 0) +
+            owner.attackTypeBonusAmplification.GetValueOrDefault(attackType, 0);
 
         calculatedMultipler =
-            (1 + ability.owner.damageMultiplerAmplification) *
-            (1 + ability.owner.damageElementMultiplerAmplification.GetValueOrDefault(damageType, 0)) *
-            (1 + ability.owner.attackTypeMultiplerAmplification.GetValueOrDefault(attackType, 0));
+            (1 + owner.damageMultiplerAmplification) *
+            (1 + owner.damageElementMultiplerAmplification.GetValueOrDefault(damageType, 0)) *
+            (1 + owner.attackTypeMultiplerAmplification.GetValueOrDefault(attackType, 0));
 
-        if (ability.owner is Unit)
+        if (owner is Unit)
         {
-            calculatedBaseDamage += ((Unit)ability.owner).mainChars[amplificationChar] * damageBonusPerCharPoint;
-            calculatedMultipler *= (1 + ((Unit)ability.owner).mainChars[amplificationChar] * damageMultiplerPerCharPoint);
+            calculatedBaseDamage += ((Unit)owner).mainChars[amplificationChar] * damageBonusPerCharPoint;
+            calculatedMultipler *= (1 + ((Unit)owner).mainChars[amplificationChar] * damageMultiplerPerCharPoint);
         }
 
         attack = new Damage(calculatedBaseDamage * calculatedMultipler, damageType, attackType);
@@ -81,7 +80,7 @@ public class DamageAE : AbilityEffect
                 // ќтражение в случае необходимости области применени€ в сторону применени€ способности
                 if (isFlexible)
                 {
-                    realAffectedArea = WorldController.FlexArea(affectedArea, target - ability.owner.currentCell.coords);
+                    realAffectedArea = WorldController.FlexArea(affectedArea, target - owner.currentCell.coords);
                 }
                 else
                 {
@@ -104,7 +103,7 @@ public class DamageAE : AbilityEffect
 
             foreach (var cell in targetCells)
             {
-                cell.AttackCell(attack, ability.owner);
+                cell.AttackCell(attack, owner);
             }
         }
     }

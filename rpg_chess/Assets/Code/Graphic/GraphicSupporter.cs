@@ -7,9 +7,9 @@ public class GraphicSupporter
 {
     protected Dictionary<CellTypeEnum, (TileBase, TileBase)> cellTiles;
     //Первый на ground2Tilemap, второй на onGroundTilemap
-    public TileBase globalFloor;
-    public TileBase globalFloorCorner;
-    public TileBase globalFloorShadow;
+    public TileBase globalFloor { get; private set; }
+    public TileBase globalFloorCorner { get; private set; }
+    public TileBase globalFloorShadow { get; private set; }
     //На groundTilemap
     protected Dictionary<ResourceTypeEnum, TileBase> resourceTiles;
     public TileBase manyResourceTile { get; private set; }

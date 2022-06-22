@@ -66,7 +66,6 @@ public class Drawer
     public void CreateMapGameObject(Map map)
     {
         GameObject newMap = Object.Instantiate(mapPrefab, new Vector3Int(0, 0, 0), Quaternion.identity, grid.gameObject.transform);
-        //newMap.SetActive(false);
         newMap.name = map.name;
         Tilemap[] tilemaps = newMap.GetComponentsInChildren<Tilemap>();
         TilemapGroup tilemapGroup = new TilemapGroup(tilemaps[0], tilemaps[1], tilemaps[2], tilemaps[3], tilemaps[4], tilemaps[5], tilemaps[6], tilemaps[7], tilemaps[8], tilemaps[9]);

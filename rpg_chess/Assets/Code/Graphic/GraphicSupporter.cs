@@ -3,58 +3,67 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class GraphicSupporter
+public static class GraphicSupporter
 {
-    protected Dictionary<CellTypeEnum, (TileBase, TileBase)> cellTiles;
+    private static Dictionary<CellTypeEnum, (TileBase, TileBase)> cellTiles;
     //Первый на ground2Tilemap, второй на onGroundTilemap
-    protected TileBase globalFloor;
+    private static TileBase globalFloor;
     //На groundTilemap
-    protected Dictionary<ResourceTypeEnum, TileBase> resourceTiles;
-    public TileBase manyResourceTile { get; private set; }
+    private static Dictionary<ResourceTypeEnum, TileBase> resourceTiles;
+    private static TileBase manyResourceTile;
 
-    public GraphicSupporter(
+    private static bool initialized = false;
+
+    public static void Init(
         Dictionary<CellTypeEnum, (TileBase, TileBase)> cellTiles,
         TileBase globalFloor,
         Dictionary<ResourceTypeEnum, TileBase> resourceTiles,
         TileBase manyResourceTile)
     {
-        this.globalFloor = globalFloor;
-        this.cellTiles = cellTiles;
-        this.resourceTiles = resourceTiles;
-        this.manyResourceTile = manyResourceTile;
+        initialized = true;
+
+        GraphicSupporter.globalFloor = globalFloor;
+        GraphicSupporter.cellTiles = cellTiles;
+        GraphicSupporter.resourceTiles = resourceTiles;
+        GraphicSupporter.manyResourceTile = manyResourceTile;
     }
 
-    public (TileBase, TileBase, TileBase) GetTileByCellType(CellTypeEnum type)
+    public static (TileBase, TileBase, TileBase) GetTileByCellType(CellTypeEnum type)
     {
         return cellTiles.ContainsKey(type) ? (globalFloor, cellTiles[type].Item1, cellTiles[type].Item2) : (null, null, null);
     }
 
-    public TileBase GetTileByResourceType(ResourceTypeEnum type)
+    public static TileBase GetTileByResourceType(ResourceTypeEnum type)
     {
         return resourceTiles.ContainsKey(type) ? resourceTiles[type] : null;
     }
 
-    public GameObject GetAttackUnitAnimation()
+    public static TileBase GetManyResourceTile()
+    {
+        return manyResourceTile;
+    }
+
+    public static GameObject GetAttackUnitAnimation()
     {
         return Resources.Load<GameObject>("Prefabs/Snake/SnakeAttackPrefab");
     }
 
-    public GameObject GetDeadUnitAnimation()
+    public static GameObject GetDeadUnitAnimation()
     {
         return Resources.Load<GameObject>("Prefabs/Snake/SnakeDyingPrefab");
     }
 
-    public TileBase GetAttackingUnitAnimatedTile()
+    public static TileBase GetAttackingUnitAnimatedTile()
     {
         return Resources.Load<TileBase>("Tiles/Creatures/Snake/Snake_attacking");
     }
 
-    public TileBase GetStayingUnitAnimatedTile()
+    public static TileBase GetStayingUnitAnimatedTile()
     {
         return Resources.Load<TileBase>("Tiles/Creatures/Snake/Snake_staying");
     }
 
-    public TileBase GetDeadUnitTile()
+    public static TileBase GetDeadUnitTile()
     {
         return Resources.Load<TileBase>("Tiles/Creatures/Snake/spr_mob_boss_19");
     }

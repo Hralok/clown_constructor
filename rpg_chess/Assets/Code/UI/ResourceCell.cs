@@ -1,22 +1,46 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class ResourceCell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    private int nameId;
+    private int descriptionId;
+    private int iconId;
+
+    private TextMeshProUGUI text;
+    private Image icon;
+
+    private void Awake()
+    {
+        text = transform.Find("Text").GetComponent<TextMeshProUGUI>();
+        icon = transform.Find("Icon").GetComponent<Image>();
+    }
+
+    public void Initialization(int nameId, int descriptionId, int iconId)
+    {
+        this.nameId = nameId;
+        this.descriptionId = descriptionId;
+        this.iconId = iconId;
+
+        // icon = GraphicSupporter
+    }
+
+    public void SetValue(int currentValue, int maxValue)
+    {
+        text.text = currentValue.ToString() + "/" + maxValue.ToString();
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("The cursor entered the selectable UI element.");
-
-        InfoBox.ShowInfoBox_Static(transform.position, "proba", "Полноценное описание какого-то ресурса, с пропусками, пробелами \n и абзацами.");
+        //InfoBox.ShowInfoBox_Static(transform.position, TextManager.GetTextById(nameId), TextManager.GetTextById(descriptionId));
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("The cursor exit the selectable UI element.");
-
-        InfoBox.HideInfoBox_Static();
+        //InfoBox.HideInfoBox_Static();
     }
 }

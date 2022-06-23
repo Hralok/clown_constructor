@@ -7,8 +7,9 @@ public static class Fabricator
     private static Dictionary<int, ActiveAbility> activeAbilities;
     public static HashSet<ResourceTypeEnum> allowedResources { get; private set; }
 
-    private static Dictionary<int, EntityInitInfo> entityInitInfo;
-
+    private static Dictionary<int, EntityInitInfo> entitiesInitInfo;
+    private static Dictionary<int, ItemInitInfo> itemsInitInfo;
+    public static int currentLastItemId { get; private set; } = -1;
     public static bool resourcesInitialized { get; private set; } = false;
     public static bool damageTypesInitialized { get; private set; } = false;
     public static bool healTypesInitialized { get; private set; } = false;
@@ -48,7 +49,25 @@ public static class Fabricator
     public static void EntitiesInit(Dictionary<int, EntityInitInfo> entityInitInfo)
     {
         entitiesInitialized = true;
-        Fabricator.entityInitInfo = entityInitInfo;
+        Fabricator.entitiesInitInfo = entityInitInfo;
+    }
+
+    public static void ItemsInit()
+    {
+        itemsInitialized = true;
+        Fabricator.itemsInitInfo = new Dictionary<int, ItemInitInfo>();
+    }
+
+    public static void AddItemInfo(ItemInitInfo info)
+    {
+        if (!itemsInitialized)
+        {
+            throw new System.Exception("Предметы ещё не инициализированы!");
+        }
+        else
+        {
+            itemsInitInfo.Add(info.itemId, info);
+        }
     }
 
     public static bool ChekAbilityExistence(int id)
@@ -66,7 +85,7 @@ public static class Fabricator
         {
             throw new System.Exception("Fabricator не инициализирован перед использованием!");
         }
-        throw new System.NotImplementedException();
+        return new Item(itemsInitInfo[newItemId]);
     }
 
     public static void CreateEntity(int newEntityId, Player owner, Cell cell)
@@ -76,24 +95,19 @@ public static class Fabricator
             throw new System.Exception("Fabricator не инициализирован перед использованием!");
         }
 
-        if(!entityInitInfo.ContainsKey(newEntityId))
+        if(!entitiesInitInfo.ContainsKey(newEntityId))
         {
             throw new System.Exception("Произведена попытка создать неизвестную сущность!");
         }
 
-        if (entityInitInfo[newEntityId] is UnitInitInfo)
+        if (entitiesInitInfo[newEntityId] is UnitInitInfo)
         {
             if (cell.unitAtCell!=null)
             {
                 throw new System.Exception("Невозможно создать существо на уже занятой ячейке!");
             }
-            owner.AddEntity(new Unit((UnitInitInfo)entityInitInfo[newEntityId], cell, owner));
+            owner.AddEntity(new Unit((UnitInitInfo)entitiesInitInfo[newEntityId], cell, owner));
         }
-
-        
-
-
-
     }
 
     public static int UseAbility(int id, List<(Vector2Int, Map)> targetsList, Entity owner)

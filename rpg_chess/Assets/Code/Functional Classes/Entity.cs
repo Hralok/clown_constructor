@@ -5,6 +5,7 @@ using System.Linq;
 
 public abstract class Entity
 {
+    readonly public int entityId;
     public Cell currentCell { get; protected set; }
 
     public double healthPoints { get; protected set; }
@@ -59,6 +60,8 @@ public abstract class Entity
 
     public Entity(EntityInitInfo info, Cell currentCell, Player player)
     {
+        entityId = info.entityId;
+
         currentCell.AddEntity(this);
         this.currentCell = currentCell;
 

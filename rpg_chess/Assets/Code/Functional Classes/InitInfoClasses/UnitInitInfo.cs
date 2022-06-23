@@ -9,6 +9,7 @@ public class UnitInitInfo : EntityInitInfo
     public int currentLvl { get; private set; }
 
     public UnitInitInfo(
+        int entityId,
         double maximalHealthPoints,
         double maximalMana,
         double maximalEnergy,
@@ -30,7 +31,7 @@ public class UnitInitInfo : EntityInitInfo
         Dictionary<MainCharacteristicTypeEnum, double> mainChars, 
         double expToNextLvl, 
         int currentLvl) :
-        base(maximalHealthPoints, maximalMana, maximalEnergy, selfTypes, damageBonusAmplification, damageMultiplerAmplification, healBonusAmplification, healMultiplerAmplification, damageElementBonusAmplification, damageElementMultiplerAmplification, healElementBonusAmplification, healElementMultiplerAmplification, attackTypeBonusAmplification, attackTypeMultiplerAmplification, expToKiller, defenseType, abilities, inventorySize)
+        base(entityId, maximalHealthPoints, maximalMana, maximalEnergy, selfTypes, damageBonusAmplification, damageMultiplerAmplification, healBonusAmplification, healMultiplerAmplification, damageElementBonusAmplification, damageElementMultiplerAmplification, healElementBonusAmplification, healElementMultiplerAmplification, attackTypeBonusAmplification, attackTypeMultiplerAmplification, expToKiller, defenseType, abilities, inventorySize)
     {
         foreach (var charNum in mainChars.Values)
         {

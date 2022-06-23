@@ -36,7 +36,7 @@ public class ResourceCell : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        //InfoBox.ShowInfoBox_Static(transform.position, TextManager.GetTextById(nameId), TextManager.GetTextById(descriptionId));
+        //InfoBox.ShowInfoBox_Static(transform.position, nameId, descriptionId);
     }
 
     public void OnPointerExit(PointerEventData eventData)

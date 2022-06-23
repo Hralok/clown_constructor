@@ -6,6 +6,20 @@ using TMPro;
 
 public class SettingsMenu : MonoBehaviour
 {
+    [SerializeField]
+    MainMenu mainMenu;
+
+    [SerializeField]
+    private TextMeshProUGUI settingsText;
+    [SerializeField]
+    private TextMeshProUGUI volumeText;
+    [SerializeField]
+    private TextMeshProUGUI qualityText;
+    [SerializeField]
+    private TextMeshProUGUI resolutionText;
+    [SerializeField]
+    private TextMeshProUGUI languageText;
+
     public AudioMixer audioMixer;
 
     public TMP_Dropdown resolutionDropdown;
@@ -38,6 +52,17 @@ public class SettingsMenu : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = resolutions.Length - 1 - currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+
+        SetTextUI();
+    }
+
+    public void SetTextUI()
+    {
+        settingsText.text = TextManager.GetTextById(1);
+        volumeText.text = TextManager.GetTextById(8);
+        qualityText.text = TextManager.GetTextById(9);
+        resolutionText.text = TextManager.GetTextById(10);
+        languageText.text = TextManager.GetTextById(11);
     }
 
     public void SetResolution(int resolutionIndex)
@@ -68,7 +93,8 @@ public class SettingsMenu : MonoBehaviour
             TextManager.SetCurrentLanguage(LanguageEnum.English);
         }
 
-        // Запустить изменение всех надписей под текущий язык
+        SetTextUI();
+        mainMenu.SetTextUI();
     }
 
     public void SetFullScreen(bool isFullScreen)

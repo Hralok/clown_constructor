@@ -65,20 +65,16 @@ public class CreatureIcon : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("Enter");
-        //InfoBox.ShowInfoBox_Static(transform.position, TextManager.GetTextById(entity.nameId), TextManager.GetTextById(entity.descriptionId));
+        //InfoBox.ShowInfoBox_Static(transform.position, entity.nameId, entity.descriptionId);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("Exit");
-
         //InfoBox.HideInfoBox_Static();
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("Down");
         // сменить выделенное существо
         // MainBars.UpdateBarsValues_Static(entity);
     }

@@ -7,7 +7,9 @@ public class GraphicSupporter
 {
     protected Dictionary<CellTypeEnum, (TileBase, TileBase)> cellTiles;
     //Первый на ground2Tilemap, второй на onGroundTilemap
-    protected TileBase globalFloor;
+    public TileBase globalFloor { get; private set; }
+    public TileBase globalFloorCorner { get; private set; }
+    public TileBase globalFloorShadow { get; private set; }
     //На groundTilemap
     protected Dictionary<ResourceTypeEnum, TileBase> resourceTiles;
     public TileBase manyResourceTile { get; private set; }
@@ -15,18 +17,22 @@ public class GraphicSupporter
     public GraphicSupporter(
         Dictionary<CellTypeEnum, (TileBase, TileBase)> cellTiles,
         TileBase globalFloor,
+        TileBase globalFloorCorner,
+        TileBase globalFloorShadow,
         Dictionary<ResourceTypeEnum, TileBase> resourceTiles,
         TileBase manyResourceTile)
     {
-        this.globalFloor = globalFloor;
         this.cellTiles = cellTiles;
+        this.globalFloor = globalFloor;
+        this.globalFloorCorner = globalFloorCorner;
+        this.globalFloorShadow = globalFloorShadow;
         this.resourceTiles = resourceTiles;
         this.manyResourceTile = manyResourceTile;
     }
 
-    public (TileBase, TileBase, TileBase) GetTileByCellType(CellTypeEnum type)
+    public (TileBase, TileBase) GetTileByCellType(CellTypeEnum type)
     {
-        return cellTiles.ContainsKey(type) ? (globalFloor, cellTiles[type].Item1, cellTiles[type].Item2) : (null, null, null);
+        return cellTiles.ContainsKey(type) ? cellTiles[type] : (null, null);
     }
 
     public TileBase GetTileByResourceType(ResourceTypeEnum type)

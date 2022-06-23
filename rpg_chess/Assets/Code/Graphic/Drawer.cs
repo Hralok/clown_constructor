@@ -6,6 +6,7 @@ public class Drawer
 {
     public struct TilemapGroup
     {
+        public Tilemap groundShadowTilemap;
         public Tilemap groundTilemap;
         public Tilemap ground2Tilemap;
         public Tilemap roadTilemap;
@@ -16,10 +17,11 @@ public class Drawer
         public Tilemap deadBodiesTilemap;
         public Tilemap creaturesTilemap;
 
-        public TilemapGroup(Tilemap groundTilemap, Tilemap ground2Tilemap, Tilemap roadTilemap, Tilemap onGroundTilemap,
+        public TilemapGroup(Tilemap groundShadowTilemap, Tilemap groundTilemap, Tilemap ground2Tilemap, Tilemap roadTilemap, Tilemap onGroundTilemap,
             Tilemap resourcesTilemap, Tilemap itemsTilemap, Tilemap structuresTilemap,
             Tilemap deadBodiesTilemap, Tilemap creaturesTilemap)
         {
+            this.groundShadowTilemap = groundShadowTilemap;
             this.groundTilemap = groundTilemap;
             this.ground2Tilemap = ground2Tilemap;
             this.roadTilemap = roadTilemap;
@@ -64,10 +66,9 @@ public class Drawer
     public void CreateMapGameObject(Map map)
     {
         GameObject newMap = Object.Instantiate(mapPrefab, new Vector3Int(0, 0, 0), Quaternion.identity, grid.gameObject.transform);
-        //newMap.SetActive(false);
         newMap.name = map.name;
         Tilemap[] tilemaps = newMap.GetComponentsInChildren<Tilemap>();
-        TilemapGroup tilemapGroup = new TilemapGroup(tilemaps[0], tilemaps[1], tilemaps[2], tilemaps[3], tilemaps[4], tilemaps[5], tilemaps[6], tilemaps[7], tilemaps[8]);
+        TilemapGroup tilemapGroup = new TilemapGroup(tilemaps[0], tilemaps[1], tilemaps[2], tilemaps[3], tilemaps[4], tilemaps[5], tilemaps[6], tilemaps[7], tilemaps[8], tilemaps[9]);
         mapTilemaps.Add(map, tilemapGroup);
         DrawMap(map);
     }
@@ -91,26 +92,71 @@ public class Drawer
 
     public void DrawCell(Cell cell, TilemapGroup tilemaps)
     {
-        TileBase groundTile;
         TileBase ground2Tile;
         TileBase ongroundTile;
-        (groundTile, ongroundTile, ground2Tile) = graphicSupport.GetTileByCellType(cell.type);
-        if (groundTile == null)
+        (ground2Tile, ongroundTile) = graphicSupport.GetTileByCellType(cell.type);
+        if (ground2Tile == null)
         {
             tilemaps.groundTilemap.SetTile((Vector3Int)cell.coords, groundDebug);
             throw new System.Exception("Местность, указанная в клетке с координатами " + cell.coords + " не обнаружена");
         }
         else
         {
+            bool downEmptyCheck = false;
+
+            if (!cell.relatedMap.DoesCellExist(new Vector2Int(cell.coords.x, cell.coords.y - 1)))
+            {
+                downEmptyCheck = true;
+            }
+
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    tilemaps.groundTilemap.SetTile(new Vector3Int(cell.coords.x * 4 + i, cell.coords.y * 4 + j, 0), groundTile);
+                    tilemaps.groundTilemap.SetTile(new Vector3Int(cell.coords.x * 4 + i, cell.coords.y * 4 + j, 0), graphicSupport.globalFloor);
                     tilemaps.ground2Tilemap.SetTile(new Vector3Int(cell.coords.x * 4 + i, cell.coords.y * 4 + j, 0), ground2Tile);
-                    tilemaps.onGroundTilemap.SetTile(new Vector3Int(cell.coords.x * 4 + i, cell.coords.y * 4 + j, 0), ongroundTile);
                 }
             }
+
+            if (!cell.relatedMap.DoesCellExist(new Vector2Int(cell.coords.x + 1, cell.coords.y))) //клетка справа
+            {
+                var start = 0;
+                var n = 4;
+                if (!cell.relatedMap.DoesCellExist(new Vector2Int(cell.coords.x, cell.coords.y + 1))) //клетка сверху
+                {
+                    n = 3;
+                }
+                if (downEmptyCheck)
+                {
+                    start = -1;
+                }
+
+                for (int j = start; j < n; j++)
+                {
+
+                    tilemaps.groundShadowTilemap.SetTile(new Vector3Int(cell.coords.x * 4 + 4, cell.coords.y * 4 + j, 0), graphicSupport.globalFloorShadow);
+                }
+            }
+
+            if (downEmptyCheck)
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    tilemaps.ground2Tilemap.SetTile(new Vector3Int(cell.coords.x * 4 + i, cell.coords.y * 4 - 1, 0), graphicSupport.globalFloorCorner);
+                }
+
+                //наличие нижних диагональных углов
+                if (cell.relatedMap.DoesCellExist(new Vector2Int(cell.coords.x - 1, cell.coords.y - 1))) 
+                {
+                    tilemaps.ground2Tilemap.SetTile(new Vector3Int(cell.coords.x * 4, cell.coords.y * 4 - 2, 0), graphicSupport.globalFloorCorner);
+                }
+                if (cell.relatedMap.DoesCellExist(new Vector2Int(cell.coords.x + 1, cell.coords.y - 1)))
+                {
+                    tilemaps.ground2Tilemap.SetTile(new Vector3Int(cell.coords.x * 4 + 3, cell.coords.y * 4 - 2, 0), graphicSupport.globalFloorCorner);
+                }
+            }
+            tilemaps.onGroundTilemap.SetTile(new Vector3Int(cell.coords.x, cell.coords.y, 0), ongroundTile);
+            downEmptyCheck = false;
         }
     }
 

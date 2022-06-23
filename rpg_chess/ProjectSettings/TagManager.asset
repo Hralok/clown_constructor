@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: ShadowTailmap
+    uniqueID: 2672073047
+    locked: 0
   - name: GroundTilemap
     uniqueID: 1306041805
     locked: 0

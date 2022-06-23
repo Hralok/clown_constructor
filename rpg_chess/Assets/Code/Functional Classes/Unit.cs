@@ -9,6 +9,13 @@ public class Unit : Entity
     public double expToNextLvl { get; private set; } // Временная переменная, необходимо заменить 
     public int currentLvl { get; private set; }
 
+    public bool busyWithItem { get; private set; }
+    public int currentItemAbilityId { get; private set; }
+    private int currentEffectGroup;
+    public double currentItemAbilityDelay { get; private set; }
+    private List<(Vector2Int, Map)> targetsList;
+
+
     public Unit(UnitInitInfo info, Cell currentCell, Player player) : base(info, currentCell, player)
     {
         mainChars = new Dictionary<MainCharacteristicTypeEnum, double>(info.mainChars);
@@ -35,11 +42,55 @@ public class Unit : Entity
         }
     }
 
+    public override void DoTheTurnStuff()
+    {
+        foreach (var item in inventory)
+        {
+            if (item != null)
+            {
+                item.DoTheTurnStuff();
+            }
+        }
+
+        if (busyWithItem)
+        {
+            currentItemAbilityDelay -= 1;
+            if (currentItemAbilityDelay <= 0)
+            {
+                var result = Fabricator.ContinueUseAbility(currentItemAbilityId, this, currentEffectGroup, targetsList);
+
+                if (result == -1)
+                {
+                    busyWithItem = false;
+                }
+                else
+                {
+                    currentEffectGroup = result;
+                    currentItemAbilityDelay = Fabricator.GetAbilityDelay(currentItemAbilityId, currentEffectGroup);
+                }
+            }
+        }
+        
+        base.DoTheTurnStuff();
+    }
+
+
+
+
+
     public void UseItem(int indx, List<(Vector2Int, Map)> targetsList)
     {
-        if (indx < inventory.Length && inventory[indx] != null)
+        if (indx < inventory.Length && indx >0 && inventory[indx] != null && inventory[indx].activeAbilitiyId != -1 && (inventory[indx].hasCharges && inventory[indx].charges > 0))
         {
-            inventory[indx].UseItemActiveAbility(targetsList, this);
+            currentEffectGroup = inventory[indx].UseItemActiveAbility(targetsList, this);
+
+            if (currentEffectGroup != -1)
+            {
+                busyWithItem = true;
+                currentItemAbilityId = inventory[indx].activeAbilitiyId;
+                currentItemAbilityDelay = Fabricator.GetAbilityDelay(inventory[indx].activeAbilitiyId, currentEffectGroup);
+                this.targetsList = targetsList;
+            }
         }
     }
 

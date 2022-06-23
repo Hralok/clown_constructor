@@ -7,41 +7,41 @@ public abstract class Entity
 {
     public Cell currentCell { get; protected set; }
 
-    public double healthPoints { get; private set; }
-    public double mana { get; private set; }
-    public double energy { get; private set; }
+    public double healthPoints { get; protected set; }
+    public double mana { get; protected set; }
+    public double energy { get; protected set; }
 
-    public double maximalHealthPoints { get; private set; }
-    public double maximalMana { get; private set; }
-    public double maximalEnergy { get; private set; }
+    public double maximalHealthPoints { get; protected set; }
+    public double maximalMana { get; protected set; }
+    public double maximalEnergy { get; protected set; }
 
     public Player player { get; protected set; }
 
     // Множество собственных типов сущности
-    public HashSet<EntityTypeEnum> selfTypes { get; private set; }
+    public HashSet<EntityTypeEnum> selfTypes { get; protected set; }
 
     // Список приобретённых типов существа с показателем количества удерживающих эффектов
     // Отложено до момента реализации временных эффектов
     //public List<(int, EntityTypeEnum)> acquiredTypes { get; private set; }
 
     // Усиление Умений лечения и атаки
-    public double damageBonusAmplification { get; private set; }
-    public double damageMultiplerAmplification { get; private set; }
-    public double healBonusAmplification { get; private set; }
-    public double healMultiplerAmplification { get; private set; }
-    public Dictionary<DamageTypeEnum, double> damageElementBonusAmplification { get; private set; }
-    public Dictionary<DamageTypeEnum, double> damageElementMultiplerAmplification { get; private set; }
-    public Dictionary<HealTypeEnum, double> healElementBonusAmplification { get; private set; }
-    public Dictionary<HealTypeEnum, double> healElementMultiplerAmplification { get; private set; }
-    public Dictionary<AttackTypeEnum, double> attackTypeBonusAmplification { get; private set; }
-    public Dictionary<AttackTypeEnum, double> attackTypeMultiplerAmplification { get; private set; }
+    public double damageBonusAmplification { get; protected set; }
+    public double damageMultiplerAmplification { get; protected set; }
+    public double healBonusAmplification { get; protected set; }
+    public double healMultiplerAmplification { get; protected set; }
+    public Dictionary<DamageTypeEnum, double> damageElementBonusAmplification { get; protected set; }
+    public Dictionary<DamageTypeEnum, double> damageElementMultiplerAmplification { get; protected set; }
+    public Dictionary<HealTypeEnum, double> healElementBonusAmplification { get; protected set; }
+    public Dictionary<HealTypeEnum, double> healElementMultiplerAmplification { get; protected set; }
+    public Dictionary<AttackTypeEnum, double> attackTypeBonusAmplification { get; protected set; }
+    public Dictionary<AttackTypeEnum, double> attackTypeMultiplerAmplification { get; protected set; }
 
-    public double expToKiller { get; private set; }
-
-
+    public double expToKiller { get; protected set; }
 
 
-    public DefenseTypeEnum defenseType { get; private set; }
+
+
+    public DefenseTypeEnum defenseType { get; protected set; }
 
     // Переменные отвечают за использование продолжительных способностей
     public bool busy { get; private set; }
@@ -52,10 +52,10 @@ public abstract class Entity
 
     // Необходимо вынести способности из сущностей и предметов, заменив на id способностей
     // Подумать над смешением активных и пассивных способностей
-    public List<ActiveAbilityInSomewhere> abilities { get; private set; }
+    public List<ActiveAbilityInSomewhere> abilities { get; protected set; }
 
-    public Item[] inventory { get; private set; }
-    public int inventorySize { get; private set; }
+    public Item[] inventory { get; protected set; }
+    public int inventorySize { get; protected set; }
 
     public Entity(EntityInitInfo info, Cell currentCell, Player player)
     {
@@ -128,7 +128,7 @@ public abstract class Entity
         }
     }
 
-    public void DoTheTurnStuff()
+    public virtual void DoTheTurnStuff()
     {
         foreach (var ability in abilities)
         {

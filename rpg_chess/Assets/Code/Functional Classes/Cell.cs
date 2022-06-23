@@ -17,7 +17,11 @@ public class Cell
     {
         this.coords = coords;
         this.type = type;
-        this.relatedMap = map;
+        if (map == null)
+        {
+            throw new System.Exception("ячейка об€зательно должна принадлежать карте!");
+        }
+        relatedMap = map;
         unitAtCell = null;
         structureAtCell = null;
         itemAtCell = null;

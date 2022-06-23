@@ -4,8 +4,6 @@ using UnityEngine;
 
 public abstract class EntityInitInfo
 {
-    public Cell currentCell { get; protected set; }
-
 
     public double maximalHealthPoints { get; private set; }
     public double maximalMana { get; private set; }
@@ -33,7 +31,6 @@ public abstract class EntityInitInfo
     public int inventorySize { get; private set; }
 
     public EntityInitInfo(
-        Cell currentCell, 
         double maximalHealthPoints, 
         double maximalMana, 
         double maximalEnergy, 
@@ -52,11 +49,10 @@ public abstract class EntityInitInfo
         List<ActiveAbilityInSomewhere> abilities, 
         int inventorySize)
     {
-        if (currentCell == null)
+        if (!Fabricator.abilitiesInitialized)
         {
-            throw new System.Exception("Такой ячейки не существует!");
+            throw new System.Exception("Необходимые элементы класса Fabricator ещё не инициализированы!");
         }
-        this.currentCell = currentCell;
 
         if (maximalHealthPoints <= 0)
         {
@@ -94,8 +90,22 @@ public abstract class EntityInitInfo
         this.healElementMultiplerAmplification = healElementMultiplerAmplification;
         this.attackTypeBonusAmplification = attackTypeBonusAmplification;
         this.attackTypeMultiplerAmplification = attackTypeMultiplerAmplification;
+
+        if (expToKiller < 0)
+        {
+            throw new System.Exception("expToKiller должно быть неотрицательным числом!");
+        }
         this.expToKiller = expToKiller;
+
         this.defenseType = defenseType;
+
+        foreach (var ability in abilities)
+        {
+            if (!Fabricator.ChekAbilityExistence(ability.abilityId))
+            {
+                throw new System.Exception("Вы пытаетесь добавить сущности несуществующую способность!");
+            }
+        }
         this.abilities = abilities;
         this.inventorySize = inventorySize;
     }

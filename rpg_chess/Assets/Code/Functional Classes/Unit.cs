@@ -8,9 +8,13 @@ public class Unit : Entity
     public double currentExp { get; private set; }
     public double expToNextLvl { get; private set; } // Временная переменная, необходимо заменить 
     public int currentLvl { get; private set; }
-    public Unit(Cell cell)
+
+    public Unit(UnitInitInfo info, Cell currentCell, Player player) : base(info, currentCell, player)
     {
-        currentCell = cell;
+        mainChars = new Dictionary<MainCharacteristicTypeEnum, double>(info.mainChars);
+        currentExp = 0;
+        expToNextLvl = info.expToNextLvl;
+        currentLvl = info.currentLvl;
     }
 
     public void ReplaceItemWith(Item replaceableItem, int replacementItemId)

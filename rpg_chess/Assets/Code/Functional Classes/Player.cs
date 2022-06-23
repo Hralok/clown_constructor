@@ -9,6 +9,14 @@ public class Player
     public HashSet<Player> enemies { get; private set; }
     public HashSet<Player> allies { get; private set; }
 
+    public Player()
+    {
+        entities = new HashSet<Entity>();
+        resources = new HashSet<Resource>();
+        enemies = new HashSet<Player>();
+        allies = new HashSet<Player>();
+    }
+
     public bool CheckForWin()
     {
         return false;
@@ -81,7 +89,14 @@ public class Player
         {
             if (!resources.Contains(resource))
             {
-                throw new System.Exception("Произведена попытка добавить игроку неразрешённый тип ресурса");
+                if (Fabricator.allowedResources.Contains(resource.type))
+                {
+                    resources.Add(resource);
+                }
+                else
+                {
+                    throw new System.Exception("Произведена попытка добавить игроку неразрешённый тип ресурса");
+                }
             }
             else
             {

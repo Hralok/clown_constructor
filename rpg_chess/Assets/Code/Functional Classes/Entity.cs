@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class Entity
+public abstract class Entity
 {
     public Cell currentCell { get; protected set; }
 
@@ -57,9 +57,38 @@ public class Entity
     public Item[] inventory { get; private set; }
     public int inventorySize { get; private set; }
 
-    public Entity()
+    public Entity(EntityInitInfo info, Cell currentCell, Player player)
     {
+        currentCell.AddEntity(this);
+        this.currentCell = currentCell;
 
+        maximalEnergy = info.maximalEnergy;
+        maximalHealthPoints = info.maximalHealthPoints;
+        maximalMana = info.maximalMana;
+
+        energy = maximalEnergy;
+        healthPoints = maximalHealthPoints;
+        mana = maximalMana;
+
+        this.player = player;
+        selfTypes = info.selfTypes;
+        damageBonusAmplification = info.damageBonusAmplification;
+        damageMultiplerAmplification = info.damageMultiplerAmplification;
+        healBonusAmplification = info.healBonusAmplification;
+        healMultiplerAmplification = info.healMultiplerAmplification;
+        damageElementBonusAmplification = new Dictionary<DamageTypeEnum, double>(info.damageElementBonusAmplification);
+        damageElementMultiplerAmplification = new Dictionary<DamageTypeEnum, double>(info.damageElementMultiplerAmplification);
+        healElementBonusAmplification = new Dictionary<HealTypeEnum, double>(info.healElementBonusAmplification);
+        healElementMultiplerAmplification = new Dictionary<HealTypeEnum, double>(info.healElementMultiplerAmplification);
+        attackTypeBonusAmplification = new Dictionary<AttackTypeEnum, double>(info.attackTypeBonusAmplification);
+        attackTypeMultiplerAmplification = new Dictionary<AttackTypeEnum, double>(info.attackTypeMultiplerAmplification);
+        expToKiller = info.expToKiller;
+        defenseType = info.defenseType;
+        busy = false;
+        abilities = info.abilities.Clone();
+        inventorySize = info.inventorySize;
+
+        inventory = new Item[inventorySize];
     }
 
 

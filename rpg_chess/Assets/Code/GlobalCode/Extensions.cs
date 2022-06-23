@@ -16,6 +16,17 @@ public static class Extensions
         }
     }
 
+    public static List<ActiveAbilityInSomewhere> Clone(this List<ActiveAbilityInSomewhere> list)
+    {
+        var newList = new List<ActiveAbilityInSomewhere>();
+
+        for (int i = 0; i < list.Count; i++)
+        {
+            newList.Add((ActiveAbilityInSomewhere)list[i].Clone());
+        }
+
+        return newList;
+    }
 
 
 }

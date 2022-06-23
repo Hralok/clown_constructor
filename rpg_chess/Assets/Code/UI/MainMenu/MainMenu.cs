@@ -8,6 +8,34 @@ public class MainMenu : MonoBehaviour
 {
     public GameObject comingSoonImage;
 
+    [SerializeField]
+    private TextMeshProUGUI continueText;
+    [SerializeField]
+    private TextMeshProUGUI loadText;
+    [SerializeField]
+    private TextMeshProUGUI newGameText;
+    [SerializeField]
+    private TextMeshProUGUI mapConstructorText;
+    [SerializeField]
+    private TextMeshProUGUI quitText;
+
+    [SerializeField]
+    private LevelLoader loadPanel;
+
+    private void Start()
+    {
+        SetTextUI();
+    }
+
+    public void SetTextUI()
+    {
+        continueText.text = TextManager.GetTextById(2);
+        loadText.text = TextManager.GetTextById(3);
+        newGameText.text = TextManager.GetTextById(4);
+        mapConstructorText.text = TextManager.GetTextById(5);
+        quitText.text = TextManager.GetTextById(6);
+    }
+
     IEnumerator SetOff()
     {
         Color startText = comingSoonImage.transform.GetComponentInChildren<TextMeshProUGUI>().color;
@@ -41,7 +69,7 @@ public class MainMenu : MonoBehaviour
 
     public void ContinueGame()
     {
-        // Загрузка последней игры
+        loadPanel.LoadLevel();
     }
 
     public void LoadGame()

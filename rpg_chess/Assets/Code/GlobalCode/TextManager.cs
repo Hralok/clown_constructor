@@ -11,7 +11,18 @@ public static class TextManager
         { LanguageEnum.Russian, new Dictionary<int, string>()
             {
                 {0,  "Главное меню"},
-                {1,  "Настройки"}
+                {1,  "Настройки"},
+                {2,  "Продолжить"},
+                {3,  "Загрузить"},
+                {4,  "Новая игра"},
+                {5,  "Картостроитель"},
+                {6,  "Выход"},
+                {7,  "Информация"},
+                {8,  "Громкость"},
+                {9,  "Качество"},
+                {10, "Разрешение"},
+                {11, "Язык"},
+                {12, "Загрузка"},
             }
         },
 
@@ -19,7 +30,19 @@ public static class TextManager
         { LanguageEnum.English, new Dictionary<int, string>()
             {
                 {0,  "Main menu"},
-                {1,  "Settings"}
+                {1,  "Settings"},
+                {2,  "Continue"},
+                {3,  "Load"},
+                {4,  "New Game"},
+                {5,  "Mapconstructor"},
+                {6,  "Quit"},
+                {7,  "Information"},
+                {8,  "Volume"},
+                {9,  "Quality"},
+                {10, "Resolution"},
+                {11, "Language"},
+                {12, "Loading"},
+
             }
         }
     };

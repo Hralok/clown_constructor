@@ -132,7 +132,7 @@ public static class GraphicSupporter
         return Resources.Load<TileBase>("Tiles/Creatures/Snake/spr_mob_boss_19");
     }
 
-    public GameObject GetAbilityAnimation()
+    public static GameObject GetAbilityAnimation()
     {
         return Resources.Load<GameObject>("Prefabs/Abilities/AttackAbility");
     }

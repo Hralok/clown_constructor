@@ -16,11 +16,10 @@ public class Drawer
         public Tilemap structuresTilemap;
         public Tilemap deadBodiesTilemap;
         public Tilemap creaturesTilemap;
-        public Tilemap abilitiesTilemap;
 
         public TilemapGroup(Tilemap groundShadowTilemap, Tilemap groundTilemap, Tilemap ground2Tilemap, Tilemap roadTilemap, Tilemap onGroundTilemap,
             Tilemap resourcesTilemap, Tilemap itemsTilemap, Tilemap structuresTilemap,
-            Tilemap deadBodiesTilemap, Tilemap creaturesTilemap, Tilemap abilitiesTilemap)
+            Tilemap deadBodiesTilemap, Tilemap creaturesTilemap)
         {
             this.groundShadowTilemap = groundShadowTilemap;
             this.groundTilemap = groundTilemap;
@@ -32,7 +31,6 @@ public class Drawer
             this.structuresTilemap = structuresTilemap;
             this.deadBodiesTilemap = deadBodiesTilemap;
             this.creaturesTilemap = creaturesTilemap;
-            this.abilitiesTilemap = abilitiesTilemap;
         }
     }
 
@@ -68,7 +66,7 @@ public class Drawer
         GameObject newMap = Object.Instantiate(mapPrefab, new Vector3Int(0, 0, 0), Quaternion.identity, grid.gameObject.transform);
         newMap.name = map.name;
         Tilemap[] tilemaps = newMap.GetComponentsInChildren<Tilemap>();
-        TilemapGroup tilemapGroup = new TilemapGroup(tilemaps[0], tilemaps[1], tilemaps[2], tilemaps[3], tilemaps[4], tilemaps[5], tilemaps[6], tilemaps[7], tilemaps[8], tilemaps[9], tilemaps[10]);
+        TilemapGroup tilemapGroup = new TilemapGroup(tilemaps[0], tilemaps[1], tilemaps[2], tilemaps[3], tilemaps[4], tilemaps[5], tilemaps[6], tilemaps[7], tilemaps[8], tilemaps[9]);
         mapTilemaps.Add(map, tilemapGroup);
         DrawMap(map);
     }
@@ -283,7 +281,7 @@ public class Drawer
         tilemapGroup = mapTilemaps[map];
 
         GameObject abilityAnimation;
-        abilityAnimation = graphicSupport.GetAbilityAnimation();
+        abilityAnimation = GraphicSupporter.GetAbilityAnimation();
 
         if (abilityAnimation == null)
         {
@@ -294,4 +292,5 @@ public class Drawer
             Object.Instantiate(abilityAnimation, (Vector3Int)coords, Quaternion.identity, tilemapGroup.creaturesTilemap.transform);
         }
     }
+
 }

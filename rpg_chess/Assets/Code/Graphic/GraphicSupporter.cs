@@ -7,9 +7,9 @@ public static class GraphicSupporter
 {
     private static Dictionary<CellTypeEnum, (TileBase, TileBase)> cellTiles;
     //Первый на ground2Tilemap, второй на onGroundTilemap
-    static public TileBase globalFloor { get; private set; }
-    static public TileBase globalFloorCorner { get; private set; }
-    static public TileBase globalFloorShadow { get; private set; }
+    private static TileBase globalFloor;
+    private static TileBase globalFloorCorner;
+    private static TileBase globalFloorShadow;
     //На groundTilemap
     private static Dictionary<ResourceTypeEnum, TileBase> resourceTiles;
     private static TileBase manyResourceTile;
@@ -58,6 +58,33 @@ public static class GraphicSupporter
             throw new System.Exception("Drawer не инициализирован перед использованием!");
         }
         return manyResourceTile;
+    }
+
+    public static TileBase GetGlobalFloor()
+    {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
+        return globalFloor;
+    }
+
+    public static TileBase GetGlobalFloorCorner()
+    {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
+        return globalFloorCorner;
+    }
+
+    public static TileBase GetGlobalFloorShadow()
+    {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
+        return globalFloorShadow;
     }
 
     public static GameObject GetAttackUnitAnimation()

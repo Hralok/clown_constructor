@@ -7,7 +7,9 @@ public static class GraphicSupporter
 {
     private static Dictionary<CellTypeEnum, (TileBase, TileBase)> cellTiles;
     //Первый на ground2Tilemap, второй на onGroundTilemap
-    private static TileBase globalFloor;
+    static public TileBase globalFloor { get; private set; }
+    static public TileBase globalFloorCorner { get; private set; }
+    static public TileBase globalFloorShadow { get; private set; }
     //На groundTilemap
     private static Dictionary<ResourceTypeEnum, TileBase> resourceTiles;
     private static TileBase manyResourceTile;
@@ -17,6 +19,8 @@ public static class GraphicSupporter
     public static void Init(
         Dictionary<CellTypeEnum, (TileBase, TileBase)> cellTiles,
         TileBase globalFloor,
+        TileBase globalFloorCorner,
+        TileBase globalFloorShadow,
         Dictionary<ResourceTypeEnum, TileBase> resourceTiles,
         TileBase manyResourceTile)
     {
@@ -26,15 +30,16 @@ public static class GraphicSupporter
         GraphicSupporter.cellTiles = cellTiles;
         GraphicSupporter.resourceTiles = resourceTiles;
         GraphicSupporter.manyResourceTile = manyResourceTile;
+	GraphicSupporter.globalFloorCorner = globalFloorCorner;
+        GraphicSupporter.globalFloorShadow = globalFloorShadow;
     }
-
-    public static (TileBase, TileBase, TileBase) GetTileByCellType(CellTypeEnum type)
+    public static (TileBase, TileBase) GetTileByCellType(CellTypeEnum type)
     {
-        if (!initialized)
+	if (!initialized)
         {
             throw new System.Exception("Drawer не инициализирован перед использованием!");
         }
-        return cellTiles.ContainsKey(type) ? (globalFloor, cellTiles[type].Item1, cellTiles[type].Item2) : (null, null, null);
+        return cellTiles.ContainsKey(type) ? cellTiles[type] : (null, null);
     }
 
     public static TileBase GetTileByResourceType(ResourceTypeEnum type)

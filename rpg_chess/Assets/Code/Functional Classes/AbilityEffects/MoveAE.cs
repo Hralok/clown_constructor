@@ -12,29 +12,16 @@ public abstract class MoveAE : AbilityEffect
     public bool needSecondTarget { get; private set; }
     public Vector2Int offset { get; private set; }
 
-    public MoveAE(
-        bool onlyUnits,
-        List<(Vector2Int, Vector2Int)> moves,
-        bool fromIsFlexible,
-        bool toIsFlexible,
-        bool needSecondTarget,
-        Vector2Int offset)
-        : base(null)
+    public MoveAE(MoveAEInitInfo info)
+        : base(info)
     {
-        this.fromArea = new List<Vector2Int>();
-        this.toArea = new List<Vector2Int>();
-
-        this.onlyUnits = onlyUnits;
-        this.fromIsFlexible = fromIsFlexible;
-        this.toIsFlexible = toIsFlexible;
-        this.needSecondTarget = needSecondTarget;
-        this.offset = offset;
-
-        for (int i = 0; i < moves.Count; i++)
-        {
-            fromArea.Add(moves[i].Item1);
-            toArea.Add(moves[i].Item2);
-        }
+        fromArea = info.fromArea;
+        toArea = info.toArea;
+        onlyUnits = info.onlyUnits;
+        fromIsFlexible = info.fromIsFlexible;
+        toIsFlexible = info.toIsFlexible;
+        needSecondTarget = info.needSecondTarget;
+        offset = info.offset;
     }
 
     public override void DoTheStuff(List<(Vector2Int, Map)> targets, Entity owner)

@@ -30,41 +30,73 @@ public static class GraphicSupporter
 
     public static (TileBase, TileBase, TileBase) GetTileByCellType(CellTypeEnum type)
     {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
         return cellTiles.ContainsKey(type) ? (globalFloor, cellTiles[type].Item1, cellTiles[type].Item2) : (null, null, null);
     }
 
     public static TileBase GetTileByResourceType(ResourceTypeEnum type)
     {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
         return resourceTiles.ContainsKey(type) ? resourceTiles[type] : null;
     }
 
     public static TileBase GetManyResourceTile()
     {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
         return manyResourceTile;
     }
 
     public static GameObject GetAttackUnitAnimation()
     {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
         return Resources.Load<GameObject>("Prefabs/Snake/SnakeAttackPrefab");
     }
 
     public static GameObject GetDeadUnitAnimation()
     {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
         return Resources.Load<GameObject>("Prefabs/Snake/SnakeDyingPrefab");
     }
 
     public static TileBase GetAttackingUnitAnimatedTile()
     {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
         return Resources.Load<TileBase>("Tiles/Creatures/Snake/Snake_attacking");
     }
 
     public static TileBase GetStayingUnitAnimatedTile()
     {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
         return Resources.Load<TileBase>("Tiles/Creatures/Snake/Snake_staying");
     }
 
     public static TileBase GetDeadUnitTile()
     {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
         return Resources.Load<TileBase>("Tiles/Creatures/Snake/spr_mob_boss_19");
     }
 }

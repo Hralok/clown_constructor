@@ -12,23 +12,15 @@ public class DamageAE : AbilityEffect
     public double damageMultiplerPerCharPoint { get; private set; }
 
 
-    public DamageAE(
-        List<(HashSet<Vector2Int>, bool)> areas,
-        double baseDamage,
-        DamageTypeEnum damageType,
-        AttackTypeEnum attackType,
-        MainCharacteristicTypeEnum amplificationChar,
-        double damageBonusPerCharPoint,
-        double damageMultiplerPerCharPoint
-        )
-        : base(areas)
+    public DamageAE(DamageAEInitInfo info)
+        : base(info)
     {
-        this.baseDamage = baseDamage;
-        this.damageType = damageType;
-        this.attackType = attackType;
-        this.amplificationChar = amplificationChar;
-        this.damageBonusPerCharPoint = damageBonusPerCharPoint;
-        this.damageMultiplerPerCharPoint = damageMultiplerPerCharPoint;
+        this.baseDamage = info.baseDamage;
+        this.damageType = info.damageType;
+        this.attackType = info.attackType;
+        this.amplificationChar = info.amplificationChar;
+        this.damageBonusPerCharPoint = info.damageBonusPerCharPoint;
+        this.damageMultiplerPerCharPoint = info.damageMultiplerPerCharPoint;
     }
 
     public override void DoTheStuff(List<(Vector2Int, Map)> targets, Entity owner)

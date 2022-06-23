@@ -242,7 +242,7 @@ public class Drawer
         else
         {
             tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, null);
-            GameObject UnitAttackHelper = Object.Instantiate(AttackAnimation, (Vector3Int)unit.currentCell.coords, Quaternion.identity, grid.gameObject.transform);
+            GameObject UnitAttackHelper = Object.Instantiate(AttackAnimation, (Vector3Int)unit.currentCell.coords, Quaternion.identity, tilemapGroup.creaturesTilemap.transform);
             var UnitAttack = UnitAttackHelper.transform.GetChild(0).gameObject;
             var UnitScript = UnitAttack.GetComponent<UnitAfterAnimationSupporter>();
             UnitScript.coords = (Vector3Int)unit.currentCell.coords;
@@ -266,7 +266,7 @@ public class Drawer
         else
         {
             tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, null);
-            GameObject UnitDieHelper = Object.Instantiate(dyingAnimation, (Vector3Int)unit.currentCell.coords, Quaternion.identity, grid.gameObject.transform);
+            GameObject UnitDieHelper = Object.Instantiate(dyingAnimation, (Vector3Int)unit.currentCell.coords, Quaternion.identity, tilemapGroup.creaturesTilemap.transform);
             var UnitDie = UnitDieHelper.transform.GetChild(0).gameObject;
             var UnitScript = UnitDie.GetComponent<UnitAfterAnimationSupporter>();
             UnitScript.replacementTile = GraphicSupporter.GetDeadUnitTile();
@@ -274,4 +274,23 @@ public class Drawer
             UnitScript.targetTilemap = tilemapGroup.deadBodiesTilemap;
         }
     }
+
+    public void DrawAbility(Map map, Vector2Int coords)
+    {
+        TilemapGroup tilemapGroup;
+        tilemapGroup = mapTilemaps[map];
+
+        GameObject abilityAnimation;
+        abilityAnimation = GraphicSupporter.GetAbilityAnimation();
+
+        if (abilityAnimation == null)
+        {
+            throw new System.Exception("Способность, направленная на клетку с координатами " + coords + " не обнаружена");
+        }
+        else
+        {
+            Object.Instantiate(abilityAnimation, (Vector3Int)coords, Quaternion.identity, tilemapGroup.creaturesTilemap.transform);
+        }
+    }
+
 }

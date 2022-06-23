@@ -22,14 +22,22 @@ public static class Fabricator
         throw new System.NotImplementedException();
     }
 
-    public static int UseAbility(int indx, List<(Vector2Int, Map)> targetsList, Entity owner)
+    public static int UseAbility(int id, List<(Vector2Int, Map)> targetsList, Entity owner)
     {
-        return abilities[indx].UseAbility(targetsList, owner);
+        return abilities[id].UseAbility(targetsList, owner);
     }
 
-    public static double GetAbilityCooldown(int indx)
+    public static double GetAbilityCooldown(int id)
     {
-        return abilities[indx].maxCooldown;
+        return abilities[id].maxCooldown;
     }
+
+    public static double GetAbilityDelay(int id, int effectGroup)
+    {
+        return abilities[id].effects[effectGroup].delay;
+    }
+
+
+
 
 }

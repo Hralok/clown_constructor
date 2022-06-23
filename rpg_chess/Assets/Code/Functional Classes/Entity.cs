@@ -3,62 +3,95 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class Entity
+public abstract class Entity
 {
+    readonly public int entityId;
     public Cell currentCell { get; protected set; }
 
-    public double healthPoints { get; private set; }
-    public double mana { get; private set; }
-    public double energy { get; private set; }
+    public double healthPoints { get; protected set; }
+    public double mana { get; protected set; }
+    public double energy { get; protected set; }
 
-    public double maximalHealthPoints { get; private set; }
-    public double maximalMana { get; private set; }
-    public double maximalEnergy { get; private set; }
+    public double maximalHealthPoints { get; protected set; }
+    public double maximalMana { get; protected set; }
+    public double maximalEnergy { get; protected set; }
 
     public Player player { get; protected set; }
 
     // Множество собственных типов сущности
-    public HashSet<EntityTypeEnum> selfTypes { get; private set; }
+    public HashSet<EntityTypeEnum> selfTypes { get; protected set; }
 
     // Список приобретённых типов существа с показателем количества удерживающих эффектов
     // Отложено до момента реализации временных эффектов
     //public List<(int, EntityTypeEnum)> acquiredTypes { get; private set; }
 
     // Усиление Умений лечения и атаки
-    public double damageBonusAmplification { get; private set; }
-    public double damageMultiplerAmplification { get; private set; }
-    public double healBonusAmplification { get; private set; }
-    public double healMultiplerAmplification { get; private set; }
-    public Dictionary<DamageTypeEnum, double> damageElementBonusAmplification { get; private set; }
-    public Dictionary<DamageTypeEnum, double> damageElementMultiplerAmplification { get; private set; }
-    public Dictionary<HealTypeEnum, double> healElementBonusAmplification { get; private set; }
-    public Dictionary<HealTypeEnum, double> healElementMultiplerAmplification { get; private set; }
-    public Dictionary<AttackTypeEnum, double> attackTypeBonusAmplification { get; private set; }
-    public Dictionary<AttackTypeEnum, double> attackTypeMultiplerAmplification { get; private set; }
+    public double damageBonusAmplification { get; protected set; }
+    public double damageMultiplerAmplification { get; protected set; }
+    public double healBonusAmplification { get; protected set; }
+    public double healMultiplerAmplification { get; protected set; }
+    public Dictionary<DamageTypeEnum, double> damageElementBonusAmplification { get; protected set; }
+    public Dictionary<DamageTypeEnum, double> damageElementMultiplerAmplification { get; protected set; }
+    public Dictionary<HealTypeEnum, double> healElementBonusAmplification { get; protected set; }
+    public Dictionary<HealTypeEnum, double> healElementMultiplerAmplification { get; protected set; }
+    public Dictionary<AttackTypeEnum, double> attackTypeBonusAmplification { get; protected set; }
+    public Dictionary<AttackTypeEnum, double> attackTypeMultiplerAmplification { get; protected set; }
 
-    public double expToKiller { get; private set; }
-
-
+    public double expToKiller { get; protected set; }
 
 
-    public DefenseTypeEnum defenseType { get; private set; }
+
+
+    public DefenseTypeEnum defenseType { get; protected set; }
 
     // Переменные отвечают за использование продолжительных способностей
     public bool busy { get; private set; }
-    public int currentAbility { get; private set; }
+    public int currentAbilityInListIndx { get; private set; }
     private int currentEffectGroup;
-    public double currentDelay;
+    public double currentDelay { get; private set; }
+    private List<(Vector2Int, Map)> targetsList;
 
     // Необходимо вынести способности из сущностей и предметов, заменив на id способностей
     // Подумать над смешением активных и пассивных способностей
-    public List<ActiveAbilityInSomewhere> abilities { get; private set; }
+    public List<ActiveAbilityInSomewhere> abilities { get; protected set; }
 
-    public Item[] inventory { get; private set; }
-    public int inventorySize { get; private set; }
+    public Item[] inventory { get; protected set; }
+    public int inventorySize { get; protected set; }
 
-    public Entity()
+    public Entity(EntityInitInfo info, Cell currentCell, Player player)
     {
+        entityId = info.entityId;
 
+        currentCell.AddEntity(this);
+        this.currentCell = currentCell;
+
+        maximalEnergy = info.maximalEnergy;
+        maximalHealthPoints = info.maximalHealthPoints;
+        maximalMana = info.maximalMana;
+
+        energy = maximalEnergy;
+        healthPoints = maximalHealthPoints;
+        mana = maximalMana;
+
+        this.player = player;
+        selfTypes = info.selfTypes;
+        damageBonusAmplification = info.damageBonusAmplification;
+        damageMultiplerAmplification = info.damageMultiplerAmplification;
+        healBonusAmplification = info.healBonusAmplification;
+        healMultiplerAmplification = info.healMultiplerAmplification;
+        damageElementBonusAmplification = new Dictionary<DamageTypeEnum, double>(info.damageElementBonusAmplification);
+        damageElementMultiplerAmplification = new Dictionary<DamageTypeEnum, double>(info.damageElementMultiplerAmplification);
+        healElementBonusAmplification = new Dictionary<HealTypeEnum, double>(info.healElementBonusAmplification);
+        healElementMultiplerAmplification = new Dictionary<HealTypeEnum, double>(info.healElementMultiplerAmplification);
+        attackTypeBonusAmplification = new Dictionary<AttackTypeEnum, double>(info.attackTypeBonusAmplification);
+        attackTypeMultiplerAmplification = new Dictionary<AttackTypeEnum, double>(info.attackTypeMultiplerAmplification);
+        expToKiller = info.expToKiller;
+        defenseType = info.defenseType;
+        busy = false;
+        abilities = info.abilities.Clone();
+        inventorySize = info.inventorySize;
+
+        inventory = new Item[inventorySize];
     }
 
 
@@ -98,7 +131,7 @@ public class Entity
         }
     }
 
-    public void DoTheTurnStuff()
+    public virtual void DoTheTurnStuff()
     {
         foreach (var ability in abilities)
         {
@@ -110,7 +143,21 @@ public class Entity
 
         if (busy)
         {
+            currentDelay -= 1;
+            if (currentDelay <= 0)
+            {
+                var result = Fabricator.ContinueUseAbility(abilities[currentAbilityInListIndx].abilityId, this, currentEffectGroup, targetsList);
 
+                if (result == -1)
+                {
+                    busy = false;
+                }
+                else
+                {
+                    currentEffectGroup = result;
+                    currentDelay = Fabricator.GetAbilityDelay(abilities[currentAbilityInListIndx].abilityId, currentEffectGroup);
+                }
+            }
         }
         else
         {
@@ -283,9 +330,10 @@ public class Entity
         else
         {
             busy = true;
-            currentAbility = inListIndx;
+            currentAbilityInListIndx = inListIndx;
             currentEffectGroup = result;
-            currentDelay = Fabricator.GetAbilityDelay(abilities[inListIndx].abilityId, currentEffectGroup);
+            currentDelay = Fabricator.GetAbilityDelay(abilities[currentAbilityInListIndx].abilityId, currentEffectGroup);
+            this.targetsList = targetsList;
         }
     }
 

@@ -48,4 +48,9 @@ public static class TextManager
     {
         return currentLanguage;
     }
+
+    static public bool CheckIdExistence(int id)
+    {
+        return allProjectText[currentLanguage].ContainsKey(id);
+    }
 }

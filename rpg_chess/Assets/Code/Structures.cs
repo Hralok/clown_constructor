@@ -18,11 +18,11 @@ public struct EffectGroup
 
 public struct TargetArea
 {
-    readonly Map map;
-    readonly HashSet<Vector2Int> area;
-    readonly int targetsCount;
-    readonly HashSet<TargetRulesEnum> rules;
-    readonly bool isAbsolute;
+    readonly public Map map;
+    readonly public HashSet<Vector2Int> area;
+    readonly public int targetsCount;
+    readonly public HashSet<TargetRulesEnum> rules;
+    readonly public bool isAbsolute;
     public TargetArea(
         Map map,
         HashSet<Vector2Int> area,

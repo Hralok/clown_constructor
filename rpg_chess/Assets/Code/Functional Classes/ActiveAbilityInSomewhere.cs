@@ -1,8 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActiveAbilityInSomewhere
+public class ActiveAbilityInSomewhere : ICloneable
 {
     public double curentCooldown;
     readonly public int abilityId;
@@ -11,5 +12,10 @@ public class ActiveAbilityInSomewhere
     {
         curentCooldown = 0;
         this.abilityId = abilityId;
+    }
+
+    public object Clone()
+    {
+        return new ActiveAbilityInSomewhere(abilityId);
     }
 }

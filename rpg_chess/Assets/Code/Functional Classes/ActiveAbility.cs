@@ -12,7 +12,11 @@ public class ActiveAbility : Ability
 
     public ActiveAbility(ActiveAbilityInitInfo info)
     {
-
+        targetAreas = info.targetAreas;
+        effects = info.effects;
+        interruptible = info.interruptible;
+        maxCooldown = info.maxCooldown;
+        descriptionTextIndex = info.descriptionTextIndex;
     }
 
     public override int DoTheTurnStuff(Entity owner, int currentEffectGroup, List<(Vector2Int, Map)> targetsList)

@@ -29,11 +29,11 @@ public class InfoBox : MonoBehaviour
         instance.HideInfoBox();
     }
 
-    private void ShowInfoBox(Vector3 pos, string name, string descript)
+    private void ShowInfoBox(Vector3 pos, int name, int descript)
     {
         gameObject.SetActive(true);
-        nameText.SetText(name);
-        descriptionText.SetText(descript);
+        nameText.SetText(TextManager.GetTextById(name));
+        descriptionText.SetText(TextManager.GetTextById(descript));
 
         Vector3 position = pos / canvasRectTransform.localScale.x;
 
@@ -55,7 +55,7 @@ public class InfoBox : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public static void ShowInfoBox_Static(Vector3 pos, string name, string descript)
+    public static void ShowInfoBox_Static(Vector3 pos, int name, int descript)
     {
         instance.ShowInfoBox(pos, name, descript);
     }

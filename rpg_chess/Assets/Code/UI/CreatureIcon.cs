@@ -49,7 +49,7 @@ public class CreatureIcon : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
         /*if (entity == выбранное существо)
         {
-            MainBars.UpdateBarsValues(entity);
+            MainBars.UpdateBarsValues_Static(entity);
         }*/
     }
 
@@ -79,9 +79,8 @@ public class CreatureIcon : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public void OnPointerDown(PointerEventData eventData)
     {
         Debug.Log("Down");
-
-        // Debug.Log(this.gameObject.name + " Was Clicked.");
         // сменить выделенное существо
+        // MainBars.UpdateBarsValues_Static(entity);
     }
 
 }

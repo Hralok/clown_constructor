@@ -1256,7 +1256,7 @@ GameObject:
   - component: {fileID: 130235429}
   - component: {fileID: 130235428}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1332,8 +1332,8 @@ MonoBehaviour:
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMin: 24
+  m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -9451,6 +9451,7 @@ GameObject:
   - component: {fileID: 1257585570}
   - component: {fileID: 1257585569}
   - component: {fileID: 1257585568}
+  - component: {fileID: 1257585571}
   m_Layer: 5
   m_Name: EndTurnButton
   m_TagString: Untagged
@@ -9560,6 +9561,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257585566}
   m_CullTransparentMesh: 1
+--- !u!114 &1257585571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257585566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92d2d9a8b6b8dcc428882856566451df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1260449840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10404,6 +10417,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0110053bd1fa01449a0630991cdcde56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuText: {fileID: 456314526}
+  continueText: {fileID: 1542652910}
+  settingsText: {fileID: 793613814}
+  mainMenuText: {fileID: 1247332361}
+  quitText: {fileID: 1356250228}
 --- !u!224 &1373231187 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7783505583070848869, guid: e6783fa031ef4eb4fb9c3b0b7733dd58, type: 3}
@@ -12733,6 +12751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourcePanel: {fileID: 1053353840}
+  menuText: {fileID: 309163304}
 --- !u!224 &1584331099 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7783505583070848869, guid: e6783fa031ef4eb4fb9c3b0b7733dd58, type: 3}
@@ -18380,6 +18399,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 936dca7921ff6be44b8e0bd597eb6e30, type: 2}
+  settingsText: {fileID: 579581519120397494}
+  volumeText: {fileID: 579581519821779106}
+  qualityText: {fileID: 1359323640004330894}
 --- !u!114 &579581519752723133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20745,8 +20767,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 123.7322, y: 0}
-  m_SizeDelta: {x: 227.4644, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &7564993019107593523
 RectTransform:
@@ -20764,8 +20786,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 123.7322, y: 0}
-  m_SizeDelta: {x: 227.4644, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &8006936055479014035
 PrefabInstance:

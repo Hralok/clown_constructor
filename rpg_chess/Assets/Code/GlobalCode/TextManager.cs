@@ -23,6 +23,9 @@ public static class TextManager
                 {10, "Разрешение"},
                 {11, "Язык"},
                 {12, "Загрузка"},
+                {13, "Меню"},
+                {14, "Конец хода"},
+
             }
         },
 
@@ -42,6 +45,8 @@ public static class TextManager
                 {10, "Resolution"},
                 {11, "Language"},
                 {12, "Loading"},
+                {13, "Menu"},
+                {14, "End turn"},
 
             }
         }

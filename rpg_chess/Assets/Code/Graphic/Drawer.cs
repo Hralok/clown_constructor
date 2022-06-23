@@ -16,10 +16,11 @@ public class Drawer
         public Tilemap structuresTilemap;
         public Tilemap deadBodiesTilemap;
         public Tilemap creaturesTilemap;
+        public Tilemap abilitiesTilemap;
 
         public TilemapGroup(Tilemap groundShadowTilemap, Tilemap groundTilemap, Tilemap ground2Tilemap, Tilemap roadTilemap, Tilemap onGroundTilemap,
             Tilemap resourcesTilemap, Tilemap itemsTilemap, Tilemap structuresTilemap,
-            Tilemap deadBodiesTilemap, Tilemap creaturesTilemap)
+            Tilemap deadBodiesTilemap, Tilemap creaturesTilemap, Tilemap abilitiesTilemap)
         {
             this.groundShadowTilemap = groundShadowTilemap;
             this.groundTilemap = groundTilemap;
@@ -31,6 +32,7 @@ public class Drawer
             this.structuresTilemap = structuresTilemap;
             this.deadBodiesTilemap = deadBodiesTilemap;
             this.creaturesTilemap = creaturesTilemap;
+            this.abilitiesTilemap = abilitiesTilemap;
         }
     }
 
@@ -68,7 +70,7 @@ public class Drawer
         GameObject newMap = Object.Instantiate(mapPrefab, new Vector3Int(0, 0, 0), Quaternion.identity, grid.gameObject.transform);
         newMap.name = map.name;
         Tilemap[] tilemaps = newMap.GetComponentsInChildren<Tilemap>();
-        TilemapGroup tilemapGroup = new TilemapGroup(tilemaps[0], tilemaps[1], tilemaps[2], tilemaps[3], tilemaps[4], tilemaps[5], tilemaps[6], tilemaps[7], tilemaps[8], tilemaps[9]);
+        TilemapGroup tilemapGroup = new TilemapGroup(tilemaps[0], tilemaps[1], tilemaps[2], tilemaps[3], tilemaps[4], tilemaps[5], tilemaps[6], tilemaps[7], tilemaps[8], tilemaps[9], tilemaps[10]);
         mapTilemaps.Add(map, tilemapGroup);
         DrawMap(map);
     }
@@ -146,7 +148,7 @@ public class Drawer
                 }
 
                 //наличие нижних диагональных углов
-                if (cell.relatedMap.DoesCellExist(new Vector2Int(cell.coords.x - 1, cell.coords.y - 1))) 
+                if (cell.relatedMap.DoesCellExist(new Vector2Int(cell.coords.x - 1, cell.coords.y - 1)))
                 {
                     tilemaps.ground2Tilemap.SetTile(new Vector3Int(cell.coords.x * 4, cell.coords.y * 4 - 2, 0), graphicSupport.globalFloorCorner);
                 }
@@ -243,7 +245,7 @@ public class Drawer
         else
         {
             tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, null);
-            GameObject UnitAttackHelper = Object.Instantiate(AttackAnimation, (Vector3Int)unit.currentCell.coords, Quaternion.identity, grid.gameObject.transform);
+            GameObject UnitAttackHelper = Object.Instantiate(AttackAnimation, (Vector3Int)unit.currentCell.coords, Quaternion.identity, tilemapGroup.creaturesTilemap.transform);
             var UnitAttack = UnitAttackHelper.transform.GetChild(0).gameObject;
             var UnitScript = UnitAttack.GetComponent<UnitAfterAnimationSupporter>();
             UnitScript.coords = (Vector3Int)unit.currentCell.coords;
@@ -267,12 +269,30 @@ public class Drawer
         else
         {
             tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, null);
-            GameObject UnitDieHelper = Object.Instantiate(dyingAnimation, (Vector3Int)unit.currentCell.coords, Quaternion.identity, grid.gameObject.transform);
+            GameObject UnitDieHelper = Object.Instantiate(dyingAnimation, (Vector3Int)unit.currentCell.coords, Quaternion.identity, tilemapGroup.creaturesTilemap.transform);
             var UnitDie = UnitDieHelper.transform.GetChild(0).gameObject;
             var UnitScript = UnitDie.GetComponent<UnitAfterAnimationSupporter>();
             UnitScript.replacementTile = graphicSupport.GetDeadUnitTile();
             UnitScript.coords = (Vector3Int)unit.currentCell.coords;
             UnitScript.targetTilemap = tilemapGroup.deadBodiesTilemap;
+        }
+    }
+
+    public void DrawAbility(Map map, Vector2Int coords)
+    {
+        TilemapGroup tilemapGroup;
+        tilemapGroup = mapTilemaps[map];
+
+        GameObject abilityAnimation;
+        abilityAnimation = graphicSupport.GetAbilityAnimation();
+
+        if (abilityAnimation == null)
+        {
+            throw new System.Exception("Способность, направленная на клетку с координатами " + coords + " не обнаружена");
+        }
+        else
+        {
+            Object.Instantiate(abilityAnimation, (Vector3Int)coords, Quaternion.identity, tilemapGroup.creaturesTilemap.transform);
         }
     }
 }

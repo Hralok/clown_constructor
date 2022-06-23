@@ -219,8 +219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 937db323d88367945ba1ae2a29cf35b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grid: {fileID: 2083911207}
-  prefab: {fileID: 3692853958357327956, guid: e66611aa9e7748c4193fffe50e097469, type: 3}
 --- !u!1001 &1537681813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -230,7 +228,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3692853958357327947, guid: e66611aa9e7748c4193fffe50e097469, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3692853958357327947, guid: e66611aa9e7748c4193fffe50e097469, type: 3}
       propertyPath: m_LocalPosition.x

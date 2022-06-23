@@ -45,9 +45,10 @@ public class Entity
 
     // ѕеременные отвечают за использование продолжительных способностей
     public bool busy { get; private set; }
-    public int currentAbility { get; private set; }
+    public int currentAbilityInListIndx { get; private set; }
     private int currentEffectGroup;
-    public double currentDelay;
+    public double currentDelay { get; private set; }
+    private List<(Vector2Int, Map)> targetsList;
 
     // Ќеобходимо вынести способности из сущностей и предметов, заменив на id способностей
     // ѕодумать над смешением активных и пассивных способностей
@@ -110,7 +111,21 @@ public class Entity
 
         if (busy)
         {
+            currentDelay -= 1;
+            if (currentDelay <= 0)
+            {
+                var result = Fabricator.ContinueUseAbility(abilities[currentAbilityInListIndx].abilityId, this, currentEffectGroup, targetsList);
 
+                if (result == -1)
+                {
+                    busy = false;
+                }
+                else
+                {
+                    currentEffectGroup = result;
+                    currentDelay = Fabricator.GetAbilityDelay(abilities[currentAbilityInListIndx].abilityId, currentEffectGroup);
+                }
+            }
         }
         else
         {
@@ -283,9 +298,10 @@ public class Entity
         else
         {
             busy = true;
-            currentAbility = inListIndx;
+            currentAbilityInListIndx = inListIndx;
             currentEffectGroup = result;
-            currentDelay = Fabricator.GetAbilityDelay(abilities[inListIndx].abilityId, currentEffectGroup);
+            currentDelay = Fabricator.GetAbilityDelay(abilities[currentAbilityInListIndx].abilityId, currentEffectGroup);
+            this.targetsList = targetsList;
         }
     }
 

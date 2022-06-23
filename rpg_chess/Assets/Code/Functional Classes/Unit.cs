@@ -33,7 +33,7 @@ public class Unit : Entity
 
     public void UseItem(int indx, List<(Vector2Int, Map)> targetsList)
     {
-        if (indx < inventory.Length && inventory[indx] != null && inventory[indx].activeAbilitiy != null)
+        if (indx < inventory.Length && inventory[indx] != null)
         {
             inventory[indx].UseItemActiveAbility(targetsList, this);
         }

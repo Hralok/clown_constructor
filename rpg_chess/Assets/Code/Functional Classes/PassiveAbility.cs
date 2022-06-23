@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PassiveAbility : Ability
 {
-    public override double DoTheTurnStuff(Entity owner, int currentEffextGroup)
+    public override int DoTheTurnStuff(Entity owner, int currentEffectGroup, List<(Vector2Int, Map)> targetsList)
     {
         throw new System.NotImplementedException();
     }

@@ -49,7 +49,7 @@ public class Entity
 
     // Необходимо вынести способности из сущностей и предметов, заменив на id способностей
     // Подумать над смешением активных и пассивных способностей
-    public List<ActiveAbility> abilities { get; private set; }
+    public List<ActiveAbilityInSomewhere> abilities { get; private set; }
 
     public Item[] inventory { get; private set; }
     public int inventorySize { get; private set; }
@@ -258,9 +258,14 @@ public class Entity
         }
     }
 
-    public void UseAbility(int indx, List<(Vector2Int, Map)> targetsList)
+    public void UseAbility(int inListIndx, List<(Vector2Int, Map)> targetsList)
     {
-        abilities[indx].UseAbility(targetsList, this);
+        var result = Fabricator.UseAbility(abilities[inListIndx].abilityId, targetsList, this);
+
+        if (result == -1)
+        {
+            abilities[inListIndx].curentCooldown = Fabricator.GetAbilityCooldown(abilities[inListIndx].abilityId);
+        }
     }
 
     public void SetNewPlayer(Player newPlayer)

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PassiveAbility : Ability
 {
-    public override void DoTheTurnStuff(Entity owner)
+    public override double DoTheTurnStuff(Entity owner, int currentEffextGroup)
     {
         throw new System.NotImplementedException();
     }

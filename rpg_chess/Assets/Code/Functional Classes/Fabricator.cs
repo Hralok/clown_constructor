@@ -4,13 +4,13 @@ using UnityEngine;
 
 public static class Fabricator 
 {
-    private static HashSet<Ability> abilities;
+    private static Dictionary<int, ActiveAbility> abilities;
     private static bool initialized = false;
 
     public static void Init()
     {
         initialized = true;
-        abilities = new HashSet<Ability>();
+        abilities = new Dictionary<int, ActiveAbility>();
     }
 
     public static Item CreateItem(int newItemId)
@@ -20,6 +20,16 @@ public static class Fabricator
             throw new System.Exception("Fabricator не инициализирован перед использованием!");
         }
         throw new System.NotImplementedException();
+    }
+
+    public static int UseAbility(int indx, List<(Vector2Int, Map)> targetsList, Entity owner)
+    {
+        return abilities[indx].UseAbility(targetsList, owner);
+    }
+
+    public static double GetAbilityCooldown(int indx)
+    {
+        return abilities[indx].maxCooldown;
     }
 
 }

@@ -27,6 +27,7 @@ public class ButtonGroupControll : MonoBehaviour
         charPanel.SetActive(false); 
         skillsPanel.SetActive(false);
 
-        inventoryPanel.SetActive(!inventoryPanel.activeSelf); 
+        inventoryPanel.SetActive(!inventoryPanel.activeSelf);
+        //inventoryPanel.GetComponent<CharacteristicsPanel>().UpdateCharacteristicValues();
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BackScript : MonoBehaviour
 {
-    public GameObject camera;
+    public GameObject cam;
 
     public float Parallax;
     float startPosX;
@@ -19,8 +19,8 @@ public class BackScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distX = (camera.transform.position.x * (1 - Parallax));
-        float distY = (camera.transform.position.y * (1 - Parallax));
+        float distX = (cam.transform.position.x * (1 - Parallax));
+        float distY = (cam.transform.position.y * (1 - Parallax));
         transform.position = new Vector3(startPosX + distX, startPosY + distY, transform.position.z);
     }
 }

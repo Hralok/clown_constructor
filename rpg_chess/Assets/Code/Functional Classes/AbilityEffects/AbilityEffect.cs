@@ -10,19 +10,9 @@ public abstract class AbilityEffect
     // ѕустое множество означает что умение будет применено ко всем €чейкам карты.
     // ¬торой параметр кортежа указывает необходимо ли повернуть область применени€ в сторону применени€
 
-    public AbilityEffect(
-        List<(HashSet<Vector2Int>, bool)> areas
-        )
+    public AbilityEffect(AbilityEffectInitInfo info)
     {
-        this.areas = areas;
-
-        foreach (var area in areas)
-        {
-            if (area.Item1 == null)
-            {
-                throw new System.Exception("ќбласть пременени€ способности не может быть null!");
-            }
-        }
+        areas = info.areas;
     }
 
     public abstract void DoTheStuff(List<(Vector2Int, Map)> targets, Entity owner);

@@ -6,12 +6,12 @@ using System.Linq;
 
 public class GameController : MonoBehaviour
 {
+    public List<Player> players = new List<Player>();
+    public int currentPlayer;
+
     public void Start()
     {
-        HashSet<int> test = new HashSet<int>() { 1, 2, 3, 4 };
+        
 
-        Debug.Log(test.Remove(1));
-        Debug.Log(test.Remove(0));
-        Debug.Log(test.Add(2));
     }
 }

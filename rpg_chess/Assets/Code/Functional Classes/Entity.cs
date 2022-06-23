@@ -37,7 +37,7 @@ public class Entity
     public Dictionary<AttackTypeEnum, double> attackTypeMultiplerAmplification { get; private set; }
 
     public double expToKiller { get; private set; }
-    
+
 
 
 
@@ -45,11 +45,13 @@ public class Entity
 
     // ѕеременные отвечают за использование продолжительных способностей
     public bool busy { get; private set; }
-    public ActiveAbility currentAbility { get; private set; }
+    public int currentAbility { get; private set; }
+    private int currentEffectGroup;
+    public double currentDelay;
 
     // Ќеобходимо вынести способности из сущностей и предметов, заменив на id способностей
     // ѕодумать над смешением активных и пассивных способностей
-    public List<ActiveAbility> abilities { get; private set; }
+    public List<ActiveAbilityInSomewhere> abilities { get; private set; }
 
     public Item[] inventory { get; private set; }
     public int inventorySize { get; private set; }
@@ -59,7 +61,7 @@ public class Entity
 
     }
 
-    
+
 
     public void MoveToCell(Cell targetCell)
     {
@@ -100,7 +102,19 @@ public class Entity
     {
         foreach (var ability in abilities)
         {
-            ability.DoTheTurnStuff(this);
+            if (ability.curentCooldown > 0)
+            {
+                ability.curentCooldown -= 1;
+            }
+        }
+
+        if (busy)
+        {
+
+        }
+        else
+        {
+            energy = maximalEnergy;
         }
     }
 
@@ -258,9 +272,21 @@ public class Entity
         }
     }
 
-    public void UseAbility(int indx, List<(Vector2Int, Map)> targetsList)
+    public void UseAbility(int inListIndx, List<(Vector2Int, Map)> targetsList)
     {
-        abilities[indx].UseAbility(targetsList, this);
+        var result = Fabricator.UseAbility(abilities[inListIndx].abilityId, targetsList, this);
+
+        if (result == -1)
+        {
+            abilities[inListIndx].curentCooldown = Fabricator.GetAbilityCooldown(abilities[inListIndx].abilityId);
+        }
+        else
+        {
+            busy = true;
+            currentAbility = inListIndx;
+            currentEffectGroup = result;
+            currentDelay = Fabricator.GetAbilityDelay(abilities[inListIndx].abilityId, currentEffectGroup);
+        }
     }
 
     public void SetNewPlayer(Player newPlayer)

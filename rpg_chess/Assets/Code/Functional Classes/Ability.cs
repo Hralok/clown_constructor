@@ -8,7 +8,7 @@ public abstract class Ability
 
 
 
-    public abstract void DoTheTurnStuff(Entity owner);
+    public abstract int DoTheTurnStuff(Entity owner, int currentEffectGroup, List<(Vector2Int, Map)> targetsList);
         
 
 }

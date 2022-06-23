@@ -11,20 +11,14 @@ public class HealAE : AbilityEffect
     public double healMultiplerPerCharPoint { get; private set; }
 
 
-    public HealAE(
-        List<(HashSet<Vector2Int>, bool)> areas,
-        double baseHeal,
-        HealTypeEnum healType,
-        MainCharacteristicTypeEnum amplificationChar,
-        double healBonusPerCharPoint,
-        double healMultiplerPerCharPoint)
-        : base(areas)
+    public HealAE(HealAEInitInfo info)
+        : base(info)
     {
-        this.baseHeal = baseHeal;
-        this.healType = healType;
-        this.amplificationChar = amplificationChar;
-        this.healBonusPerCharPoint = healBonusPerCharPoint;
-        this.healMultiplerPerCharPoint = healMultiplerPerCharPoint;
+        this.baseHeal = info.baseHeal;
+        this.healType = info.healType;
+        this.amplificationChar = info.amplificationChar;
+        this.healBonusPerCharPoint = info.healBonusPerCharPoint;
+        this.healMultiplerPerCharPoint = info.healMultiplerPerCharPoint;
     }
 
     public override void DoTheStuff(List<(Vector2Int, Map)> targets, Entity owner)

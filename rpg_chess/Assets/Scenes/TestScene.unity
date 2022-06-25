@@ -219,6 +219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 937db323d88367945ba1ae2a29cf35b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grid: {fileID: 2083911207}
+  prefab: {fileID: 3692853958357327956, guid: e66611aa9e7748c4193fffe50e097469, type: 3}
 --- !u!1001 &1537681813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16986,7 +16988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ec922d5a25ade45a3728fb66a8a73b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
+  cam: {fileID: 140096379}
   Parallax: 0.5
 --- !u!4 &7724102465978956931
 Transform:

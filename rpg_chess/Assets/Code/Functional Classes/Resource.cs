@@ -1,12 +1,16 @@
 public class Resource
 {
-    public ResourceTypeEnum type { get; private set; }
+    public int id { get; private set; }
     public int count { get; private set; }
+    public int nameId { get; private set; }
+    public int descriptionId { get; private set; }
 
-    public Resource(ResourceTypeEnum type, int count)
+    public Resource(ResourceInitInfo info, int count)
     {
-        this.type = type;
+        id = info.id;
         this.count = count;
+        nameId = info.nameId;
+        descriptionId = info.descriptionId;
     }
 
     public override bool Equals(object obj)
@@ -16,7 +20,7 @@ public class Resource
 
     public override int GetHashCode()
     {
-        return type.GetHashCode();
+        return id.GetHashCode();
     }
 
     private bool Equals(Resource that)
@@ -25,7 +29,7 @@ public class Resource
         {
             return false;
         }
-        return type == that.type;
+        return id == that.id;
     }
 
     public bool TakeResource(int takeCount)

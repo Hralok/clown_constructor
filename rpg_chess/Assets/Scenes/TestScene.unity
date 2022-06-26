@@ -232,6 +232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 341648049}
   - component: {fileID: 341648050}
+  - component: {fileID: 341648051}
   m_Layer: 0
   m_Name: Back
   m_TagString: Untagged
@@ -247,7 +248,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341648048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 140096382}
@@ -272,7 +273,7 @@ MonoBehaviour:
   - {fileID: 5593039545741919214, guid: 27e6e6ba771585a48bc2074819225f8a, type: 3}
   - {fileID: 5774467662189654139, guid: a8cad48508a06164cb89ecf071f6e282, type: 3}
   - {fileID: 3949946457222675409, guid: ba12b05eac9594d4ea2642b7073abd3a, type: 3}
-  midleClouds:
+  mediumClouds:
   - {fileID: 4950261598993511734, guid: 67e9afd59557ec04dbe84933c6d072cf, type: 3}
   - {fileID: 4512044716023560844, guid: be36202baba6eca48b3f6f13730c21d8, type: 3}
   - {fileID: 8004521835791101633, guid: 9f8f5c8384aee124c830abf52890bf15, type: 3}
@@ -288,8 +289,48 @@ MonoBehaviour:
   - {fileID: 655072570058796829, guid: 5e3727365dc88624fbd92e0c13aad45c, type: 3}
   - {fileID: 8478670936409483176, guid: a6e0c6dec01c0c04680486509fcf1c94, type: 3}
   - {fileID: 7497359966109468740, guid: 7cee16531cd60e7488e79cfbd69d5f2e, type: 3}
-  minTimeToNext: 2
-  maxTimeToNext: 5
+  currentTimeBC: 0
+  minTimeToNextBC: 5
+  maxTimeToNextBC: 8
+  minSpeedBC: 1
+  maxSpeedBC: 1.7
+  speedScaleBC: 0.5
+  minCountBC: 1
+  maxCountBC: 1
+  currentTimeMC: 0
+  minTimeToNextMC: 4
+  maxTimeToNextMC: 7
+  minSpeedMC: 1.7
+  maxSpeedMC: 2.5
+  speedScaleMC: 0.5
+  minCountMC: 1
+  maxCountMC: 3
+  currentTimeSC: 0
+  minTimeToNextSC: 3
+  maxTimeToNextSC: 6
+  minSpeedSC: 2.5
+  maxSpeedSC: 3.5
+  speedScaleSC: 0.5
+  minCountSC: 1
+  maxCountSC: 5
+--- !u!114 &341648051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341648048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4270044a44dbd044a60c07d589604a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollScale: 0.1
+  minimalSize: 1
+  maximalSize: 5
+  movingSpeed: 0
+  pixelsFromBoarder: 100
+  baseCameraSize: 3
 --- !u!1001 &1537681813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16773,6 +16814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2083911208}
   - component: {fileID: 2083911207}
+  - component: {fileID: 2083911209}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -16807,6 +16849,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2083911209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083911206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6abee18b353645a64d902f704794d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.03
+  minYPosition: -0.5
 --- !u!4 &2126876205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3692853958357327947, guid: e66611aa9e7748c4193fffe50e097469, type: 3}

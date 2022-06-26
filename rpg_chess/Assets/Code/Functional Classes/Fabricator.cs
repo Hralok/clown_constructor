@@ -4,24 +4,114 @@ using UnityEngine;
 
 public static class Fabricator
 {
-    private static Dictionary<int, ActiveAbility> activeAbilities;
-    public static HashSet<ResourceTypeEnum> allowedResources { get; private set; }
 
-    private static Dictionary<int, EntityInitInfo> entitiesInitInfo;
+    private static Dictionary<int, ResourceInitInfo> resourceInitInfo;
+    private static Dictionary<int, CellInitInfo> cellsInitInfo;
+
     private static Dictionary<int, ItemInitInfo> itemsInitInfo;
+    private static Dictionary<int, EntityInitInfo> entitiesInitInfo;
+
+    private static Dictionary<int, ActiveAbility> activeAbilities;
+
+
+
+
+
+
+
+
+
+    public static int currentLastResourceId { get; private set; } = -1;
+    public static int currentLastCellId { get; private set; } = -1;
+
     public static int currentLastItemId { get; private set; } = -1;
+
+
+
+
+
     public static bool resourcesInitialized { get; private set; } = false;
+    public static bool cellsInitialized { get; private set; } = false;
+
     public static bool damageTypesInitialized { get; private set; } = false;
     public static bool healTypesInitialized { get; private set; } = false;
     public static bool defenceTypesInitialized { get; private set; } = false;
     public static bool abilitiesInitialized { get; private set; } = false;
     public static bool itemsInitialized { get; private set; } = false;
-
     public static bool entitiesInitialized { get; private set; } = false;
+
+    public static int AddResourceId()
+    {
+        if (resourcesInitialized)
+        {
+            throw new System.Exception("Ресурсы уже инициализированы, добавление новых невозможно!");
+        }
+        currentLastResourceId++;
+        return currentLastResourceId;
+    }
+
+    public static void AddResourceInitInfo(ResourceInitInfo info)
+    {
+        if (resourcesInitialized)
+        {
+            throw new System.Exception("Ресурсы уже инициализированы, добавление новых невозможно!");
+        }
+        resourceInitInfo[info.id] = info;
+    }
+
+    public static void ResourceInit()
+    {
+        resourcesInitialized = true;
+    }
+
+    public static Resource CreateResource(int newResourceId, int count)
+    {
+        if (IsInitialized())
+        {
+            throw new System.Exception("Fabricator не инициализирован перед использованием!");
+        }
+        return new Resource(resourceInitInfo[newResourceId], count);
+    }
+
+    public static int AddCellId()
+    {
+        if (cellsInitialized)
+        {
+            throw new System.Exception("Ячейки уже инициализированы, добавление новых невозможно!");
+        }
+        currentLastCellId++;
+        return currentLastCellId;
+    }
+
+    public static void AddCellInitInfo(CellInitInfo info)
+    {
+        if (cellsInitialized)
+        {
+            throw new System.Exception("Ресурсы уже инициализированы, добавление новых невозможно!");
+        }
+        cellsInitInfo[info.typeId] = info;
+    }
+
+    public static void CellsInit()
+    {
+        cellsInitialized = true;
+    }
+
+    public static void CreateCell(int newCellTypeId, Vector2Int coords, Map map)
+    {
+        if (IsInitialized())
+        {
+            throw new System.Exception("Fabricator не инициализирован перед использованием!");
+        }
+
+        map.AddCell(new Cell(cellsInitInfo[newCellTypeId], coords, map));
+    }
+
 
     public static bool IsInitialized()
     {
         return resourcesInitialized &&
+            cellsInitialized &&
             damageTypesInitialized &&
             healTypesInitialized &&
             defenceTypesInitialized &&
@@ -30,15 +120,7 @@ public static class Fabricator
             entitiesInitialized;
     }
 
-    public static void ResourceInit(HashSet<ResourceTypeEnum> allowedResources)
-    {
-        if (allowedResources == null)
-        {
-            throw new System.Exception("allowedResources не может быть null!");
-        }
-        resourcesInitialized = true;
-        Fabricator.allowedResources = allowedResources;
-    }
+
 
     public static void AbilitiesInit(Dictionary<int, ActiveAbility> activeAbilities)
     {
@@ -88,6 +170,8 @@ public static class Fabricator
         return new Item(itemsInitInfo[newItemId]);
     }
 
+    
+
     public static void CreateEntity(int newEntityId, Player owner, Cell cell)
     {
         if (IsInitialized())
@@ -95,14 +179,14 @@ public static class Fabricator
             throw new System.Exception("Fabricator не инициализирован перед использованием!");
         }
 
-        if(!entitiesInitInfo.ContainsKey(newEntityId))
+        if (!entitiesInitInfo.ContainsKey(newEntityId))
         {
             throw new System.Exception("Произведена попытка создать неизвестную сущность!");
         }
 
         if (entitiesInitInfo[newEntityId] is UnitInitInfo)
         {
-            if (cell.unitAtCell!=null)
+            if (cell.unitAtCell != null)
             {
                 throw new System.Exception("Невозможно создать существо на уже занятой ячейке!");
             }

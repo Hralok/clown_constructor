@@ -92,7 +92,7 @@ public class Drawer
     {
         TileBase ground2Tile;
         TileBase ongroundTile;
-        (ground2Tile, ongroundTile) = GraphicSupporter.GetTileByCellType(cell.type);
+        (ground2Tile, ongroundTile) = GraphicSupporter.GetTileByCellTypeId(cell.typeId);
         if (ground2Tile == null)
         {
             tilemaps.groundTilemap.SetTile((Vector3Int)cell.coords, groundDebug);
@@ -172,7 +172,7 @@ public class Drawer
                 foreach (Resource resource in cell.resourcesAtCell)
                 {
                     TileBase resourcesTile;
-                    resourcesTile = GraphicSupporter.GetTileByResourceType(resource.type);
+                    resourcesTile = GraphicSupporter.GetTileByResourceId(resource.id);
                     if (resourcesTile == null)
                     {
                         tilemaps.resourcesTilemap.SetTile((Vector3Int)cell.coords, resourceDebug);

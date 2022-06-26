@@ -26,6 +26,8 @@ public class ActiveAbilityInitInfo
             throw new System.Exception("Необходимые элементы класса Fabricator ещё не инициализированы!");
         }
 
+        targetUsed = new List<int>();
+
         foreach (var targetArea in targetAreas)
         {
             if (targetArea.targetsCount <= 0)

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Cell
 {
     public Vector2Int coords { get; private set; }
-    public CellTypeEnum type { get; private set; }
+    public int typeId { get; private set; }
     public Unit unitAtCell { get; private set; }
     public Structure structureAtCell { get; private set; }
     public HashSet<Resource> resourcesAtCell { get; private set; }
@@ -13,15 +13,20 @@ public class Cell
 
     public Map relatedMap { get; private set; }
 
-    public Cell(Vector2Int coords, CellTypeEnum type, Map map)
+    public int nameId { get; private set; }
+    public int descriptionId { get; private set; }
+
+    public Cell(CellInitInfo info, Vector2Int coords, Map map)
     {
-        this.coords = coords;
-        this.type = type;
         if (map == null)
         {
             throw new System.Exception("ячейка об€зательно должна принадлежать карте!");
         }
         relatedMap = map;
+        this.coords = coords;
+        typeId = info.typeId;
+        nameId = info.nameId;
+        descriptionId = info.descriptionId;
         unitAtCell = null;
         structureAtCell = null;
         itemAtCell = null;
@@ -68,7 +73,7 @@ public class Cell
             {
                 foreach (var j in newResources)
                 {
-                    if (j.type == resource.type)
+                    if (j.id == resource.id)
                     {
                         j.PutResource(resource.count);
                     }
@@ -95,9 +100,11 @@ public class Cell
         itemAtCell = item;
     }
 
-    public void ChangeType(CellTypeEnum newType)
+    public void ChangeType(CellInitInfo newInfo)
     {
-        type = newType;
+        typeId = newInfo.typeId;
+        nameId = newInfo.nameId;
+        descriptionId = newInfo.descriptionId;
     }
 
     public void AttackCell(Damage attack, Entity attacker)

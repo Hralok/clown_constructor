@@ -295,24 +295,24 @@ MonoBehaviour:
   minSpeedBC: 1
   maxSpeedBC: 1.7
   speedScaleBC: 0.5
-  minCountBC: 1
-  maxCountBC: 1
+  minCountBC: 9
+  maxCountBC: 9
   currentTimeMC: 0
   minTimeToNextMC: 4
   maxTimeToNextMC: 7
   minSpeedMC: 1.7
   maxSpeedMC: 2.5
   speedScaleMC: 0.5
-  minCountMC: 1
-  maxCountMC: 3
+  minCountMC: 9
+  maxCountMC: 27
   currentTimeSC: 0
   minTimeToNextSC: 3
   maxTimeToNextSC: 6
   minSpeedSC: 2.5
   maxSpeedSC: 3.5
   speedScaleSC: 0.5
-  minCountSC: 1
-  maxCountSC: 5
+  minCountSC: 9
+  maxCountSC: 45
 --- !u!114 &341648051
 MonoBehaviour:
   m_ObjectHideFlags: 0

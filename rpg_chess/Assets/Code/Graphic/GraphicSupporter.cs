@@ -58,6 +58,8 @@ public static class GraphicSupporter
         //
     }
 
+
+
     public static TileBase GetTileByResourceId(int resourceId)
     {
         if (!initialized)
@@ -91,9 +93,6 @@ public static class GraphicSupporter
 
 
 
-
-
-
     public static TileBase GetManyResourceTile()
     {
         if (!initialized)
@@ -102,6 +101,9 @@ public static class GraphicSupporter
         }
         return manyResourceTile;
     }
+
+
+
 
     public static TileBase GetGlobalFloor()
     {
@@ -130,6 +132,8 @@ public static class GraphicSupporter
         return globalFloorShadow;
     }
 
+
+
     public static GameObject GetAttackUnitAnimation()
     {
         if (!initialized)
@@ -137,6 +141,14 @@ public static class GraphicSupporter
             throw new System.Exception("Drawer не инициализирован перед использованием!");
         }
         return Resources.Load<GameObject>("Prefabs/Snake/SnakeAttackPrefab");
+    }
+    public static TileBase GetAttackingUnitAnimatedTile()
+    {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
+        return Resources.Load<TileBase>("Tiles/Creatures/Snake/Snake_attacking");
     }
 
     public static GameObject GetDeadUnitAnimation()
@@ -146,15 +158,6 @@ public static class GraphicSupporter
             throw new System.Exception("Drawer не инициализирован перед использованием!");
         }
         return Resources.Load<GameObject>("Prefabs/Snake/SnakeDyingPrefab");
-    }
-
-    public static TileBase GetAttackingUnitAnimatedTile()
-    {
-        if (!initialized)
-        {
-            throw new System.Exception("Drawer не инициализирован перед использованием!");
-        }
-        return Resources.Load<TileBase>("Tiles/Creatures/Snake/Snake_attacking");
     }
 
     public static TileBase GetStayingUnitAnimatedTile()

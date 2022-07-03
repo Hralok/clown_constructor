@@ -26,7 +26,9 @@ public class CharacteristicsPanel : MonoBehaviour
     private Dictionary<MainCharacteristicTypeEnum, double> mainChars;
     private Dictionary<MainCharacteristicTypeEnum, double> otherChars;
 
-    /*private void Start()
+
+    // Заглушка
+    private void Start()
     {
         mainChars = new Dictionary<MainCharacteristicTypeEnum, double>
         {
@@ -103,10 +105,10 @@ public class CharacteristicsPanel : MonoBehaviour
                 otherCharacteristicsCount++;
             }
         }
-    }*/
+    }
 
 
-
+    // С активным существом
     /*public void UpdateCharacteristicValues()
     {
         levelText.text = "Уровень " + activeEntity.currentLvl;

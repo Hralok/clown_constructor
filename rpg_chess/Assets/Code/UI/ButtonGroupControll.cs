@@ -20,6 +20,7 @@ public class ButtonGroupControll : MonoBehaviour
         skillsPanel.SetActive(false);
 
         charPanel.SetActive(!charPanel.activeSelf); 
+        charPanel.GetComponent<CharacteristicsPanel>().UpdateCharacteristicValues(); 
     }
     
     public void InventoryButtonOnClick()
@@ -28,6 +29,5 @@ public class ButtonGroupControll : MonoBehaviour
         skillsPanel.SetActive(false);
 
         inventoryPanel.SetActive(!inventoryPanel.activeSelf);
-        //inventoryPanel.GetComponent<CharacteristicsPanel>().UpdateCharacteristicValues();
     }
 }

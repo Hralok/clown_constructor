@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Item
 {
-    readonly public int itemId;
+    readonly public int id;
     public List<HashSet<Resource>> cost { get; private set; }
     public int activeAbilitiyId { get; private set; }
     //public List<PassiveAbility> passiveAbilities { get; private set; }
@@ -21,7 +21,7 @@ public class Item
 
     public Item(ItemInitInfo info)
     {
-        itemId = info.itemId;
+        id = info.id;
         cost = info.cost;
         activeAbilitiyId = info.activeAbilitiyId;
         nameId = info.nameId;

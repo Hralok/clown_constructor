@@ -55,7 +55,7 @@ public class Map
         }
         else
         {
-            throw new System.Exception("Произошла попытка удалить несуществующую ячейку");
+            throw new System.Exception("Произошла попытка удалить несуществующую ячейку!");
         }
     }
 
@@ -75,7 +75,7 @@ public class Map
     {
         if (cellMap.ContainsKey(newCell.coords))
         {
-            throw new System.Exception("Произошла попытка добавить ячейку в карту на уже занятое место");
+            throw new System.Exception("Произошла попытка добавить ячейку в карту на уже занятое место!");
         }
         else
         {
@@ -89,7 +89,7 @@ public class Map
         {
             if (cellMap.ContainsKey(newCell.coords))
             {
-                throw new System.Exception("Произошла попытка добавить ячейку в карту на уже занятое место");
+                throw new System.Exception("Произошла попытка добавить ячейку в карту на уже занятое место!");
             }
             else
             {

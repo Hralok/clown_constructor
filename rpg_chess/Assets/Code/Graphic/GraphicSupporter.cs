@@ -5,50 +5,97 @@ using UnityEngine.Tilemaps;
 
 public static class GraphicSupporter
 {
-    private static Dictionary<CellTypeEnum, (TileBase, TileBase)> cellTiles;
+    private static Dictionary<int, (TileBase, TileBase)> cellTiles;
     //Первый на ground2Tilemap, второй на onGroundTilemap
     private static TileBase globalFloor;
     private static TileBase globalFloorCorner;
     private static TileBase globalFloorShadow;
     //На groundTilemap
-    private static Dictionary<ResourceTypeEnum, TileBase> resourceTiles;
+    private static Dictionary<int, (TileBase, Sprite)> resourceTiles;
     private static TileBase manyResourceTile;
 
     private static bool initialized = false;
 
+    private static Dictionary<int, (GameObject, TileBase, GameObject, TileBase, Sprite)> unitGraphic;
+
     public static void Init(
-        Dictionary<CellTypeEnum, (TileBase, TileBase)> cellTiles,
         TileBase globalFloor,
         TileBase globalFloorCorner,
         TileBase globalFloorShadow,
-        Dictionary<ResourceTypeEnum, TileBase> resourceTiles,
-        TileBase manyResourceTile)
+        TileBase manyResourceTile
+        )
     {
         initialized = true;
 
-        GraphicSupporter.globalFloor = globalFloor;
-        GraphicSupporter.cellTiles = cellTiles;
-        GraphicSupporter.resourceTiles = resourceTiles;
+        cellTiles = new Dictionary<int, (TileBase, TileBase)>();
+        resourceTiles = new Dictionary<int, (TileBase, Sprite)>();
+        unitGraphic = new Dictionary<int, (GameObject, TileBase, GameObject, TileBase, Sprite)>();
+
         GraphicSupporter.manyResourceTile = manyResourceTile;
-	GraphicSupporter.globalFloorCorner = globalFloorCorner;
+        GraphicSupporter.globalFloor = globalFloor;
+        GraphicSupporter.globalFloorCorner = globalFloorCorner;
         GraphicSupporter.globalFloorShadow = globalFloorShadow;
     }
-    public static (TileBase, TileBase) GetTileByCellType(CellTypeEnum type)
-    {
-	if (!initialized)
-        {
-            throw new System.Exception("Drawer не инициализирован перед использованием!");
-        }
-        return cellTiles.ContainsKey(type) ? cellTiles[type] : (null, null);
-    }
 
-    public static TileBase GetTileByResourceType(ResourceTypeEnum type)
+
+    //Cell
+    public static (TileBase, TileBase) GetTileByCellTypeId(int typeId)
     {
         if (!initialized)
         {
             throw new System.Exception("Drawer не инициализирован перед использованием!");
         }
-        return resourceTiles.ContainsKey(type) ? resourceTiles[type] : null;
+        return cellTiles.ContainsKey(typeId) ? cellTiles[typeId] : (null, null);
+    }
+
+    public static void AddCellTile(int cellTypeId, TileBase tile, TileBase tile2)
+    {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
+        if (Fabricator.cellsInitialized)
+        {
+            throw new System.Exception("Ячейки уже инициализированы, добавление новых невозможно!");
+        }
+
+        cellTiles[cellTypeId] = (tile, tile2);
+        //
+        // Настя переназови переменные tile и tile2 более подходящими наименованиями!
+        //
+    }
+
+
+    //Resource
+    public static TileBase GetTileByResourceId(int resourceId)
+    {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
+        return resourceTiles.ContainsKey(resourceId) ? resourceTiles[resourceId].Item1 : null;
+    }
+
+    public static Sprite GetSpriteByResourceId(int resourceId)
+    {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
+        return resourceTiles.ContainsKey(resourceId) ? resourceTiles[resourceId].Item2 : null;
+    }
+
+    public static void AddResourceGraphic(int resourceId, TileBase tile, Sprite sprite)
+    {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
+        if (Fabricator.resourcesInitialized)
+        {
+            throw new System.Exception("Ресурсы уже инициализированы, добавление новых невозможно!");
+        }
+        resourceTiles[resourceId] = (tile, sprite);
     }
 
     public static TileBase GetManyResourceTile()
@@ -60,6 +107,8 @@ public static class GraphicSupporter
         return manyResourceTile;
     }
 
+
+    //Глобальный пол
     public static TileBase GetGlobalFloor()
     {
         if (!initialized)
@@ -87,42 +136,67 @@ public static class GraphicSupporter
         return globalFloorShadow;
     }
 
-    public static GameObject GetAttackUnitAnimation()
+
+    //Unit
+    public static GameObject GetAttackUnitAnimation(int unitId)
     {
         if (!initialized)
         {
             throw new System.Exception("Drawer не инициализирован перед использованием!");
         }
-        return Resources.Load<GameObject>("Prefabs/Snake/SnakeAttackPrefab");
+        return unitGraphic[unitId].Item1;
     }
-
-    public static GameObject GetDeadUnitAnimation()
+    public static TileBase GetAttackingUnitAnimatedTile(int unitId)
     {
         if (!initialized)
         {
             throw new System.Exception("Drawer не инициализирован перед использованием!");
         }
-        return Resources.Load<GameObject>("Prefabs/Snake/SnakeDyingPrefab");
+        return unitGraphic[unitId].Item2;
     }
 
-    public static TileBase GetAttackingUnitAnimatedTile()
+    public static GameObject GetDeadUnitAnimation(int unitId)
     {
         if (!initialized)
         {
             throw new System.Exception("Drawer не инициализирован перед использованием!");
         }
-        return Resources.Load<TileBase>("Tiles/Creatures/Snake/Snake_attacking");
+        return unitGraphic[unitId].Item3;
     }
 
-    public static TileBase GetStayingUnitAnimatedTile()
+    public static TileBase GetStayingUnitAnimatedTile(int unitId)
     {
         if (!initialized)
         {
             throw new System.Exception("Drawer не инициализирован перед использованием!");
         }
-        return Resources.Load<TileBase>("Tiles/Creatures/Snake/Snake_staying");
+        return unitGraphic[unitId].Item4;
     }
 
+    public static Sprite GetUnitPortrait(int unitId)
+    {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
+        return unitGraphic[unitId].Item5;
+    }
+
+    public static void AddUnitGraphic(int unitId, GameObject attack, TileBase attacking, GameObject dying, TileBase staying, Sprite portrait)
+    {
+        if (!initialized)
+        {
+            throw new System.Exception("Drawer не инициализирован перед использованием!");
+        }
+        //if (Fabricator.resourcesInitialized)
+        //{
+        //    throw new System.Exception("Ресурсы уже инициализированы, добавление новых невозможно!");
+        //}
+        unitGraphic[unitId] = (attack, attacking, dying, staying, portrait);
+    }
+
+
+    //Corpse
     public static TileBase GetDeadUnitTile()
     {
         if (!initialized)
@@ -132,6 +206,8 @@ public static class GraphicSupporter
         return Resources.Load<TileBase>("Tiles/Creatures/Snake/spr_mob_boss_19");
     }
 
+
+    //Ability
     public static GameObject GetAbilityAnimation()
     {
         return Resources.Load<GameObject>("Prefabs/Abilities/AttackAbility");

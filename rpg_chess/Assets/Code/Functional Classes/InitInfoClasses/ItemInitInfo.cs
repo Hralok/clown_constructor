@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemInitInfo
 {
-    public int itemId { get; private set; }
+    public int id { get; private set; }
     public List<HashSet<Resource>> cost { get; private set; }
     public int activeAbilitiyId { get; private set; }
     public int nameId { get; private set; }
@@ -19,7 +19,6 @@ public class ItemInitInfo
     public double maximalCooldown { get; private set; }
 
     public ItemInitInfo(
-        int itemId, 
         List<HashSet<Resource>> cost, 
         int activeAbilitiyId, 
         int nameId, 
@@ -30,7 +29,6 @@ public class ItemInitInfo
         bool consumable, 
         int replacementItemId)
     {
-        this.itemId = itemId;
         this.cost = cost;
         this.activeAbilitiyId = activeAbilitiyId;
         this.nameId = nameId;
@@ -40,6 +38,7 @@ public class ItemInitInfo
         this.charges = charges;
         this.consumable = consumable;
         this.replacementItemId = replacementItemId;
+        id = Fabricator.AddItemId();
     }
 
 

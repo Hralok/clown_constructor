@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ActiveAbility : Ability
 {
+    public int id { get; private set; }
     public List<TargetArea> targetAreas { get; private set; }
     public List<EffectGroup> effects { get; private set; } // Возможно стоит сделать приватным полем, а всю информацию о способности игрок будет получать из текстового описания
     public bool interruptible { get; private set; }
@@ -12,6 +13,7 @@ public class ActiveAbility : Ability
 
     public ActiveAbility(ActiveAbilityInitInfo info)
     {
+        id = info.id;
         targetAreas = info.targetAreas;
         effects = info.effects;
         interruptible = info.interruptible;

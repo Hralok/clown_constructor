@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: test1
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 19d40ae297d6229478883482d14242c3, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -4493167982403427661, guid: 19d40ae297d6229478883482d14242c3, type: 3}
+  - {fileID: 5067615823719073871, guid: 19d40ae297d6229478883482d14242c3, type: 3}
+  - {fileID: -7574418545404756090, guid: 19d40ae297d6229478883482d14242c3, type: 3}
+  - {fileID: -3129249792826528229, guid: 19d40ae297d6229478883482d14242c3, type: 3}
+  - {fileID: 1381423758616440938, guid: 19d40ae297d6229478883482d14242c3, type: 3}
+  - {fileID: 7145657045057641528, guid: 19d40ae297d6229478883482d14242c3, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - fsm_Dungeon02_A5_18
+  - fsm_Dungeon02_A5_28
+  - fsm_Dungeon02_A5_29
+  - fsm_Dungeon02_A5_20
+  - fsm_Dungeon02_A5_22
+  - fsm_Dungeon02_A5_45
+  m_RenderDataMap: {}
+  m_Tag: test1
+  m_IsVariant: 0

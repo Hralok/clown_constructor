@@ -83,32 +83,29 @@ public class Player
         return false;
     }
 
-    public void AddResources(HashSet<Resource> newResources)
+    public HashSet<Resource> AddResources(HashSet<Resource> newResources)
     {
+        HashSet<Resource> resourcesForReturn = new HashSet<Resource>();
+
         foreach (var resource in newResources)
         {
             if (!resources.Contains(resource))
             {
-                if (Fabricator.allowedResources.Contains(resource.type))
-                {
-                    resources.Add(resource);
-                }
-                else
-                {
-                    throw new System.Exception("Произведена попытка добавить игроку неразрешённый тип ресурса");
-                }
+                resourcesForReturn.Add(resource);
             }
             else
             {
                 foreach (var j in newResources)
                 {
-                    if (j.type == resource.type)
+                    if (j.id == resource.id)
                     {
                         j.PutResource(resource.count);
                     }
                 }
             }
         }
+
+        return resourcesForReturn;
     }
 
     public bool AddEntity(Entity entity)
@@ -122,7 +119,6 @@ public class Player
         {
             return false;
         }
-
     }
 
 

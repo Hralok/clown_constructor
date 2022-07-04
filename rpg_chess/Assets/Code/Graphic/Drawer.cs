@@ -92,7 +92,7 @@ public class Drawer
     {
         TileBase ground2Tile;
         TileBase ongroundTile;
-        (ground2Tile, ongroundTile) = GraphicSupporter.GetTileByCellType(cell.type);
+        (ground2Tile, ongroundTile) = GraphicSupporter.GetTileByCellTypeId(cell.id);
         if (ground2Tile == null)
         {
             tilemaps.groundTilemap.SetTile((Vector3Int)cell.coords, groundDebug);
@@ -172,7 +172,7 @@ public class Drawer
                 foreach (Resource resource in cell.resourcesAtCell)
                 {
                     TileBase resourcesTile;
-                    resourcesTile = GraphicSupporter.GetTileByResourceType(resource.type);
+                    resourcesTile = GraphicSupporter.GetTileByResourceId(resource.id);
                     if (resourcesTile == null)
                     {
                         tilemaps.resourcesTilemap.SetTile((Vector3Int)cell.coords, resourceDebug);
@@ -192,7 +192,7 @@ public class Drawer
         if (cell.unitAtCell != null)
         {
             TileBase unitTile;
-            unitTile = GraphicSupporter.GetStayingUnitAnimatedTile();
+            unitTile = GraphicSupporter.GetStayingUnitAnimatedTile(cell.unitAtCell.id);
 
             if (unitTile == null)
             {
@@ -212,7 +212,7 @@ public class Drawer
         tilemapGroup = mapTilemaps[unit.currentCell.relatedMap];
 
         TileBase unitTile;
-        unitTile = GraphicSupporter.GetAttackingUnitAnimatedTile();
+        unitTile = GraphicSupporter.GetAttackingUnitAnimatedTile(unit.id);
 
         if (unitTile == null)
         {
@@ -232,7 +232,7 @@ public class Drawer
         tilemapGroup = mapTilemaps[unit.currentCell.relatedMap];
 
         GameObject AttackAnimation;
-        AttackAnimation = GraphicSupporter.GetAttackUnitAnimation();
+        AttackAnimation = GraphicSupporter.GetAttackUnitAnimation(unit.id);
 
         if (AttackAnimation == null)
         {
@@ -247,7 +247,7 @@ public class Drawer
             var UnitScript = UnitAttack.GetComponent<UnitAfterAnimationSupporter>();
             UnitScript.coords = (Vector3Int)unit.currentCell.coords;
             UnitScript.targetTilemap = tilemapGroup.creaturesTilemap;
-            UnitScript.replacementTile = GraphicSupporter.GetStayingUnitAnimatedTile();
+            UnitScript.replacementTile = GraphicSupporter.GetStayingUnitAnimatedTile(unit.id);
         }
     }
 
@@ -257,7 +257,7 @@ public class Drawer
         tilemapGroup = mapTilemaps[unit.currentCell.relatedMap];
 
         GameObject dyingAnimation;
-        dyingAnimation = GraphicSupporter.GetDeadUnitAnimation();
+        dyingAnimation = GraphicSupporter.GetDeadUnitAnimation(unit.id);
         if (dyingAnimation == null)
         {
             tilemapGroup.creaturesTilemap.SetTile((Vector3Int)unit.currentCell.coords, unitDebug);

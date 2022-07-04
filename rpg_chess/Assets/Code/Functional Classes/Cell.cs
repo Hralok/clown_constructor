@@ -5,7 +5,7 @@ using UnityEngine;
 public class Cell
 {
     public Vector2Int coords { get; private set; }
-    public int typeId { get; private set; }
+    public int id { get; private set; }
     public Unit unitAtCell { get; private set; }
     public Structure structureAtCell { get; private set; }
     public HashSet<Resource> resourcesAtCell { get; private set; }
@@ -24,7 +24,7 @@ public class Cell
         }
         relatedMap = map;
         this.coords = coords;
-        typeId = info.typeId;
+        id = info.id;
         nameId = info.nameId;
         descriptionId = info.descriptionId;
         unitAtCell = null;
@@ -102,7 +102,7 @@ public class Cell
 
     public void ChangeType(CellInitInfo newInfo)
     {
-        typeId = newInfo.typeId;
+        id = newInfo.id;
         nameId = newInfo.nameId;
         descriptionId = newInfo.descriptionId;
     }

@@ -5,7 +5,7 @@ using System.Linq;
 
 public abstract class Entity
 {
-    readonly public int entityId;
+    readonly public int id;
     public Cell currentCell { get; protected set; }
 
     public double healthPoints { get; protected set; }
@@ -60,7 +60,7 @@ public abstract class Entity
 
     public Entity(EntityInitInfo info, Cell currentCell, Player player)
     {
-        entityId = info.entityId;
+        id = info.id;
 
         currentCell.AddEntity(this);
         this.currentCell = currentCell;
@@ -269,13 +269,13 @@ public abstract class Entity
             {
                 if (item.ñombinable)
                 {
-                    if (realItemsCount.ContainsKey(item.itemId))
+                    if (realItemsCount.ContainsKey(item.id))
                     {
-                        realItemsCount[item.itemId]++;
+                        realItemsCount[item.id]++;
                     }
                     else
                     {
-                        realItemsCount[item.itemId] = 1;
+                        realItemsCount[item.id] = 1;
                     }
                 }
 
@@ -299,12 +299,11 @@ public abstract class Entity
 
                     if (canCraft)
                     {
-
                         foreach (var key in realItemsCount.Keys)
                         {
                             while (realItemsCount[key] != 0)
                             {
-                                inventory[inventory.First(x => x.itemId == key && x.ñombinable).itemId] = null;
+                                inventory[inventory.First(x => x.id == key && x.ñombinable).id] = null;
                                 realItemsCount[key] -= 1;
                             }
                         }

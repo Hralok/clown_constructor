@@ -101,15 +101,15 @@ public abstract class EntityInitInfo
 
         foreach (var ability in abilities)
         {
-            if (!Fabricator.ChekAbilityExistence(ability.abilityId))
-            {
-                throw new System.Exception("Вы пытаетесь добавить сущности несуществующую способность!");
-            }
+            //if (!Fabricator.ChekAbilityExistence(ability.abilityId))
+            //{
+            //    throw new System.Exception("Вы пытаетесь добавить сущности несуществующую способность!");
+            //}
         }
         this.abilities = abilities;
         this.inventorySize = inventorySize;
 
-        id = Fabricator.
+        id = Fabricator.AddEntityId();
     }
 
 

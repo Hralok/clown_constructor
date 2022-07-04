@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class UnitInitInfo : EntityInitInfo
 {
@@ -9,7 +10,6 @@ public class UnitInitInfo : EntityInitInfo
     public int currentLvl { get; private set; }
 
     public UnitInitInfo(
-        int entityId,
         double maximalHealthPoints,
         double maximalMana,
         double maximalEnergy,
@@ -30,8 +30,14 @@ public class UnitInitInfo : EntityInitInfo
         int inventorySize, 
         Dictionary<MainCharacteristicTypeEnum, double> mainChars, 
         double expToNextLvl, 
-        int currentLvl) :
-        base(entityId, maximalHealthPoints, maximalMana, maximalEnergy, selfTypes, damageBonusAmplification, damageMultiplerAmplification, healBonusAmplification, healMultiplerAmplification, damageElementBonusAmplification, damageElementMultiplerAmplification, healElementBonusAmplification, healElementMultiplerAmplification, attackTypeBonusAmplification, attackTypeMultiplerAmplification, expToKiller, defenseType, abilities, inventorySize)
+        int currentLvl,
+        GameObject attackAnimationObject,
+        TileBase attackingAnimationTile,
+        GameObject dyingAnimationObject,
+        TileBase stayingAnimationTile,
+        Sprite portrait
+        ) :
+        base(maximalHealthPoints, maximalMana, maximalEnergy, selfTypes, damageBonusAmplification, damageMultiplerAmplification, healBonusAmplification, healMultiplerAmplification, damageElementBonusAmplification, damageElementMultiplerAmplification, healElementBonusAmplification, healElementMultiplerAmplification, attackTypeBonusAmplification, attackTypeMultiplerAmplification, expToKiller, defenseType, abilities, inventorySize)
     {
         foreach (var charNum in mainChars.Values)
         {
@@ -48,10 +54,14 @@ public class UnitInitInfo : EntityInitInfo
         }
         this.expToNextLvl = expToNextLvl;
 
-        if (currentLvl <= 0)
+        if (currentLvl < 0)
         {
-            throw new System.Exception("currentLvl должно быть положительным числом!");
+            throw new System.Exception("currentLvl должно быть неотрицательным числом!");
         }
         this.currentLvl = currentLvl;
+
+
+        GraphicSupporter.AddUnitGraphic(id, attackAnimationObject, attackingAnimationTile, dyingAnimationObject, stayingAnimationTile, portrait);
+
     }
 }

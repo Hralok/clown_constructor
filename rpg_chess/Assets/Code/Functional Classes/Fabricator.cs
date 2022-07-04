@@ -25,6 +25,8 @@ public static class Fabricator
     public static int currentLastCellId { get; private set; } = -1;
     public static int currentLastItemId { get; private set; } = -1;
     public static int currentLastActiveAbilityId { get; private set; } = -1;
+    public static int currentLastEntityId { get; private set; } = -1;
+
 
 
     public static bool initialized { get; private set; } = false;
@@ -32,12 +34,12 @@ public static class Fabricator
     public static bool cellsInitialized { get; private set; } = false;
     public static bool itemsInitialized { get; private set; } = false;
     public static bool activeAbilitiesInitialized { get; private set; } = false;
+    public static bool entitiesInitialized { get; private set; } = false;
 
 
     public static bool damageTypesInitialized { get; private set; } = false;
     public static bool healTypesInitialized { get; private set; } = false;
     public static bool defenceTypesInitialized { get; private set; } = false;
-    public static bool entitiesInitialized { get; private set; } = false;
 
     public static void Init()
     {
@@ -59,9 +61,9 @@ public static class Fabricator
         return initialized &&
             resourcesInitialized &&
             cellsInitialized &&
-            damageTypesInitialized &&
-            healTypesInitialized &&
-            defenceTypesInitialized &&
+            //damageTypesInitialized &&
+            //healTypesInitialized &&
+            //defenceTypesInitialized &&
             activeAbilitiesInitialized &&
             itemsInitialized &&
             entitiesInitialized;
@@ -96,7 +98,7 @@ public static class Fabricator
         resourceInitInfo[info.id] = info;
     }
 
-    public static void ResourceInit()
+    public static void ResourcesInit()
     {
         if (!initialized)
         {
@@ -111,7 +113,7 @@ public static class Fabricator
 
     public static Resource CreateResource(int newResourceId, int count)
     {
-        if (IsInitialized())
+        if (!IsInitialized())
         {
             throw new System.Exception("Fabricator не инициализирован перед использованием!");
         }
@@ -148,7 +150,7 @@ public static class Fabricator
         {
             throw new System.Exception("Ресурсы уже инициализированы, добавление новых невозможно!");
         }
-        cellsInitInfo[info.typeId] = info;
+        cellsInitInfo[info.id] = info;
     }
 
     public static void CellsInit()
@@ -166,7 +168,7 @@ public static class Fabricator
 
     public static void CreateCell(int newCellTypeId, Vector2Int coords, Map map)
     {
-        if (IsInitialized())
+        if (!IsInitialized())
         {
             throw new System.Exception("Fabricator не инициализирован перед использованием!");
         }
@@ -221,7 +223,7 @@ public static class Fabricator
 
     public static Item CreateItem(int newItemId)
     {
-        if (IsInitialized())
+        if (!IsInitialized())
         {
             throw new System.Exception("Fabricator не инициализирован перед использованием!");
         }
@@ -280,7 +282,7 @@ public static class Fabricator
 
     public static int UseAbility(int id, List<(Vector2Int, Map)> targetsList, Entity owner)
     {
-        if (IsInitialized())
+        if (!IsInitialized())
         {
             throw new System.Exception("Fabricator не инициализирован перед использованием!");
         }
@@ -289,7 +291,7 @@ public static class Fabricator
 
     public static int ContinueUseAbility(int id, Entity owner, int currentEffectGroup, List<(Vector2Int, Map)> targetsList)
     {
-        if (IsInitialized())
+        if (!IsInitialized())
         {
             throw new System.Exception("Fabricator не инициализирован перед использованием!");
         }
@@ -298,7 +300,7 @@ public static class Fabricator
 
     public static double GetAbilityCooldown(int id)
     {
-        if (IsInitialized())
+        if (!IsInitialized())
         {
             throw new System.Exception("Fabricator не инициализирован перед использованием!");
         }
@@ -307,7 +309,7 @@ public static class Fabricator
 
     public static double GetAbilityDelay(int id, int effectGroup)
     {
-        if (IsInitialized())
+        if (!IsInitialized())
         {
             throw new System.Exception("Fabricator не инициализирован перед использованием!");
         }
@@ -327,19 +329,49 @@ public static class Fabricator
 
 
     // Entities
-    public static void EntitiesInit(Dictionary<int, EntityInitInfo> entityInitInfo)
+    public static int AddEntityId()
     {
-        entitiesInitialized = true;
-        Fabricator.entitiesInitInfo = entityInitInfo;
+        if (!initialized)
+        {
+            throw new System.Exception("Fabricator не инициализирован!");
+        }
+        if (entitiesInitialized)
+        {
+            throw new System.Exception("Сущности уже инициализированы, добавление новых невозможно!");
+        }
+        currentLastEntityId++;
+        return currentLastEntityId;
     }
 
+    public static void AddEntityInitInfo(EntityInitInfo info)
+    {
+        if (!initialized)
+        {
+            throw new System.Exception("Fabricator не инициализирован!");
+        }
+        if (entitiesInitialized)
+        {
+            throw new System.Exception("Сущности уже инициализированы, добавление новых невозможно!");
+        }
+        entitiesInitInfo[info.id] = info;
+    }
 
-
-
+    public static void EntitiesInit()
+    {
+        if (!initialized)
+        {
+            throw new System.Exception("Fabricator не инициализирован!");
+        }
+        if (entitiesInitialized)
+        {
+            throw new System.Exception("Сущности уже инициализированы!");
+        }
+        entitiesInitialized = true;
+    }
 
     public static void CreateEntity(int newEntityId, Player owner, Cell cell)
     {
-        if (IsInitialized())
+        if (!IsInitialized())
         {
             throw new System.Exception("Fabricator не инициализирован перед использованием!");
         }
@@ -347,7 +379,7 @@ public static class Fabricator
         {
             throw new System.Exception("Произведена попытка создать неизвестную сущность!");
         }
-
+        // не хватает проверки на owner == null
         if (entitiesInitInfo[newEntityId] is UnitInitInfo)
         {
             if (cell.unitAtCell != null)

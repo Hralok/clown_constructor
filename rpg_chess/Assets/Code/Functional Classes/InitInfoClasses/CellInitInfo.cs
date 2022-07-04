@@ -5,7 +5,7 @@ using UnityEngine.Tilemaps;
 
 public class CellInitInfo
 {
-    public int typeId { get; private set; }
+    public int id { get; private set; }
     public int nameId { get; private set; }
     public int descriptionId { get; private set; }
     public CellInitInfo(
@@ -14,11 +14,11 @@ public class CellInitInfo
         (TileBase, TileBase) tilePair
         )
     {
-        typeId = Fabricator.AddCellId();
+        id = Fabricator.AddCellId();
         this.nameId = nameId;
         this.descriptionId = descriptionId;
 
-        GraphicSupporter.AddCellTile(typeId, tilePair.Item1, tilePair.Item2);
+        GraphicSupporter.AddCellTile(id, tilePair.Item1, tilePair.Item2);
         Fabricator.AddCellInitInfo(this);
     }
 

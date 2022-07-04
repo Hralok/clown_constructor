@@ -5,8 +5,9 @@ using System.Linq;
 
 public class ActiveAbilityInitInfo
 {
+    public int id { get; private set; }
     public List<TargetArea> targetAreas { get; private set; }
-    public List<EffectGroup> effects { get; private set; } 
+    public List<EffectGroup> effects { get; private set; }
     public bool interruptible { get; private set; }
     public double maxCooldown { get; private set; }
     public int descriptionTextIndex { get; private set; }
@@ -15,10 +16,10 @@ public class ActiveAbilityInitInfo
     private List<int> targetUsed;
 
     public ActiveAbilityInitInfo(
-        List<TargetArea> targetAreas, 
-        List<EffectGroup> effects, 
-        bool interruptible, 
-        double maxCooldown, 
+        List<TargetArea> targetAreas,
+        List<EffectGroup> effects,
+        bool interruptible,
+        double maxCooldown,
         int descriptionTextIndex)
     {
         if (!Fabricator.resourcesInitialized || !Fabricator.damageTypesInitialized || !Fabricator.healTypesInitialized)
@@ -97,6 +98,8 @@ public class ActiveAbilityInitInfo
             throw new System.Exception("Такого текстового описания не существует в проекте!");
         }
         this.descriptionTextIndex = descriptionTextIndex;
+
+        id = Fabricator.AddActiveAbilityId();
     }
 
 

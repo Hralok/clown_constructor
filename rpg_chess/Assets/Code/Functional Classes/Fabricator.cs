@@ -24,15 +24,15 @@ public static class Fabricator
     public static int currentLastResourceId { get; private set; } = -1;
     public static int currentLastCellId { get; private set; } = -1;
     public static int currentLastItemId { get; private set; } = -1;
-
+    public static int currentLastActiveAbilityId { get; private set; } = -1;
 
 
     public static bool initialized { get; private set; } = false;
     public static bool resourcesInitialized { get; private set; } = false;
     public static bool cellsInitialized { get; private set; } = false;
     public static bool itemsInitialized { get; private set; } = false;
+    public static bool activeAbilitiesInitialized { get; private set; } = false;
 
-    public static bool abilitiesInitialized { get; private set; } = false;
 
     public static bool damageTypesInitialized { get; private set; } = false;
     public static bool healTypesInitialized { get; private set; } = false;
@@ -62,13 +62,13 @@ public static class Fabricator
             damageTypesInitialized &&
             healTypesInitialized &&
             defenceTypesInitialized &&
-            abilitiesInitialized &&
+            activeAbilitiesInitialized &&
             itemsInitialized &&
             entitiesInitialized;
     }
 
 
-    //Resource
+    // Resources
     public static int AddResourceId()
     {
         if (!initialized)
@@ -123,7 +123,7 @@ public static class Fabricator
     }
 
 
-    //Cell
+    // Cells
     public static int AddCellId()
     {
         if (!initialized)
@@ -178,7 +178,7 @@ public static class Fabricator
     }
 
 
-    //Item
+    // Items
     public static int AddItemId()
     {
         if (!initialized)
@@ -203,7 +203,7 @@ public static class Fabricator
         {
             throw new System.Exception("ѕредметы уже инициализированы, добавление новых невозможно!");
         }
-        itemsInitInfo[info.itemId] = info;
+        itemsInitInfo[info.id] = info;
     }
 
     public static void ItemsInit()
@@ -218,6 +218,7 @@ public static class Fabricator
         }
         itemsInitialized = true;
     }
+
     public static Item CreateItem(int newItemId)
     {
         if (IsInitialized())
@@ -232,12 +233,49 @@ public static class Fabricator
     }
 
 
-    //Abilities
-    public static void AbilitiesInit()
+    // Abilities
+    public static int AddActiveAbilityId()
     {
+        if (!initialized)
+        {
+            throw new System.Exception("Fabricator не инициализирован!");
+        }
+        if (activeAbilitiesInitialized)
+        {
+            throw new System.Exception("јктивные способности уже инициализированы, добавление новых невозможно!");
+        }
+        currentLastActiveAbilityId++;
+        return currentLastActiveAbilityId;
+    }
 
+    public static void AddActiveAbility(ActiveAbilityInitInfo info)
+    {
+        if (!initialized)
+        {
+            throw new System.Exception("Fabricator не инициализирован!");
+        }
+        if (itemsInitialized)
+        {
+            throw new System.Exception("ѕредметы уже инициализированы, добавление новых невозможно!");
+        }
+        if (activeAbilities.ContainsKey(info.id))
+        {
+            throw new System.Exception("—пособность с таким id уже существует!");
+        }
+        activeAbilities[info.id] = new ActiveAbility(info);
+    }
 
-        abilitiesInitialized = true;
+    public static void ActiveAbilitysInit()
+    {
+        if (!initialized)
+        {
+            throw new System.Exception("Fabricator не инициализирован!");
+        }
+        if (activeAbilitiesInitialized)
+        {
+            throw new System.Exception("ѕредметы уже инициализированы!");
+        }
+        activeAbilitiesInitialized = true;
     }
 
     public static int UseAbility(int id, List<(Vector2Int, Map)> targetsList, Entity owner)
@@ -276,24 +314,25 @@ public static class Fabricator
         return activeAbilities[id].effects[effectGroup].delay;
     }
 
+    // –ешить надо ли оставить данный метод, и не стоит ли добавить аналогичные методы дл€ всего остального
+    // (¬еро€тнее всего, стоит)
+    //public static bool ChekAbilityExistence(int id) 
+    //{
+    //    if (!abilitiesInitialized)
+    //    {
+    //        throw new System.Exception("—пособности ещЄ не инициализированы!");
+    //    }
+    //    return activeAbilities.ContainsKey(id);
+    //}
 
 
-
+    // Entities
     public static void EntitiesInit(Dictionary<int, EntityInitInfo> entityInitInfo)
     {
         entitiesInitialized = true;
         Fabricator.entitiesInitInfo = entityInitInfo;
     }
 
-
-    public static bool ChekAbilityExistence(int id)
-    {
-        if (!abilitiesInitialized)
-        {
-            throw new System.Exception("—пособности ещЄ не инициализированы!");
-        }
-        return activeAbilities.ContainsKey(id);
-    }
 
 
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class EntityInitInfo
 {
-    public int entityId;
+    public int id;
     public double maximalHealthPoints { get; private set; }
     public double maximalMana { get; private set; }
     public double maximalEnergy { get; private set; }
@@ -31,7 +31,6 @@ public abstract class EntityInitInfo
     public int inventorySize { get; private set; }
 
     public EntityInitInfo(
-        int entityId,
         double maximalHealthPoints, 
         double maximalMana, 
         double maximalEnergy, 
@@ -50,9 +49,7 @@ public abstract class EntityInitInfo
         List<ActiveAbilityInSomewhere> abilities, 
         int inventorySize)
     {
-        this.entityId = entityId;
-
-        if (!Fabricator.abilitiesInitialized)
+        if (!Fabricator.activeAbilitiesInitialized)
         {
             throw new System.Exception("Необходимые элементы класса Fabricator ещё не инициализированы!");
         }
@@ -111,6 +108,8 @@ public abstract class EntityInitInfo
         }
         this.abilities = abilities;
         this.inventorySize = inventorySize;
+
+        id = Fabricator.
     }
 
 

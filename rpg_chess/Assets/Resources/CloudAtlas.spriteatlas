@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CloudAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 49c309d8fe036ea4385f79d74a1e4a19, type: 3}
+    - {fileID: 2800000, guid: 94113af3b156b834eb06cf34144b7182, type: 3}
+    - {fileID: 2800000, guid: 8b4545a31d926f242b8869d3bbbeb240, type: 3}
+    - {fileID: 2800000, guid: 184cdc68b3da4054b9bfb9fcd21d2a19, type: 3}
+    - {fileID: 2800000, guid: 7f7aa336d18c5c1418aa5809594adaa0, type: 3}
+    - {fileID: 2800000, guid: 6181eeaeca4bb954b93cb8c0f30f88a2, type: 3}
+    - {fileID: 2800000, guid: 140464916fae51749b406425008cc99d, type: 3}
+    - {fileID: 2800000, guid: 7931ce39e5807fa42a7de6f5f2e941c8, type: 3}
+    - {fileID: 2800000, guid: a6be0c13fe07d5146baa14a70970c910, type: 3}
+    - {fileID: 2800000, guid: 02b1eaed4045ac649b06a3709356a15a, type: 3}
+    - {fileID: 2800000, guid: 65e50bbfe80c7c744a7430d154c271c8, type: 3}
+    - {fileID: 2800000, guid: e1f43e7a7b05b974d80ef299d3915158, type: 3}
+    - {fileID: 2800000, guid: 18f70d9a8ea95db4891ecbc5dc47d3a7, type: 3}
+    - {fileID: 2800000, guid: 3d0d179c4505d6846b7e7696d1904751, type: 3}
+    - {fileID: 2800000, guid: 9919c6cf91a73574b9f6b5cc74ab3610, type: 3}
+    - {fileID: 2800000, guid: 7d270688bd78b3f479be85d3e6a2839f, type: 3}
+    - {fileID: 2800000, guid: ad11d24d86200a542a1cc709f3254991, type: 3}
+    - {fileID: 2800000, guid: 18803a28e092ec4438feb9b9c61fe517, type: 3}
+    - {fileID: 2800000, guid: e21492db43a6e784cac14fbf3d44ee95, type: 3}
+    - {fileID: 2800000, guid: f0680cd6177406c479a0119ae2bac1ae, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 140464916fae51749b406425008cc99d, type: 3}
+  - {fileID: 21300000, guid: a6be0c13fe07d5146baa14a70970c910, type: 3}
+  - {fileID: 21300000, guid: 8b4545a31d926f242b8869d3bbbeb240, type: 3}
+  - {fileID: 21300000, guid: 94113af3b156b834eb06cf34144b7182, type: 3}
+  - {fileID: 21300000, guid: 7f7aa336d18c5c1418aa5809594adaa0, type: 3}
+  - {fileID: 21300000, guid: f0680cd6177406c479a0119ae2bac1ae, type: 3}
+  - {fileID: 21300000, guid: 18803a28e092ec4438feb9b9c61fe517, type: 3}
+  - {fileID: 21300000, guid: 184cdc68b3da4054b9bfb9fcd21d2a19, type: 3}
+  - {fileID: 21300000, guid: 7d270688bd78b3f479be85d3e6a2839f, type: 3}
+  - {fileID: 21300000, guid: 49c309d8fe036ea4385f79d74a1e4a19, type: 3}
+  - {fileID: 21300000, guid: 7931ce39e5807fa42a7de6f5f2e941c8, type: 3}
+  - {fileID: 21300000, guid: e1f43e7a7b05b974d80ef299d3915158, type: 3}
+  - {fileID: 21300000, guid: 18f70d9a8ea95db4891ecbc5dc47d3a7, type: 3}
+  - {fileID: 21300000, guid: e21492db43a6e784cac14fbf3d44ee95, type: 3}
+  - {fileID: 21300000, guid: 3d0d179c4505d6846b7e7696d1904751, type: 3}
+  - {fileID: 21300000, guid: ad11d24d86200a542a1cc709f3254991, type: 3}
+  - {fileID: 21300000, guid: 02b1eaed4045ac649b06a3709356a15a, type: 3}
+  - {fileID: 21300000, guid: 6181eeaeca4bb954b93cb8c0f30f88a2, type: 3}
+  - {fileID: 21300000, guid: 65e50bbfe80c7c744a7430d154c271c8, type: 3}
+  - {fileID: 21300000, guid: 9919c6cf91a73574b9f6b5cc74ab3610, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Cloud 7
+  - Cloud 9
+  - Cloud 3
+  - Cloud 2
+  - Cloud 5
+  - Cloud 20
+  - Cloud 18
+  - Cloud 4
+  - Cloud 16
+  - Cloud 1
+  - Cloud 8
+  - Cloud 12
+  - Cloud 13
+  - Cloud 19
+  - Cloud 14
+  - Cloud 17
+  - Cloud 10
+  - Cloud 6
+  - Cloud 11
+  - Cloud 15
+  m_RenderDataMap: {}
+  m_Tag: CloudAtlas
+  m_IsVariant: 0

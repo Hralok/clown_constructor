@@ -85,16 +85,10 @@ public static class TextManager
         return lastTextIndex;
     }
 
-
-
     static public void EndInitialization()
     {
         initialized = true;
     }
-
-
-
-
 
     static public string GetTextById(int id)
     {

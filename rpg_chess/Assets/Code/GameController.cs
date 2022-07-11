@@ -123,5 +123,8 @@ public class GameController : MonoBehaviour
         List<Map> maps = new List<Map>();
         maps.Add(map);
         Drawer drawer = new Drawer(grid, prefab, maps);
+
+        Debug.Log(TextManager.GetTextById(17));
+
     }
 }

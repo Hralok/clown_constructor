@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public static class TextManager
 {
     static private LanguageEnum currentLanguage = LanguageEnum.Russian;
+    static public int lastSystemIndex { get; private set; } = 14;
+    static public int lastTextIndex { get; private set; }
+    static public bool initialized { get; private set; } = true;
 
-    static private Dictionary<LanguageEnum, Dictionary<int, string>> allProjectText = new Dictionary<LanguageEnum, Dictionary<int, string>>()
+    static private Dictionary<LanguageEnum, Dictionary<int, string>> systemText = new Dictionary<LanguageEnum, Dictionary<int, string>>()
     {
         { LanguageEnum.Russian, new Dictionary<int, string>()
             {
@@ -29,7 +33,6 @@ public static class TextManager
             }
         },
 
-
         { LanguageEnum.English, new Dictionary<int, string>()
             {
                 {0,  "Main menu"},
@@ -51,6 +54,41 @@ public static class TextManager
             }
         }
     };
+
+    static private Dictionary<LanguageEnum, Dictionary<int, string>> allProjectText;
+
+    static public void StartInitialization()
+    {
+        allProjectText = new Dictionary<LanguageEnum, Dictionary<int, string>>(systemText);
+        lastTextIndex = lastSystemIndex;
+        initialized = false;
+    }
+
+    static public int AddText(Dictionary<LanguageEnum, string> text)
+    {
+        if (initialized)
+        {
+            throw new System.Exception("Невозможно добавить новый текст, TextManager уже инициализирован!");
+        }
+
+        lastTextIndex++;
+
+        foreach(var i in allProjectText.Keys)
+        {
+            if (!text.ContainsKey(i))
+            {
+                throw new System.Exception("Добавляемый текст представлен не на всех системных языках!");
+            }
+            allProjectText[i].Add(lastTextIndex, text[i]);
+        }
+
+        return lastTextIndex;
+    }
+
+    static public void EndInitialization()
+    {
+        initialized = true;
+    }
 
     static public string GetTextById(int id)
     {
